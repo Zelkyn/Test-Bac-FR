@@ -174,45 +174,32 @@ const textesTitres={
   texte16:"Texte 16 – Le Loup et le Chien (La Fontaine)",
 };
 
-// Chaque entrée = une ligne physique affichée. "__BREAK__" = saut de strophe.
-// Format : [texte, analyse]
+// Format : [texte_affiché, analyse]
+// "__BREAK__" = saut de strophe (poèmes)
 const texteLines={
 
-/* ---- TEXTE 1 : 51 lignes ---- */
+/* ====================================================================
+   TEXTE 1 — 38 lignes
+   Règle : une réplique entière = une ligne, même si longue.
+   ==================================================================== */
 texte1:[
-["<strong>H.1 :</strong> Écoute, je voulais te demander…","Début in medias res. H1 prend l'initiative, hésite : les points de suspension signalent une difficulté à formuler."],
-["C'est un peu pour ça que je suis venu…","Analyse commune à la ligne ci-dessus"],
-["je voudrais savoir… que s'est-il passé ?","Double question en suspension : la pression monte, la formulation reste floue."],
-["Qu'est-ce que tu as contre moi ?","Question directe et accusatrice. H1 suppose un grief caché dès l'ouverture."],
+["<strong>H.1 :</strong> Écoute, je voulais te demander… C'est un peu pour ça que je suis venu… je voudrais savoir… que s'est-il passé ? Qu'est-ce que tu as contre moi ?","Début in medias res. H1 prend l'initiative. Les points de suspension signalent l'hésitation. La double question finale pose d'emblée le conflit."],
 ["<strong>H.2 :</strong> Mais rien… Pourquoi ?","Réponse minimale et paradoxale : le « rien » annonce pourtant un malaise profond."],
-["<strong>H.1 :</strong> Oh, je ne sais pas… Il me semble que tu t'éloignes…","H1 exprime son ressenti de façon vague. Le verbe « s'éloigner » pose le thème de la rupture progressive."],
-["tu ne fais plus jamais signe… il faut toujours que ce soit moi…","Reproche explicite : déséquilibre dans la relation, H1 seul à maintenir le lien."],
+["<strong>H.1 :</strong> Oh, je ne sais pas… Il me semble que tu t'éloignes… tu ne fais plus jamais signe… il faut toujours que ce soit moi…","H1 exprime son ressenti de façon vague. Reproche explicite : déséquilibre dans la relation, H1 seul à maintenir le lien."],
 ["<strong>H.2 :</strong> Tu sais bien : je prends rarement l'initiative, j'ai peur de déranger.","H2 se justifie par un trait de caractère général : il minimise le reproche en le généralisant."],
-["<strong>H.1 :</strong> Mais pas avec moi ? Tu sais que je te le dirais…","H1 souligne la spécificité de leur amitié : H2 ne devrait pas avoir peur avec lui."],
-["Nous n'en sommes tout de même pas là… Non, je sens qu'il y a quelque chose…","H1 refuse de croire à un simple malentendu : il insiste, il « sent » quelque chose d'indicible."],
+["<strong>H.1 :</strong> Mais pas avec moi ? Tu sais que je te le dirais… Nous n'en sommes tout de même pas là… Non, je sens qu'il y a quelque chose…","H1 souligne la spécificité de leur amitié. Il insiste : il « sent » quelque chose d'indicible."],
 ["<strong>H.2 :</strong> Mais que veux-tu qu'il y ait ?","H2 esquive encore : la question rhétorique écarte tout reproche sans vraiment répondre."],
-["<strong>H.1 :</strong> C'est justement ce que je me demande. J'ai beau chercher…","H1 reconnaît l'absence de cause apparente tout en cherchant."],
-["jamais… depuis tant d'années… il n'y a jamais rien eu entre nous…","Évocation du long passé commun. L'opposition entre durée et rupture souligne le paradoxe."],
-["rien dont je me souvienne…","Analyse commune à la ligne ci-dessus"],
-["<strong>H.2 :</strong> Moi, par contre, il y a des choses que je n'oublie pas.","H2 introduit une mémoire dissymétrique : lui se souvient, lui garde des traces."],
-["Tu as toujours été très chic… il y a eu des circonstances…","Éloge de H1. Lexique de l'amitié sincère et des moments partagés."],
-["<strong>H.1 :</strong> Oh qu'est-ce que c'est ? Toi aussi, tu as toujours été parfait…","H1 rend l'éloge en miroir : « parfait, un ami sûr »."],
-["un ami sûr… Tu te souviens comme on attendrissait ta mère ?…","Référence affective forte : la mère de H2, souvenir de complicité ancienne."],
-["<strong>H.2 :</strong> Oui, pauvre maman… Elle t'aimait bien…","H2 confirme avec une émotion douce. Le « pauvre maman » marque une tendresse mélancolique."],
-["elle me disait : « Ah lui, au moins, c'est un vrai copain, tu pourras toujours compter sur lui. »","Discours rapporté de la mère : validation extérieure de l'amitié, légitimité du lien."],
-["C'est ce que j'ai fait, d'ailleurs.","Brève affirmation : H2 confirme qu'il a compté sur H1. Paradoxe : alors pourquoi l'éloignement ?"],
+["<strong>H.1 :</strong> C'est justement ce que je me demande. J'ai beau chercher… jamais… depuis tant d'années… il n'y a jamais rien eu entre nous… rien dont je me souvienne…","H1 reconnaît l'absence de cause apparente. Évocation du long passé commun. L'opposition entre durée et rupture souligne le paradoxe."],
+["<strong>H.2 :</strong> Moi, par contre, il y a des choses que je n'oublie pas. Tu as toujours été très chic… il y a eu des circonstances…","H2 introduit une mémoire dissymétrique. Éloge de H1. Lexique de l'amitié sincère."],
+["<strong>H.1 :</strong> Oh qu'est-ce que c'est ? Toi aussi, tu as toujours été parfait… un ami sûr… Tu te souviens comme on attendrissait ta mère ?…","H1 rend l'éloge en miroir. Référence affective forte : la mère de H2, souvenir de complicité ancienne."],
+["<strong>H.2 :</strong> Oui, pauvre maman… Elle t'aimait bien… elle me disait : « Ah lui, au moins, c'est un vrai copain, tu pourras toujours compter sur lui. » C'est ce que j'ai fait, d'ailleurs.","Discours rapporté de la mère : validation extérieure de l'amitié. H2 confirme qu'il a compté sur H1. Paradoxe : alors pourquoi l'éloignement ?"],
 ["<strong>H.1 :</strong> Alors ?","Question brève, incisive : H1 attend une explication logique après ces souvenirs."],
 ["<strong>H.2</strong>, <em>hausse les épaules</em> : … Alors… que veux-tu que je te dise !","Didascalie expressive : le geste signale la résignation. H2 refuse de s'engager verbalement."],
-["<strong>H.1 :</strong> Si, dis-moi… je te connais trop bien : il y a quelque chose de changé…","H1 insiste. « Je te connais trop bien » : connaissance intime invoquée comme argument."],
-["Tu étais toujours à une certaine distance… de tout le monde, du reste…","H1 reconnaît que H2 est distant avec tout le monde, ce qui est sa nature."],
-["mais maintenant avec moi… encore l'autre jour, au téléphone… tu étais à l'autre bout du monde…","Mais cette distance s'est aggravée avec lui récemment. Exemple concret : le téléphone."],
-["ça me fait de la peine, tu sais…","Expression directe de la souffrance. H1 se montre vulnérable pour faire parler H2."],
+["<strong>H.1 :</strong> Si, dis-moi… je te connais trop bien : il y a quelque chose de changé… Tu étais toujours à une certaine distance… de tout le monde, du reste… mais maintenant avec moi… encore l'autre jour, au téléphone… tu étais à l'autre bout du monde… ça me fait de la peine, tu sais…","H1 insiste. La longue réplique mêle argumentation et aveu de souffrance. L'exemple du téléphone ancre le conflit dans le concret."],
 ["<strong>H.2</strong>, <em>dans un élan</em> : Mais moi aussi, figure-toi…","Didascalie : élan subit. Aveu-surprise : H2 ressent la même chose. Effet miroir inattendu."],
 ["<strong>H.1 :</strong> Ah tu vois, j'ai donc raison…","H1 croit avoir percé le mystère : illusion de résolution."],
-["<strong>H.2 :</strong> Que veux-tu… je t'aime tout autant, tu sais… ne crois pas ça…","H2 réaffirme son attachement. Paradoxe : il aime autant et pourtant s'éloigne."],
-["mais c'est plus fort que moi…","Formule-clé : une force incontrôlable, indicible, est à l'œuvre."],
-["<strong>H.1 :</strong> Qu'est-ce qui est plus fort ? Pourquoi ne veux-tu pas le dire ?","H1 multiplie les questions. Urgence croissante."],
-["Il y a donc eu quelque chose…","H1 formule enfin une hypothèse : un événement précis serait à l'origine."],
+["<strong>H.2 :</strong> Que veux-tu… je t'aime tout autant, tu sais… ne crois pas ça… mais c'est plus fort que moi…","H2 réaffirme son attachement. Paradoxe : il aime autant et pourtant s'éloigne. Formule-clé : « plus fort que moi »."],
+["<strong>H.1 :</strong> Qu'est-ce qui est plus fort ? Pourquoi ne veux-tu pas le dire ? Il y a donc eu quelque chose…","H1 multiplie les questions. Urgence croissante. Il formule une hypothèse : un événement précis."],
 ["<strong>H.2 :</strong> Non… vraiment rien… Rien qu'on puisse dire…","H2 résiste. L'expression « rien qu'on puisse dire » introduit l'indicible comme thème central."],
 ["<strong>H.1 :</strong> Essaie quand même…","Insistance douce mais ferme."],
 ["<strong>H.2 :</strong> Oh non… je ne veux pas…","Refus net, spontané, presque enfantin dans sa formulation."],
@@ -221,90 +208,78 @@ texte1:[
 ["<strong>H.1 :</strong> C'est donc si terrible ?","H1 dramatise pour débloquer H2."],
 ["<strong>H.2 :</strong> Non, pas terrible… ce n'est pas ça…","Nuance de H2 : pas terrible, mais indéfinissable. Contradiction."],
 ["<strong>H.1 :</strong> Mais qu'est-ce que c'est, alors ?","Relance directe."],
-["<strong>H.2 :</strong> C'est… c'est plutôt que ce n'est rien… ce qui s'appelle rien…","H2 commence à parler : paradoxe central, la cause est un « rien »."],
-["ce qu'on appelle ainsi… en parler seulement, évoquer ça… ça peut vous entraîner…","La peur de nommer : évoquer la chose suffit à la rendre dangereuse."],
-["de quoi on aurait l'air ? Personne, du reste… personne ne l'ose… on n'en entend jamais parler…","Généralisation sociale : ce silence est universel, personne n'ose y toucher."],
-["<strong>H.1 :</strong> Eh bien, je te demande au nom de tout ce que tu prétends que j'ai été pour toi…","Chantage affectif : H1 invoque le poids de l'amitié passée."],
-["au nom de ta mère… de nos parents… je t'adjure solennellement,","Solennité croissante. La mère et les parents sont convoqués comme témoins moraux."],
-["tu ne peux plus reculer… Qu'est-ce qu'il y a eu ? Dis-le… tu me dois ça…","« Tu me dois ça » : formule de bilan d'une relation fragilisée."],
-["<strong>H.2</strong>, <em>piteusement</em> : Je te dis : ce n'est rien qu'on puisse dire…","H2 maintient sa résistance. Didascalie « piteusement » : il a honte de ne pas pouvoir dire."],
-["rien dont il soit permis de parler…","Analyse commune à la ligne ci-dessus"],
+["<strong>H.2 :</strong> C'est… c'est plutôt que ce n'est rien… ce qui s'appelle rien… ce qu'on appelle ainsi… en parler seulement, évoquer ça… ça peut vous entraîner… de quoi on aurait l'air ? Personne, du reste… personne ne l'ose… on n'en entend jamais parler…","H2 commence à parler dans l'obscurité : la cause est un « rien ». La peur de nommer. Évoquer la chose suffit à la rendre dangereuse. Généralisation sociale."],
+["<strong>H.1 :</strong> Eh bien, je te demande au nom de tout ce que tu prétends que j'ai été pour toi… au nom de ta mère… de nos parents… je t'adjure solennellement, tu ne peux plus reculer… Qu'est-ce qu'il y a eu ? Dis-le… tu me dois ça…","Chantage affectif : H1 invoque le poids de l'amitié passée. Solennité croissante. « Tu me dois ça » : formule de bilan d'une relation fragilisée."],
+["<strong>H.2</strong>, <em>piteusement</em> : Je te dis : ce n'est rien qu'on puisse dire… rien dont il soit permis de parler…","H2 maintient sa résistance. Didascalie « piteusement » : il a honte de ne pas pouvoir dire."],
 ["<strong>H.1 :</strong> Allons, vas-y…","Encouragement bref, presque commandement."],
 ["<strong>H.2 :</strong> Eh bien, c'est juste des mots…","Révélation : le cœur du conflit est langagier. Le conflit naît des mots."],
-["<strong>H.1 :</strong> Des mots ? Entre nous ? Ne me dis pas qu'on a eu des mots…","H1 incrédule : il interprète « mots » comme une dispute verbale classique."],
-["ce n'est pas possible… et je m'en serais souvenu…","Négation absolue : H1 nie toute querelle mémorable."],
+["<strong>H.1 :</strong> Des mots ? Entre nous ? Ne me dis pas qu'on a eu des mots… ce n'est pas possible… et je m'en serais souvenu…","H1 incrédule : il interprète « mots » comme une dispute verbale classique."],
+["<strong>H.2 :</strong> Non, pas des mots comme ça… d'autres mots… pas ceux dont on dit qu'on les a « eus »… Des mots qu'on n'a pas « eus », justement… On ne sait pas comment ils vous viennent…","H2 distingue entre mots dits et non dits. Ces mots « qu'on n'a pas eus ». Dimension métalinguistique."],
+["<strong>H.1 :</strong> Lesquels ? Quels mots ? Tu me fais languir… tu me taquines…","H1 impatient. Tension dramatique."],
+["<strong>H.2 :</strong> Mais non, je ne te taquine pas… Mais si je te les dis…","H2 hésite. Peur des conséquences."],
+["<strong>H.1 :</strong> Alors ? Qu'est-ce qui se passera ? Tu me dis que ce n'est rien…","H1 relance."],
+["<strong>H.2 :</strong> Mais justement, ce n'est rien… Et c'est à cause de ce rien…","Paradoxe final : c'est un rien qui cause la rupture."],
+["<strong>H.1 :</strong> Ah on y arrive… C'est à cause de ce rien que tu t'es éloigné ? Que tu as voulu rompre avec moi ?","H1 formule enfin : la rupture serait née d'un rien."],
+["<strong>H.2</strong>, <em>soupire</em> : Oui… C'est à cause de ça… Tu ne comprendras jamais… Personne, du reste, ne pourra comprendre…","H2, soupire : confirmation. Futur négatif : fin pessimiste, ils ne se comprendront jamais."],
 ],
 
-/* ---- TEXTE 2 : 38 lignes ---- */
+/* ====================================================================
+   TEXTE 2 — 32 lignes
+   ==================================================================== */
 texte2:[
-["<strong>H.2</strong>, <em>revient avec un couple</em> : Voilà… je vous présente…","Didascalie d'entrée : H2 revient avec un couple. Théâtralisation du conflit."],
-["Je vous en prie… cela ne vous prendra pas longtemps…","H2 minimise l'enjeu. Tension entre gravité du conflit et banalisation apparente."],
-["il y a entre nous un différend…","Terme soutenu « différend » : atténuation pudique d'une véritable dispute."],
+["<strong>H.2</strong>, <em>revient avec un couple</em> : Voilà… Je vous présente… Je vous en prie… cela ne vous prendra pas longtemps… il y a entre nous un différend…","Didascalie d'entrée : H2 revient avec un couple. Théâtralisation du conflit. Terme soutenu « différend » : atténuation pudique."],
 ["<strong>Eux :</strong> Oh, mais nous, vous savez, nous n'avons aucune compétence.","Refus initial du couple : effet comique. Ils se déclarent incompétents."],
-["<strong>H.2 :</strong> Si, si, vous en avez… Plus qu'il n'en faut.","Insistance de H2. Hyperbole ironique : « plus qu'il n'en faut »."],
-["Voilà de quoi il s'agit. Mon ami, là, un ami de toujours…","H2 campe la situation : amitié ancienne, ce qui rend la rupture plus inexplicable."],
-["<strong>F. :</strong> C'est lui dont vous m'avez souvent parlé ?","F. rappelle que H2 avait évoqué H1 avant."],
-["Je me rappelle… quand il a été souffrant… vous étiez si inquiet…","Souvenir affectif fort : H2 s'inquiétait pour H1 malade."],
+["<strong>H.2 :</strong> Si, si, vous en avez… Plus qu'il n'en faut. Voilà de quoi il s'agit. Mon ami, là, un ami de toujours…","Insistance de H2. Hyperbole ironique : « plus qu'il n'en faut ». Amitié ancienne évoquée."],
+["<strong>F. :</strong> C'est lui dont vous m'avez souvent parlé ? Je me rappelle… quand il a été souffrant… vous étiez si inquiet…","F. rappelle que H2 avait évoqué H1 avant. Souvenir affectif fort : H2 s'inquiétait pour H1 malade."],
 ["<strong>H.2 :</strong> Oui, c'est lui… Et c'est pour ça justement que ça me fait tant de peine…","Confirmation et douleur exprimée. Le paradoxe s'installe : tant d'amitié, et pourtant…"],
-["<strong>F. :</strong> Ne me dites pas qu'entre vous… après tant d'amitié…","F. exprime l'incrédulité générale face à la rupture."],
-["vous m'avez toujours dit qu'il a été, à votre égard…","Analyse commune à la ligne ci-dessus"],
+["<strong>F. :</strong> Ne me dites pas qu'entre vous… après tant d'amitié… vous m'avez toujours dit qu'il a été, à votre égard…","F. exprime l'incrédulité générale face à la rupture."],
 ["<strong>H.2 :</strong> Oui, parfait. Je lui en suis reconnaissant…","H2 confirme : H1 était parfait. Paradoxe renforcé."],
 ["<strong>F. :</strong> Alors pourquoi ?","Question centrale posée par un tiers. Cela souligne l'absurdité de la rupture."],
 ["<strong>H.1 :</strong> Eh bien, je vais vous le dire : je lui ai, paraît-il, parlé sur un ton condescendant…","Révélation du motif. Distance ironique : « paraît-il » signale que H1 n'y croit pas vraiment."],
-["<strong>H.2 :</strong> Pourquoi le dis-tu comme ça ? Avec cette ironie ?","Mise en abyme : le problème se reproduit dans le présent. H2 reproche le ton à H1 en direct."],
-["Tu ne veux plus faire l'essai ?","H2 demande si H1 joue encore le jeu de l'explication."],
-["<strong>H.1 :</strong> Mais si mais si… Je le dis sérieusement.","H1 se reprend, tente de jouer le jeu."],
-["Je l'ai vexé… il s'est senti diminué… alors, depuis, il m'évite…","Vocabulaire psychologique. H1 résume la situation avec une certaine froideur analytique."],
+["<strong>H.2 :</strong> Pourquoi le dis-tu comme ça ? Avec cette ironie ? Tu ne veux plus faire l'essai ?","Mise en abyme : le problème se reproduit dans le présent. H2 reproche le ton à H1 en direct."],
+["<strong>H.1 :</strong> Mais si mais si… Je le dis sérieusement. Je l'ai vexé… il s'est senti diminué… alors, depuis, il m'évite…","H1 se reprend, tente de jouer le jeu. Vocabulaire psychologique."],
 ["<em>Eux, silencieux… perplexes… hochant la tête…</em>","Didascalie : incompréhension générale. Effet comique et critique du langage."],
-["<strong>F. :</strong> En effet… ça paraît… pour le moins excessif…","F. juge le conflit excessif. Réaction de bon sens qui souligne l'absurdité."],
-["juste un ton condescendant…","Analyse commune à la ligne ci-dessus"],
+["<strong>F. :</strong> En effet… ça paraît… pour le moins excessif… juste un ton condescendant…","F. juge le conflit excessif. Réaction de bon sens qui souligne l'absurdité."],
 ["<strong>H.3 :</strong> Mais vous savez, la condescendance, parfois…","H3 nuance : la condescendance peut parfois blesser profondément."],
 ["<strong>H.2 :</strong> Ah ? Vous comprenez ?","H2 cherche une validation extérieure."],
 ["<strong>H.3 :</strong> Enfin… je n'irais pas jusqu'à ne plus revoir, mais…","H3 hésite : il comprend partiellement mais ne cautionne pas entièrement."],
 ["<strong>H.2 :</strong> Mais, mais, mais… oh, vous voyez, vous pouvez me comprendre.","H2 insiste, veut une approbation totale."],
 ["<strong>H.3 :</strong> Je n'irai pas jusqu'à dire ça…","H3 refuse d'aller aussi loin. Il ne valide pas complètement H2."],
-["<strong>H.2 :</strong> Si, si, vous irez, vous verrez… permettez-moi de vous exposer…","H2 écarte le refus et reprend la parole."],
-["Voilà… Il faut vous dire d'abord que jamais, mais vraiment jamais je n'ai accepté d'aller chez lui…","Répétition + négation absolue : H2 affirme n'avoir jamais cherché à pénétrer l'univers de H1."],
+["<strong>H.2 :</strong> Si, si, vous irez, vous verrez… permettez-moi de vous exposer… Voilà… Il faut vous dire d'abord que jamais, mais vraiment jamais je n'ai accepté d'aller chez lui…","H2 écarte le refus et reprend la parole. Répétition + négation absolue : H2 n'a jamais cherché à pénétrer l'univers de H1."],
 ["<strong>F. :</strong> Vous n'allez jamais chez lui ?","F. étonnée : rupture des normes sociales apparente."],
 ["<strong>H.1 :</strong> Mais si, voyons… qu'est-ce qu'il raconte ?","H1 contredit : il y allait physiquement. Contradiction de perception."],
-["<strong>H.2 :</strong> Ce n'est pas de ça que je parle. J'allais le voir. Le voir, c'est vrai.","H2 précise : il distingue présence physique et présence intérieure."],
-["Mais jamais, jamais je ne cherchais à m'installer sur ses domaines…","Métaphore spatiale : « domaines » = univers mental et social de H1."],
-["dans ces régions qu'il habite… je ne joue pas le jeu, vous comprenez.","« Je ne joue pas le jeu » : refus des codes et des normes de l'univers de H1."],
+["<strong>H.2 :</strong> Ce n'est pas de ça que je parle. J'allais le voir. Le voir, c'est vrai. Mais jamais, jamais je ne cherchais à m'installer sur ses domaines… dans ces régions qu'il habite… je ne joue pas le jeu, vous comprenez.","H2 précise : présence physique ≠ présence intérieure. Métaphore spatiale : « domaines ». « Je ne joue pas le jeu » : refus des codes de H1."],
 ["<strong>H.1 :</strong> Ah, c'est ça que tu veux dire… Oui, c'est vrai, tu t'es toujours tenu en marge…","H1 reconnaît partiellement. Le mot « marge » définit la position de H2."],
 ["<strong>H.3 :</strong> Un marginal ?","H3 résume d'une étiquette. Simplification réductrice du conflit."],
-["<strong>H.1 :</strong> Oui, si on veut. Mais je dois dire qu'il a toujours gagné sa vie…","H1 défend H2 : il précise qu'être marginal ne signifie pas être dépendant."],
-["il n'a jamais rien demandé à personne.","Valeur morale et sociale : l'indépendance de H2 est soulignée."],
-["<strong>H.2 :</strong> Merci, tu es gentil…","Remerciement sincère mais bref avant de reprendre le fil."],
+["<strong>H.1 :</strong> Oui, si on veut. Mais je dois dire qu'il a toujours gagné sa vie… il n'a jamais rien demandé à personne.","H1 défend H2 : être marginal ne signifie pas être dépendant. Dimension morale."],
+["<strong>H.2 :</strong> Merci, tu es gentil… Mais où en étions-nous ? Ah oui, c'est ça, il vous l'a dit : je me tiens à l'écart. Il est chez lui. Moi je suis chez moi.","H2 reprend. Séparation nette des univers."],
+["<strong>F. :</strong> C'est bien normal. Chacun sa vie, n'est-ce pas ?","F. rationalise. Vision de bon sens → contraste avec la complexité du conflit."],
+["<strong>H.2 :</strong> Eh bien, figurez-vous qu'il ne le supporte pas. Il veut à toute force m'attirer… là-bas, chez lui… il faut que j'y sois avec lui, que je ne puisse pas en sortir… Alors il m'a tendu un piège… il a disposé une souricière.","H2 contre-attaque : H1 veut l'attirer, lui tendre un piège. Métaphore de la souricière. Vision paranoïaque du conflit."],
+["<strong>Tous :</strong> Une souricière ?","Réaction collective de surprise → effet comique, exagération du conflit."],
+["<strong>H.2 :</strong> il a profité d'une occasion…","H2 continue."],
+["<strong>F.</strong> <em>rit</em> : Une souricière d'occasion ?","F. rit : ironie."],
+["<strong>H.1 :</strong> Non, ne riez pas. Il parle sérieusement, je vous assure… Quelle souricière, dis-nous…","H1 protège H2 : « Ne riez pas, il parle sérieusement ». Retour au sérieux."],
 ],
 
-/* ---- TEXTE 3 : 30 lignes ---- */
+/* ====================================================================
+   TEXTE 3 — 22 lignes
+   ==================================================================== */
 texte3:[
 ["<em>Un silence.</em>","Didascalie d'ouverture : le silence traduit la fatigue du conflit. Le non-dit est central."],
 ["<strong>H.1 :</strong> À quoi bon s'acharner ?","Question rhétorique de lassitude. « S'acharner » = le combat est devenu inutile."],
 ["<strong>H.2 :</strong> Ce serait tellement plus sain...","Vocabulaire du bien-être : la rupture est présentée comme remède, solution raisonnable."],
 ["<strong>H.1 :</strong> Pour chacun de nous... plus salutaire…","H1 reprend le lexique médical. La séparation comme acte de soin."],
 ["<strong>H.2 :</strong> La meilleure solution...","Conclusion lapidaire : accord apparent entre les deux personnages."],
-["<strong>H.1 :</strong> Mais tu sais bien comment nous sommes.","H1 reconnaît leur incapacité commune à agir."],
-["Même toi, tu n'as pas osé le prendre sur toi.","Le verbe « oser » : la peur et l'hésitation les paralysent tous les deux."],
+["<strong>H.1 :</strong> Mais tu sais bien comment nous sommes. Même toi, tu n'as pas osé le prendre sur toi.","H1 reconnaît leur incapacité commune à agir. Le verbe « oser » : la peur et l'hésitation les paralysent tous les deux."],
 ["<strong>H.2 :</strong> Non. J'ai besoin qu'on m'autorise.","Aveu de dépendance au regard extérieur. H2 attend une validation sociale."],
 ["<strong>H.1 :</strong> Et moi donc, tu me connais...","Même aveu implicite de H1 : lui non plus ne peut agir seul."],
 ["<em>Un silence.</em>","Nouvelle pause théâtrale : stagnation du dialogue."],
-["<strong>H.1 :</strong> Qu'est-ce que tu crois... si on introduisait une demande... à nous deux, cette fois...","H1 imagine une démarche officielle commune. Ironie : une rupture d'amitié nécessiterait une procédure ?"],
-["on pourrait peut-être mieux expliquer... on aurait peut-être plus de chances...","Analyse commune à la ligne ci-dessus"],
-["<strong>H.2 :</strong> Non... à quoi bon ? Je peux tout te dire d'avance...","H2 anticipe le rejet. Il connaît déjà la réponse imaginaire."],
-["Je vois leur air… « Eh bien, de quoi s'agit-il encore ?","H2 joue le tribunal imaginaire. Discours intérieur prêté aux juges."],
-["De quoi ? Qu'est-ce qu'ils racontent ? Quelles taupes ? Quelles pelouses ?","Images absurdes : la cause de la rupture paraît dérisoire vue de l'extérieur."],
-["Quels sables mouvants ? Quels camps ennemis ? Voyons un peu leurs dossiers…","Ironie sur le sérieux apparent. Contraste comique entre la procédure et le motif futile."],
-["on a beau chercher... examiner les points d'ordinaire les plus chauds...","Les juges imaginaires cherchent une cause réelle et n'en trouvent pas."],
-["rien d'autre nulle part que les signes d'une amitié parfaite... »","Conclusion du tribunal fictif : aucune raison apparente de rompre."],
+["<strong>H.1 :</strong> Qu'est-ce que tu crois... si on introduisait une demande... à nous deux, cette fois... on pourrait peut-être mieux expliquer... on aurait peut-être plus de chances...","H1 imagine une démarche officielle commune. Ironie : une rupture d'amitié nécessiterait une procédure ?"],
+["<strong>H.2 :</strong> Non... à quoi bon ? Je peux tout te dire d'avance... Je vois leur air… « Eh bien, de quoi s'agit-il encore ? De quoi ? Qu'est-ce qu'ils racontent ? Quelles taupes ? Quelles pelouses ? Quels sables mouvants ? Quels camps ennemis ? Voyons un peu leurs dossiers… on a beau chercher... examiner les points d'ordinaire les plus chauds... rien d'autre nulle part que les signes d'une amitié parfaite... »","H2 anticipe le rejet. Il joue le tribunal imaginaire. Images absurdes : la cause paraît dérisoire vue de l'extérieur. Contraste comique entre la procédure et le motif futile."],
 ["<strong>H.1 :</strong> C'est vrai.","H1 confirme lucidement ce décalage entre image sociale et réalité intime."],
-["<strong>H.2 :</strong> « Et ils demandent à rompre. Ils ne veulent plus se revoir de leur vie... quelle honte... »","H2 continue : le tribunal condamne moralement leur désir de rupture."],
+["<strong>H.2 :</strong> « Et ils demandent à rompre. Ils ne veulent plus se revoir de leur vie... quelle honte... »","H2 continue le discours imaginaire : le tribunal condamne moralement leur désir de rupture."],
 ["<strong>H.1 :</strong> Oui, aucun doute possible, aucune hésitation : déboutés tous les deux.","Vocabulaire juridique. H1 accepte ironiquement la condamnation."],
-["<strong>H.2 :</strong> « Et même, qu'ils y prennent garde... qu'ils fassent très attention.","Gradation dramatique dans la sentence imaginaire."],
-["On sait quelles peines encourent ceux qui ont l'outrecuidance de se permettre ainsi, sans raison...","Registre juridique poussé à l'absurde : rompre sans raison est un délit social."],
-["ils seront signalés... on ne s'en approchera qu'avec prudence, avec la plus extrême méfiance...","La rupture entraîne une mise en quarantaine sociale imaginée."],
-["Chacun saura de quoi ils sont capables, de quoi ils peuvent se rendre coupables :","Analyse commune à la ligne ci-dessus"],
-["ils peuvent rompre pour un oui ou pour un non. »","Le titre de la pièce apparaît dans la bouche du tribunal fictif."],
+["<strong>H.2 :</strong> « Et même, qu'ils y prennent garde... qu'ils fassent très attention. On sait quelles peines encourent ceux qui ont l'outrecuidance de se permettre ainsi, sans raison... ils seront signalés... on ne s'en approchera qu'avec prudence, avec la plus extrême méfiance... Chacun saura de quoi ils sont capables, de quoi ils peuvent se rendre coupables : ils peuvent rompre pour un oui ou pour un non. »","H2 accentue : gradation dramatique. Registre juridique poussé à l'absurde. Le titre de la pièce apparaît dans la bouche du tribunal fictif."],
 ["<strong>H.1 :</strong> Pour un oui... ou pour un non ?","H1 reprend l'expression. Elle devient objet de réflexion métalinguistique."],
 ["<em>Un silence.</em>","La pause donne du poids à la formule. Le titre résonne dans le silence."],
 ["<strong>H.2 :</strong> Oui ou non ?...","H2 décompose les termes. Retour au langage lui-même."],
@@ -314,159 +289,120 @@ texte3:[
 ["<strong>H.2 :</strong> Non !","H2 dit « Non ! ». Dernier mot rebelle. Différence profonde entre les deux personnages."],
 ],
 
-/* ---- TEXTE 4 : 40 lignes ---- */
+/* ====================================================================
+   TEXTE 4 — 24 lignes
+   Règle : les longues tirades de Sganarelle (non interrompues) = une ligne.
+   ==================================================================== */
 texte4:[
-["<strong>SGANARELLE.</strong>- (…) cet habit me donne de l'esprit,","Le valet attribue son audace à son costume : ironie sur le pouvoir de l'apparence."],
-["et je me sens en humeur de disputer contre vous.","Il veut « disputer » : terme philosophique, dispute = débat argumenté."],
-["Vous savez bien que vous me permettez les disputes,","Dom Juan autorise la contestation : rapport de forces particulier."],
-["et que vous ne me défendez que les remontrances.","Nuance : la remontrance (reproche moral) est interdite, la dispute (débat) permise."],
-["<strong>DOM JUAN.</strong>- Eh bien !","Dom Juan désinvolte : deux mots qui signifient « vas-y, je t'écoute ». Supériorité ironique."],
-["<strong>SGANARELLE.</strong>- Je veux savoir un peu vos pensées à fond.","Sganarelle prend l'initiative : il veut sonder Dom Juan sur la religion."],
-["Est-il possible que vous ne croyiez point du tout au Ciel ?","Première question religieuse. Le ton est rhétorique, presque incrédule."],
-["<strong>DOM JUAN.</strong>- Laissons cela.","Refus d'entrer dans le débat. Esquive par le silence ou le mépris."],
+["<strong>SGANARELLE.</strong>- (…) cet habit me donne de l'esprit, et je me sens en humeur de disputer contre vous. Vous savez bien que vous me permettez les disputes, et que vous ne me défendez que les remontrances.","Sganarelle attribue son audace à son costume. Il veut « disputer » (débat philosophique) et non « remontrer ». Mise en place de la dispute."],
+["<strong>DOM JUAN.</strong>- Eh bien !","Dom Juan désinvolte. Supériorité ironique en deux mots."],
+["<strong>SGANARELLE.</strong>- Je veux savoir un peu vos pensées à fond. Est-il possible que vous ne croyiez point du tout au Ciel ?","Sganarelle prend l'initiative. Première question religieuse. Le ton est rhétorique, presque incrédule."],
+["<strong>DOM JUAN.</strong>- Laissons cela.","Refus d'entrer dans le débat. Esquive par le mépris."],
 ["<strong>SGANARELLE.</strong>- C'est-à-dire que non. Et à l'Enfer ?","Sganarelle interprète le silence comme aveu d'athéisme. Il enchaîne."],
 ["<strong>DOM JUAN.</strong>- Eh.","Réponse minimale : interjection de mépris ou d'ennui."],
 ["<strong>SGANARELLE.</strong>- Tout de même. Et au diable, s'il vous plaît ?","Progression sur les croyances fondamentales : Ciel, Enfer, diable."],
 ["<strong>DOM JUAN.</strong>- Oui, oui.","Réponse moqueuse : il « croit » au diable avec ironie."],
 ["<strong>SGANARELLE.</strong>- Aussi peu. Ne croyez-vous point l'autre vie ?","Sganarelle interprète encore : « aussi peu » = pas du tout."],
 ["<strong>DOM JUAN.</strong>- Ah, ah, ah.","Rire de mépris : Dom Juan ne daigne même pas répondre."],
-["<strong>SGANARELLE.</strong>- Voilà un homme que j'aurai bien de la peine à convertir.","Aparté comique : Sganarelle mesure l'obstacle."],
-["Et dites-moi un peu, le Moine-Bourru, qu'en croyez-vous, eh ?","Le Moine-Bourru : figure folklorique superstitieuse. Mélange de religion et de superstition."],
+["<strong>SGANARELLE.</strong>- Voilà un homme que j'aurai bien de la peine à convertir. Et dites-moi un peu, le Moine-Bourru, qu'en croyez-vous, eh ?","Aparté comique. Le Moine-Bourru : mélange de religion et de superstition. Question décisive."],
 ["<strong>DOM JUAN.</strong>- La peste soit du fat !","Insulte vive : Dom Juan s'impatiente."],
-["<strong>SGANARELLE.</strong>- Et voilà ce que je ne puis souffrir,","Sganarelle s'offusque : il ne peut tolérer ce mépris."],
-["car il n'y a rien de plus vrai que le Moine-Bourru,","Défense comique d'une superstition populaire."],
-["et je me ferais pendre pour celui-là.","Hyperbole : prêt à mourir pour la vérité du Moine-Bourru."],
-["Mais encore faut-il croire quelque chose. Qu'est-ce que vous croyez ?","Question centrale enfin posée directement."],
+["<strong>SGANARELLE.</strong>- Et voilà ce que je ne puis souffrir, car il n'y a rien de plus vrai que le Moine-Bourru, et je me ferais pendre pour celui-là. Mais encore faut-il croire quelque chose. Qu'est-ce que vous croyez ?","Sganarelle s'offuse mais maintient sa croyance. Question centrale enfin posée directement."],
 ["<strong>DOM JUAN.</strong>- Ce que je crois ?","Dom Juan reprend la question, délibérément suspendu."],
 ["<strong>SGANARELLE.</strong>- Oui.","Affirmation brève. Sganarelle attend."],
-["<strong>DOM JUAN.</strong>- Je crois que deux et deux sont quatre, Sganarelle,","Réponse célèbre : la mathématique remplace la foi. Rationalisme provocateur."],
-["et que quatre et quatre sont huit.","Analyse commune à la ligne ci-dessus"],
-["<strong>SGANARELLE.</strong>- La belle croyance, que voilà !","Ironie de Sganarelle : il se moque à son tour."],
-["Votre religion, à ce que je vois, est donc l'arithmétique ?","La religion réduite à l'arithmétique : formule piquante."],
-["Il faut avouer qu'il se met d'étranges folies dans la tête des hommes,","Sganarelle commente avec son « petit sens »."],
-["et que pour avoir bien étudié, on en est bien moins sage le plus souvent.","Critique du savoir livresque : l'érudition rend fou, pas sage."],
-["Pour moi, Monsieur, je n'ai point étudié comme vous, Dieu merci,","Sganarelle oppose son ignorance à l'instruction de Dom Juan."],
-["et personne ne saurait se vanter de m'avoir jamais rien appris ;","Il est fier de ne rien avoir appris : paradoxe comique."],
-["mais avec mon petit sens, mon petit jugement, je vois les choses mieux que tous les livres,","Le « petit sens » populaire présenté comme supérieur aux livres."],
-["et je comprends fort bien que ce monde que nous voyons,","Argument de la création divine : le monde ne peut s'être fait seul."],
-["n'est pas un champignon qui soit venu tout seul en une nuit.","Métaphore comique et rustique pour la création du monde."],
-["<strong>SGANARELLE.</strong>- Je voudrais bien vous demander qui a fait ces arbres-là, ces rochers, cette terre, et ce ciel que voilà là-haut,","Accumulation rhétorique : Sganarelle désigne la création comme preuve de Dieu."],
-["et si tout cela s'est bâti de lui-même ?","Question rhétorique : l'évidence de la création implique un créateur."],
-["Vous voilà vous, par exemple, vous êtes là ; est-ce que vous vous êtes fait tout seul,","L'argument passe au corps de Dom Juan lui-même."],
-["et n'a-t-il pas fallu que votre père ait engrossé votre mère pour vous faire ?","Brutalité triviale du langage comique : l'acte de procréation comme preuve."],
+["<strong>DOM JUAN.</strong>- Je crois que deux et deux sont quatre, Sganarelle, et que quatre et quatre sont huit.","Réponse célèbre : la mathématique remplace la foi. Rationalisme provocateur."],
+["<strong>SGANARELLE.</strong>- La belle croyance, que voilà ! Votre religion, à ce que je vois, est donc l'arithmétique ? Il faut avouer qu'il se met d'étranges folies dans la tête des hommes, et que pour avoir bien étudié, on en est bien moins sage le plus souvent. Pour moi, Monsieur, je n'ai point étudié comme vous, Dieu merci, et personne ne saurait se vanter de m'avoir jamais rien appris ; mais avec mon petit sens, mon petit jugement, je vois les choses mieux que tous les livres, et je comprends fort bien que ce monde que nous voyons, n'est pas un champignon qui soit venu tout seul en une nuit.","Sganarelle s'indigne. Longue tirade : opposition entre son « petit sens » et le savoir livresque. L'érudition rend fou, pas sage. Argument de la création divine."],
+["<strong>SGANARELLE.</strong>- Je voudrais bien vous demander qui a fait ces arbres-là, ces rochers, cette terre, et ce ciel que voilà là-haut, et si tout cela s'est bâti de lui-même ? Vous voilà vous, par exemple, vous êtes là ; est-ce que vous vous êtes fait tout seul, et n'a-t-il pas fallu que votre père ait engrossé votre mère pour vous faire ?","Accumulation rhétorique : Sganarelle désigne la création comme preuve de Dieu. L'argument passe au corps de Dom Juan. Brutalité triviale du langage comique."],
+["<strong>SGANARELLE.</strong>- Pouvez-vous voir toutes les inventions dont la machine de l'homme est composée, sans admirer de quelle façon cela est agencé l'un dans l'autre, ces nerfs, ces os, ces veines, ces artères, ces... ce poumon, ce cœur, ce foie, et tous ces autres ingrédients qui sont là et qui... Oh dame, interrompez-moi donc si vous voulez, je ne saurais disputer si l'on ne m'interrompt, vous vous taisez exprès, et me laissez parler par belle malice.","Le corps humain comme mécanisme complexe. Accumulation pseudo-savante. Sganarelle accuse Dom Juan de se taire exprès."],
 ["<strong>DOM JUAN.</strong>- J'attends que ton raisonnement soit fini.","Dom Juan ironique : il laisse Sganarelle s'embourber."],
-["<strong>SGANARELLE.</strong>- Mon raisonnement est qu'il y a quelque chose d'admirable dans l'homme,","Sganarelle conclut : l'homme est admirable, inexplicable par la science."],
+["<strong>SGANARELLE.</strong>- Mon raisonnement est qu'il y a quelque chose d'admirable dans l'homme, quoi que vous puissiez dire, que tous les savants ne sauraient expliquer. Cela n'est-il pas merveilleux que me voilà ici, et que j'aie quelque chose dans la tête qui pense cent choses différentes en un moment, et fait de mon corps tout ce qu'elle veut ?","Sganarelle conclut : l'homme est admirable, inexplicable. Merveille de la pensée."],
+["<strong>SGANARELLE.</strong>- Je veux frapper des mains, hausser le bras, lever les yeux au ciel, baisser la tête, remuer les pieds, aller à droit, à gauche, en avant, en arrière, tourner…","Énumération de mouvements. Démonstration comique. Il annonce qu'il va tourner…"],
+["<em>Il se laisse tomber en tournant.</em>","Didascalie : chute physique. Le corps prouve la thèse par l'absurde."],
+["<strong>DOM JUAN.</strong>- Bon, voilà ton raisonnement qui a le nez cassé.","Chute comique finale. Dom Juan conclut ironiquement."],
 ],
 
-/* ---- TEXTE 5 : 20 lignes ---- */
+/* ====================================================================
+   TEXTE 5 — 10 lignes
+   Règle : chaque paragraphe du texte = une ligne.
+   ==================================================================== */
 texte5:[
-["Il y avait dans ce temps-là de grands hivers, de brûlants étés.","Ouverture nostalgique. « Ce temps-là » : désignation d'un passé idéalisé. Hyperboles climatiques."],
-["J'ai connu, depuis, des étés dont la couleur, si je ferme les yeux, est celle de la terre ocreuse, fendillée entre les tiges du blé","Mémoire sensorielle : la couleur de la terre ocreuse. Le passé se perçoit les yeux fermés."],
-["et sous la géante ombelle du panais sauvage, celle de la mer grise ou bleue.","Accumulation de paysages. La mémoire est plurielle, elle stocke plusieurs étés adultes."],
-["Mais aucun été, sauf ceux de mon enfance, ne commémore le géranium écarlate et la hampe enflammée des digitales.","Restriction valorisant l'enfance. Les couleurs vives (écarlate, enflammée) sont réservées à ce passé."],
-["Aucun hiver n'est plus d'un blanc pur à la base d'un ciel bourré de nues ardoisées,","L'hiver de l'enfance : blanc pur et ciel d'ardoise. Opposition de couleurs."],
-["qui présageaient une tempête de flocons plus épais, puis un dégel illuminé de mille gouttes d'eau et de bourgeons lancéolés…","Transition climatique décrite en tableau. « Illuminé » : le dégel est une lumière."],
-["Ce ciel pesait sur le toit chargé de neige des greniers à fourrages, le noyer nu, la girouette,","Le ciel personnifié pèse sur les éléments. Énumération familière du domaine."],
-["et pliait les oreilles des chattes…","Image douce et concrète : les chats sous la neige. Fin de l'énumération sur une note intime."],
-["La calme et verticale chute de neige devenait oblique,","Changement de temps : la neige verticale devient oblique = la tempête arrive."],
-["un faible ronflement de mer lointaine se levait sur ma tête encapuchonnée,","Comparaison sonore : la bourrasque évoque la mer. L'enfant est encapuchonnée."],
-["tandis que j'arpentais le jardin, happant la neige volante…","Verbe « happant » : joie physique, l'enfant attrape la neige avec la bouche ou les mains."],
-["Avertie par ses antennes, ma mère s'avançait sur la terrasse,","La mère avertie « par ses antennes » : métaphore instinctive, elle perçoit tout avant les autres."],
-["goûtait le temps, me jetait un cri :","Verbe « goûtait » : synesthésie, la mère teste le temps avec ses sens."],
-["– La bourrasque d'Ouest ! Cours ! Ferme les lucarnes du grenier !…","Impératifs autoritaires et urgents. Rythme haché : la tempête réclame l'action immédiate."],
-["La porte de la remise aux voitures !… Et la fenêtre de la chambre du fond !","Énumération des tâches domestiques urgentes. La maison est un navire à sécuriser."],
-["Mousse exalté du navire natal, je m'élançais, claquant des sabots, enthousiasmée","Métaphore maritime héroïque : l'enfant est un marin sur le navire de sa maison."],
-["si du fond de la mêlée blanche et bleu noir, sifflante, un vif éclair, un bref roulement de foudre,","Description sensorielle de la tempête : sons, couleurs, violence naturelle."],
-["enfants d'Ouest et de Février, comblaient tous deux un des abîmes du ciel…","Personnification de l'éclair et du tonnerre comme enfants de l'Ouest."],
+["Il y avait dans ce temps-là de grands hivers, de brûlants étés. J'ai connu, depuis, des étés dont la couleur, si je ferme les yeux, est celle de la terre ocreuse, fendillée entre les tiges du blé et sous la géante ombelle du panais sauvage, celle de la mer grise ou bleue. Mais aucun été, sauf ceux de mon enfance, ne commémore le géranium écarlate et la hampe enflammée des digitales.","Ouverture nostalgique. « Ce temps-là » : désignation d'un passé idéalisé. Hyperboles climatiques. Mémoire sensorielle : couleurs vives réservées à l'enfance."],
+["Aucun hiver n'est plus d'un blanc pur à la base d'un ciel bourré de nues ardoisées, qui présageaient une tempête de flocons plus épais, puis un dégel illuminé de mille gouttes d'eau et de bourgeons lancéolés…","L'hiver de l'enfance : blanc pur et ciel d'ardoise. Opposition de couleurs. Transition climatique décrite en tableau. « Illuminé » : le dégel est une lumière."],
+["Ce ciel pesait sur le toit chargé de neige des greniers à fourrages, le noyer nu, la girouette, et pliait les oreilles des chattes…","Le ciel personnifié pèse sur les éléments. Énumération familière du domaine. Image douce et concrète : les chats sous la neige."],
+["La calme et verticale chute de neige devenait oblique, un faible ronflement de mer lointaine se levait sur ma tête encapuchonnée, tandis que j'arpentais le jardin, happant la neige volante…","Changement de temps : la neige verticale devient oblique. Comparaison sonore : la bourrasque évoque la mer. Verbe « happant » : joie physique de l'enfant."],
+["Avertie par ses antennes, ma mère s'avançait sur la terrasse, goûtait le temps, me jetait un cri :","La mère avertie « par ses antennes » : métaphore instinctive. Verbe « goûtait » : synesthésie."],
+["– La bourrasque d'Ouest ! Cours ! Ferme les lucarnes du grenier !… La porte de la remise aux voitures !… Et la fenêtre de la chambre du fond !","Impératifs autoritaires et urgents. Rythme haché. Énumération des tâches domestiques. La maison est un navire à sécuriser."],
+["Mousse exalté du navire natal, je m'élançais, claquant des sabots, enthousiasmée si du fond de la mêlée blanche et bleu noir, sifflante, un vif éclair, un bref roulement de foudre, enfants d'Ouest et de Février, comblaient tous deux un des abîmes du ciel…","Métaphore maritime héroïque : l'enfant est un marin. Description sensorielle de la tempête. Personnification de l'éclair et du tonnerre comme enfants de l'Ouest."],
 ["Je tâchais de trembler, de croire à la fin du monde.","« Je tâchais » : hyperbole enfantine. L'enfant joue à avoir peur. Elle ne tremble pas vraiment."],
-["Mais dans le pire du fracas ma mère, l'œil sur une grosse loupe cerclée de cuivre, s'émerveillait, comptant les cristaux ramifiés d'une poignée de neige qu'elle venait de cueillir aux mains mêmes de l'Ouest rué sur notre jardin…","Contraste final : au cœur du fracas, la mère est calme et scientifique. Personnification finale de l'Ouest."],
+["Mais dans le pire du fracas ma mère, l'œil sur une grosse loupe cerclée de cuivre, s'émerveillait, comptant les cristaux ramifiés d'une poignée de neige qu'elle venait de cueillir aux mains mêmes de l'Ouest rué sur notre jardin…","Contraste final : au cœur du fracas, la mère est calme et scientifique. Sa loupe : précision réaliste. Personnification finale de l'Ouest."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
 ],
 
-/* ---- TEXTE 6 : 23 lignes ---- */
+/* ====================================================================
+   TEXTE 6 — 13 lignes
+   Règle : chaque paragraphe ou unité de sens = une ligne.
+   ==================================================================== */
 texte6:[
-["Je gis sans mouvement, la tête sur ta douce épaule.","Immobilité totale, image de tendresse. « Je gis » : terme littéraire évoquant le repos absolu."],
-["Je vais sûrement, jusqu'à demain, descendre au fond d'un noir sommeil,","Métaphore du sommeil comme plongée dans un abîme. Certitude affichée."],
-["un sommeil si têtu, si fermé, que les ailes des rêves le viendront battre en vain.","Personnification du sommeil : têtu, fermé. Les rêves ne pourront pas y pénétrer."],
-["Je vais dormir... Attends seulement que je cherche, pour la plante de mes pieds qui fourmille et brûle,","Le corps trahit l'éveil : les pieds fourmillent et brûlent. Contradiction avec la promesse de dormir."],
-["une place toute fraîche…","Analyse commune à la ligne ci-dessus"],
-["Tu n'as pas bougé. Tu respires à longs traits,","Observation de l'autre dans le noir : perception fine des mouvements du partenaire."],
-["mais je sens ton épaule encore éveillée, attentive à se creuser sous ma joue…","Personnification de l'épaule : elle est « éveillée », elle s'adapte. Intimité physique."],
-["Dormons. Les nuits de mai sont si courtes.","Impératif : tentative de volonté. Les nuits de mai : cadre printanier précieux et bref."],
-["Malgré l'obscurité bleue qui nous baigne, mes paupières sont encore pleines de soleil, de flammes roses, d'ombres qui bougent, balancées,","Les images du jour persistent sous les paupières fermées. Synesthésie visuelle."],
-["et je contemple ma journée les yeux clos,","Paradoxe : contempler les yeux fermés. La journée se rejoue intérieurement."],
-["comme on se penche, derrière l'abri d'une persienne, sur un jardin d'été éblouissant…","Comparaison : les paupières comme une persienne. Le souvenir est lumineux et protégé."],
-["Comme mon cœur bat ! J'entends aussi le tien sous mon oreille.","Exclamation lyrique : le cœur trahit le désir. Synesthésie : elle entend le cœur de l'autre."],
-["Tu ne dors pas ?","Question intime. La complicité silencieuse est confirmée."],
-["Je lève un peu la tête, je devine la pâleur de ton visage renversé,","Perception dans le noir : les sens s'aiguisent en l'absence de lumière."],
-["l'ombre fauve de tes courts cheveux. Tes genoux sont frais comme deux oranges…","Comparaison inattendue et sensuelle. « Oranges » : forme, fraîcheur, rondeur."],
-["Tourne-toi de mon côté, pour que les miens leur volent cette lisse fraîcheur…","Verbe « voler » : échange ludique et amoureux. Désir exprimé par une image de vol."],
-["Ah ! dormons !... Mille fois mille fourmis courent avec mon sang sous ma peau.","Exclamation volontariste suivie d'une hyperbole : le désir circule dans tout le corps."],
-["Les muscles de mes mollets battent, mes oreilles tressaillent,","Enumération du corps en éveil : chaque partie trahit l'insomnie désirante."],
-["et notre doux lit, ce soir, est-il jonché d'aiguilles de pin ?","Image inconfortable pour un lit : le désir rend le repos impossible."],
+["Je gis sans mouvement, la tête sur ta douce épaule. Je vais sûrement, jusqu'à demain, descendre au fond d'un noir sommeil, un sommeil si têtu, si fermé, que les ailes des rêves le viendront battre en vain. Je vais dormir... Attends seulement que je cherche, pour la plante de mes pieds qui fourmille et brûle, une place toute fraîche…","Immobilité totale. « Je gis » : terme littéraire évoquant le repos absolu. Métaphore du sommeil comme plongée. Le corps trahit l'éveil : les pieds fourmillent et brûlent."],
+["Tu n'as pas bougé. Tu respires à longs traits, mais je sens ton épaule encore éveillée, attentive à se creuser sous ma joue…","Observation de l'autre dans le noir. Personnification de l'épaule : elle est « éveillée », elle s'adapte. Intimité physique."],
+["Dormons. Les nuits de mai sont si courtes. Malgré l'obscurité bleue qui nous baigne, mes paupières sont encore pleines de soleil, de flammes roses, d'ombres qui bougent, balancées, et je contemple ma journée les yeux clos, comme on se penche, derrière l'abri d'une persienne, sur un jardin d'été éblouissant…","Impératif : tentative de volonté. Les nuits de mai : cadre printanier précieux. Les images du jour persistent. Comparaison : les paupières comme une persienne."],
+["Comme mon cœur bat ! J'entends aussi le tien sous mon oreille. Tu ne dors pas ?","Exclamation lyrique : le cœur trahit le désir. Synesthésie : elle entend le cœur de l'autre. Question intime."],
+["Je lève un peu la tête, je devine la pâleur de ton visage renversé, l'ombre fauve de tes courts cheveux. Tes genoux sont frais comme deux oranges… Tourne-toi de mon côté, pour que les miens leur volent cette lisse fraîcheur…","Perception dans le noir. Comparaison inattendue et sensuelle : « deux oranges ». Verbe « voler » : échange ludique et amoureux."],
+["Ah ! dormons !... Mille fois mille fourmis courent avec mon sang sous ma peau. Les muscles de mes mollets battent, mes oreilles tressaillent, et notre doux lit, ce soir, est-il jonché d'aiguilles de pin ?","Exclamation volontariste. Hyperbole : le désir circule dans tout le corps. Énumération du corps en éveil. Image inconfortable pour un lit."],
 ["Dormons ! je le veux !","Formule autoritaire. Mais l'ordre donné à soi-même échoue : volonté impuissante."],
-["Je ne puis dormir. Mon insomnie heureuse palpite, allègre,","Constatation décisive. « Insomnie heureuse » : oxymore central du texte."],
-["et je devine, en ton immobilité, le même accablement frémissant…","H2 perçoit chez l'autre le même état : complicité silencieuse parfaite."],
+["Je ne puis dormir. Mon insomnie heureuse palpite, allègre, et je devine, en ton immobilité, le même accablement frémissant…","Constatation décisive. « Insomnie heureuse » : oxymore central du texte. Complicité silencieuse."],
+["Tu ne bouges pas. Tu espères que je dors. Ton bras se resserre parfois autour de moi, par tendre habitude, et tes pieds charmants s'enlacent aux miens…","Le bras se resserre par tendre habitude. Les pieds s'enlacent. Entrelacement physique."],
 ["Le sommeil s'approche, me frôle et me fuit… Je le vois ! Il est pareil à ce papillon de lourd velours que je poursuivais, dans le jardin enflammé d'iris… Tu te souviens ?","Personnification du sommeil comme papillon fuyant. Dernière adresse à l'autre. Communion de mémoire et d'amour."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
 ],
 
-/* ---- TEXTE 7 : 26 lignes ---- */
+/* ====================================================================
+   TEXTE 7 — 16 lignes
+   ==================================================================== */
 texte7:[
-["<strong>TOBY-CHIEN :</strong> (…) Je haletais autant qu'Elle, ému de sa violence.","Toby-Chien haletait autant qu'Elle : parallélisme, même agitation physique."],
-["Elle entendit ma respiration et se jeta à quatre pattes,","Elle se jette à quatre pattes : rupture de la hiérarchie humain/animal."],
-["sa tête sous le tapis de la table contre la mienne…","Proximité physique totale entre la femme et le chien : fusion momentanée."],
-["« Oui, inutile ! je maintiens le mot.","Entrée brutale du discours direct. « Oui, inutile ! » : colère et obstination."],
-["Ce n'est pas un sale petit bull bringé qui me fera changer d'avis, encore !","Apostrophe au chien : Elle le rabroue mais lui parle directement. Complicité paradoxale."],
-["Inutile s'Il n'aime pas assez ou s'Il méconnaît l'amour véritable !","Le « Il » majuscule désigne l'amant absent. La question du sens de sa vie est posée."],
-["Quoi ?... ma vie aussi est inutile ? Non, Toby-Chien.","Passage du conflit à l'interrogation existentielle. Elle se reprend."],
-["Moi, j'aime ! J'aime tant tout ce que j'aime !","Répétition du verbe aimer. Déclaration passionnée et presque tautologique."],
-["Si tu savais comme j'embellis tout ce que j'aime, et quel plaisir je me donne en aimant !","L'amour comme acte créateur : il embellit le monde et procure du plaisir."],
-["Si tu pouvais comprendre de quelle force et de quelle défaillance m'emplit ce que j'aime !…","Antithèse entre puissance et fragilité : l'amour est à la fois force et faiblesse."],
-["C'est cela que je nomme le frôlement du bonheur.","L'expression centrale est nommée pour la première fois."],
-["Le frôlement du bonheur…","Répétition : l'expression est mise en valeur. Le bonheur est fugitif, impalpable."],
-["caresse impalpable qui creuse le long de mon dos un sillon velouté,","Métaphore tactile délicate : le bonheur comme caresse physique."],
-["comme le bout d'une aile creuse l'onde…","Comparaison légère : image de l'aile sur l'eau."],
-["Frisson mystérieux prêt à se fondre en larmes, angoisse légère que je cherche et qui m'atteint","Oxymore implicite : frisson qui se fond en larmes. Le bonheur frôle l'angoisse."],
-["devant un cher paysage argenté de brouillard, devant un ciel où fleurit l'aube,","Émerveillement visuel : paysages qui déclenchent le frôlement du bonheur."],
-["sous le bois où l'automne souffle une haleine mûre et musquée…","Synesthésie olfactive : l'automne a une haleine. Richesse sensorielle."],
-["Tristesse voluptueuse des fins de jour, bondissement sans cause d'un cœur plus mobile que celui du chevreuil,","Oxymore : tristesse voluptueuse. La légèreté du cœur comparée au chevreuil."],
-["tu es le frôlement même du bonheur, toi qui gis au sein des heures les plus pleines…","Apostrophe à l'émotion personnifiée. Le bonheur est dans les moments les plus intenses."],
-["et jusqu'au fond du regard de ma sûre amie…","Le bonheur se trouve aussi dans le regard de l'amie : dimension humaine et intime."],
+["<strong>TOBY-CHIEN :</strong> (…) Je haletais autant qu'Elle, ému de sa violence. Elle entendit ma respiration et se jeta à quatre pattes, sa tête sous le tapis de la table contre la mienne…","Toby-Chien haletait autant qu'Elle : parallélisme, même agitation physique. Elle se jette à quatre pattes : rupture de la hiérarchie humain/animal."],
+["« Oui, inutile ! je maintiens le mot. Ce n'est pas un sale petit bull bringé qui me fera changer d'avis, encore ! Inutile s'Il n'aime pas assez ou s'Il méconnaît l'amour véritable ! Quoi ?... ma vie aussi est inutile ? Non, Toby-Chien.","Entrée brutale du discours direct. Colère et obstination. Le « Il » majuscule désigne l'amant absent. Passage du conflit à l'interrogation existentielle."],
+["Moi, j'aime ! J'aime tant tout ce que j'aime ! Si tu savais comme j'embellis tout ce que j'aime, et quel plaisir je me donne en aimant ! Si tu pouvais comprendre de quelle force et de quelle défaillance m'emplit ce que j'aime !…","Répétition du verbe aimer. Déclaration passionnée. L'amour comme acte créateur. Antithèse entre puissance et fragilité."],
+["C'est cela que je nomme le frôlement du bonheur. Le frôlement du bonheur…","L'expression centrale est nommée et répétée. Le bonheur est fugitif, impalpable."],
+["caresse impalpable qui creuse le long de mon dos un sillon velouté, comme le bout d'une aile creuse l'onde…","Métaphore tactile délicate : le bonheur comme caresse physique. Comparaison légère."],
+["Frisson mystérieux prêt à se fondre en larmes, angoisse légère que je cherche et qui m'atteint devant un cher paysage argenté de brouillard, devant un ciel où fleurit l'aube, sous le bois où l'automne souffle une haleine mûre et musquée…","Oxymore implicite : frisson qui se fond en larmes. Synesthésie olfactive. Richesse sensorielle."],
+["Tristesse voluptueuse des fins de jour, bondissement sans cause d'un cœur plus mobile que celui du chevreuil, tu es le frôlement même du bonheur, toi qui gis au sein des heures les plus pleines… et jusqu'au fond du regard de ma sûre amie…","Oxymore : tristesse voluptueuse. Apostrophe à l'émotion personnifiée. Le bonheur se trouve aussi dans le regard de l'amie."],
 ["Tu oserais dire ma vie inutile ?... Tu n'auras pas de pâtée, ce soir ! »","Retour à l'indignation initiale. Chute comique : la menace de privation de pâtée."],
-["Je voyais la brume de ses cheveux danser autour de sa tête qu'Elle hochait furieusement.","Regard poétique de Toby-Chien sur Elle. La brume des cheveux : image douce."],
-["Elle était comme moi à quatre pattes, aplatie, comme un chien qui va s'élancer,","Comparaison explicite : Elle est comme un chien. Frontière animale/humaine effacée."],
-["et j'espérais un peu qu'Elle aboierait…","Toby-Chien espère qu'Elle aboiera : comique naïf et tendre."],
-["<strong>KIKI-LA-DOUCETTE</strong>, <em>révolté</em> : Aboyer, Elle ! Elle a ses défauts, mais tout de même aboyer !… Si Elle devait parler en quatre-pattes, elle miaulerait.","Kiki-la-Doucette révolté : si Elle parlait en quatre-pattes, elle miaulerait. Indignation comique."],
+["Je voyais la brume de ses cheveux danser autour de sa tête qu'Elle hochait furieusement. Elle était comme moi à quatre pattes, aplatie, comme un chien qui va s'élancer, et j'espérais un peu qu'Elle aboierait…","Regard poétique de Toby-Chien sur Elle. Comparaison : Elle est comme un chien. Toby-Chien espère qu'Elle aboiera."],
+["<strong>KIKI-LA-DOUCETTE</strong>, <em>révolté</em> : Aboyer, Elle ! Elle a ses défauts, mais tout de même aboyer !… Si Elle devait parler en quatre-pattes, elle miaulerait.","Kiki-la-Doucette révolté. Indignation comique. Si Elle parlait en quatre-pattes, elle miaulerait."],
 ["<strong>TOBY-CHIEN</strong>, <em>poursuivant</em> : Elle n'aboya point, en effet. Elle se redressa d'un bond, rejeta en arrière les cheveux qui lui balayaient le visage…","Toby-Chien reprend : Elle se redressa. Retour soudain à la posture humaine."],
+["<strong>KIKI-LA-DOUCETTE :</strong> Oui. Elle a la tête angora. La tête seulement.","Comparaison humoristique avec le chat angora. Ironie fine."],
+["<strong>TOBY-CHIEN :</strong> … Et Elle se remit à parler, incohérente : « Alors, voilà ! Je veux faire ce que je veux. »","Toby-Chien : Elle se remit à parler. Formule finale de révolte et de liberté."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
 ],
 
-/* ---- TEXTE 8 : 23 lignes ---- */
+/* ====================================================================
+   TEXTE 8 — 14 lignes
+   Règle : chaque phrase ou groupe de sens = une ligne.
+   ==================================================================== */
 texte8:[
-["Quand le lac agité ne me permettait pas la navigation","Condition initiale : le lac agité empêche la barque. Rousseau cherche d'autres plaisirs."],
-["je passais mon après-midi à parcourir l'île en herborisant à droite et à gauche,","Herboriser : activité contemplative et scientifique. L'île comme espace clos protecteur."],
-["m'asseyant tantôt dans les réduits les plus riants et les plus solitaires pour y rêver à mon aise,","Alternance entre marche et repos. La solitude est choisie, joyeuse."],
-["tantôt sur les terrasses et les tertres, pour parcourir des yeux le superbe et ravissant coup d'œil du lac et de ses rivages couronnés","Changement de point de vue : il monte pour voir plus loin. Les adjectifs « superbe » et « ravissant »."],
-["d'un côté par des montagnes prochaines, et de l'autre élargis en riches et fertiles plaines","La vue s'étend de chaque côté : sentiment de liberté et d'espace."],
-["dans lesquelles la vue s'étendait jusqu'aux montagnes bleuâtres plus éloignées qui la bornaient.","Les montagnes bleuâtres bornent la vue mais sans enfermer : l'horizon est doux."],
-["Quand le soir approchait je descendais des cimes de l'île","Transition temporelle : la descente vers le soir correspond à une descente vers la rêverie."],
-["et j'allais volontiers m'asseoir au bord du lac, sur la grève, dans quelque asile caché ;","« Asile caché » : refuge intime au bord de l'eau."],
-["là le bruit des vagues et l'agitation de l'eau fixant mes sens","Le mouvement de l'eau fixe les sens : paradoxe."],
-["et chassant de mon âme toute autre agitation la plongeaient dans une rêverie délicieuse","L'eau chasse l'agitation intérieure. La rêverie est présentée comme un état de plaisir."],
-["où la nuit me surprenait souvent sans que je m'en fusse aperçu.","La nuit arrive sans qu'il le remarque : temps suspendu, perte de conscience."],
-["Le flux et reflux de cette eau, son bruit continu mais renflé par intervalles frappant sans relâche mon oreille et mes yeux,","Le rythme de l'eau frappe tous les sens. Musicalité naturelle."],
-["suppléaient aux mouvements internes que la rêverie éteignait en moi","L'eau remplace les mouvements intérieurs que la rêverie a éteints."],
+["Quand le lac agité ne me permettait pas la navigation je passais mon après-midi à parcourir l'île en herborisant à droite et à gauche, m'asseyant tantôt dans les réduits les plus riants et les plus solitaires pour y rêver à mon aise,","Rousseau herborisait dans l'île : activité contemplative. Alternance entre marche et repos. La solitude est choisie, joyeuse."],
+["tantôt sur les terrasses et les tertres, pour parcourir des yeux le superbe et ravissant coup d'œil du lac et de ses rivages couronnés d'un côté par des montagnes prochaines, et de l'autre élargis en riches et fertiles plaines dans lesquelles la vue s'étendait jusqu'aux montagnes bleuâtres plus éloignées qui la bornaient.","Changement de point de vue : il monte pour voir plus loin. La vue s'étend : sentiment de liberté. Les montagnes bleuâtres bornent sans enfermer."],
+["Quand le soir approchait je descendais des cimes de l'île et j'allais volontiers m'asseoir au bord du lac, sur la grève, dans quelque asile caché ;","Transition temporelle : la descente vers le soir correspond à une descente vers la rêverie. « Asile caché » : refuge intime."],
+["là le bruit des vagues et l'agitation de l'eau fixant mes sens et chassant de mon âme toute autre agitation la plongeaient dans une rêverie délicieuse où la nuit me surprenait souvent sans que je m'en fusse aperçu.","Le mouvement de l'eau fixe les sens : paradoxe. L'eau chasse l'agitation intérieure. La nuit arrive sans qu'il le remarque : temps suspendu."],
+["Le flux et reflux de cette eau, son bruit continu mais renflé par intervalles frappant sans relâche mon oreille et mes yeux, suppléaient aux mouvements internes que la rêverie éteignait en moi","Le rythme de l'eau frappe tous les sens. L'eau remplace les mouvements intérieurs. Musicalité naturelle."],
 ["et suffisaient pour me faire sentir avec plaisir mon existence, sans prendre la peine de penser.","Bonheur passif : exister sans penser. Formule centrale du texte."],
-["De temps à autre naissait quelque faible et courte réflexion sur l'instabilité des choses de ce monde","De temps à autre, une pensée surgit malgré tout. Elle est « faible » et « courte »."],
-["dont la surface des eaux m'offrait l'image :","Le lac comme miroir de l'instabilité du monde."],
+["De temps à autre naissait quelque faible et courte réflexion sur l'instabilité des choses de ce monde dont la surface des eaux m'offrait l'image :","De temps à autre, une pensée surgit malgré tout. Le lac comme miroir de l'instabilité du monde."],
 ["mais bientôt ces impressions légères s'effaçaient dans l'uniformité du mouvement continu qui me berçait,","Les pensées s'effacent : régularité hypnotique des flots."],
-["et qui sans aucun concours actif de mon âme ne laissait pas de m'attacher au point","L'attachement au lieu est passif : son âme n'y contribue pas activement."],
-["qu'appelé par l'heure et par le signal convenu je ne pouvais m'arracher de là sans effort.","Fascination irrésistible. Il doit s'arracher à cette contemplation."],
-["Après le souper, quand la soirée était belle, nous allions encore tous ensemble faire quelque tour de promenade sur la terrasse","Passage du bonheur solitaire au collectif. La soirée est partagée."],
-["pour y respirer l'air du lac et la fraîcheur.","Plaisir simple et naturel : l'air, la fraîcheur."],
+["et qui sans aucun concours actif de mon âme ne laissait pas de m'attacher au point qu'appelé par l'heure et par le signal convenu je ne pouvais m'arracher de là sans effort.","L'attachement au lieu est passif. Fascination irrésistible. Il doit s'arracher à cette contemplation."],
+["Après le souper, quand la soirée était belle, nous allions encore tous ensemble faire quelque tour de promenade sur la terrasse pour y respirer l'air du lac et la fraîcheur.","Passage du bonheur solitaire au collectif. La soirée est partagée. Plaisir simple et naturel."],
 ["On se reposait dans le pavillon, on riait, on causait, on chantait quelque vieille chanson qui valait bien le tortillage moderne,","Énumération joyeuse des activités collectives. Critique implicite de la modernité musicale."],
 ["et enfin l'on s'allait coucher content de sa journée et n'en désirant qu'une semblable pour le lendemain.","Bonheur par répétition. Le désir le plus simple : que demain soit comme aujourd'hui."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
 ],
 
-/* ---- TEXTE 9 : 14 lignes (+ 3 lignes de strophe = pauses) ---- */
+/* ====================================================================
+   TEXTE 9 — 14 lignes + sauts de strophe
+   ==================================================================== */
 texte9:[
 ["Comme d'un cercueil vert en fer blanc, une tête","Comparaison dévalorisante : cercueil vert en fer blanc. La baignoire évoque la mort, pas la beauté."],
 ["De femme à cheveux bruns fortement pommadés","Détail réaliste et péjoratif : les cheveux gominés, excès et vulgarité."],
@@ -487,7 +423,9 @@ texte9:[
 ["Belle hideusement d'un ulcère à l'anus.","Oxymore majeur : « belle hideusement ». Chute violente, fin choquante et provocatrice."],
 ],
 
-/* ---- TEXTE 10 : 14 lignes (+ 3 pauses) ---- */
+/* ====================================================================
+   TEXTE 10 — 14 lignes + sauts de strophe
+   ==================================================================== */
 texte10:[
 ["Tandis que les crachats rouges de la mitraille","Métaphore violente et dégradante : les obus sont des « crachats ». Couleur rouge du sang."],
 ["Sifflent tout le jour par l'infini du ciel bleu ;","Contraste entre beauté du ciel bleu et violence des tirs."],
@@ -495,7 +433,7 @@ texte10:[
 ["Croulent les bataillons en masse dans le feu ;","Verbe brutal : les bataillons « croulent ». Masse anonyme sacrifiée."],
 ["__BREAK__",""],
 ["Tandis qu'une folie épouvantable broie","Personnification de la guerre comme machine monstrueuse."],
-["Et fait de cent milliers d'hommes un tas fumant ;","Déshumanisation : les morts réduits à un « tas ». Chiffre hypbolique."],
+["Et fait de cent milliers d'hommes un tas fumant ;","Déshumanisation : les morts réduits à un « tas ». Chiffre hyperbolique."],
 ["– Pauvres morts ! dans l'été, dans l'herbe, dans ta joie,","Exclamation pathétique. Cadre naturel heureux contrastant avec la mort."],
 ["Nature ! ô toi qui fis ces hommes saintement !…","Apostrophe lyrique à la Nature. Lexique religieux transféré à la nature, pas à Dieu."],
 ["__BREAK__",""],
@@ -508,7 +446,9 @@ texte10:[
 ["Lui donnent un gros sou lié dans leur mouchoir !","Dénonciation finale : Dieu ne se réveille que pour l'argent des pauvres."],
 ],
 
-/* ---- TEXTE 11 : 14 lignes (+ 3 pauses) ---- */
+/* ====================================================================
+   TEXTE 11 — 14 lignes + sauts de strophe
+   ==================================================================== */
 texte11:[
 ["Je m'en allais, les poings dans mes poches crevées ;","Imparfait de durée : voyageur errant, libre et pauvre. Les poches crevées : pauvreté concrète."],
 ["Mon paletot aussi devenait idéal ;","Transformation poétique du réel. Le manteau usé « devient idéal » : la pauvreté est transfigurée."],
@@ -529,113 +469,108 @@ texte11:[
 ["De mes souliers blessés, un pied près de mon cœur !","Détail réaliste transformé en geste créateur. Corps et cœur réunis dans l'image finale."],
 ],
 
-/* ---- TEXTE 12 : 13 lignes ---- */
+/* ====================================================================
+   TEXTE 12 — 9 lignes
+   Règle : chaque phrase ou groupe de sens du texte = une ligne.
+   ==================================================================== */
 texte12:[
-["La surface du pain est merveilleuse d'abord à cause de cette impression quasi panoramique qu'elle donne :","La surface du pain est « merveilleuse » d'emblée. Impression panoramique : le pain devient paysage."],
-["comme si l'on avait à sa disposition sous la main les Alpes, le Taurus ou la Cordillère des Andes.","Comparaison avec les grandes chaînes de montagnes. Le gigantesque devient accessible, à portée de main."],
-["Ainsi donc une masse amorphe en train d'éructer fut glissée pour nous dans le four stellaire,","Image de naissance volcanique. Le four est « stellaire » : cosmique et grandiose."],
-["où durcissant elle s'est façonnée en vallées, crêtes, ondulations, crevasses…","Énumération géographique : le pain est un paysage façonné par la cuisson."],
-["Et tous ces plans dès lors si nettement articulés, ces dalles minces où la lumière avec application couche ses feux,","La lumière est personnifiée : elle couche ses feux sur la croûte."],
-["- sans un regard pour la mollesse ignoble sous-jacente.","La mie est méprisée : « mollesse ignoble ». Opposition croûte noble / mie dévalorisée."],
-["Ce lâche et froid sous-sol que l'on nomme la mie a son tissu pareil à celui des éponges :","La mie qualifiée de « lâche et froid sous-sol ». Son tissu poreux comparé à une éponge."],
-["feuilles ou fleurs y sont comme des sœurs siamoises soudées par tous les coudes à la fois.","Métaphore végétale : les alvéoles de la mie comme des sœurs siamoises."],
-["Lorsque le pain rassit ces fleurs fanent et se rétrécissent :","Métaphore de la mort : le vieillissement du pain."],
-["elles se détachent alors les unes des autres, et la masse en devient friable…","La mie se désagrège : fin de la vie du pain."],
-["Mais brisons-la : car le pain doit être dans notre bouche","Rupture du registre descriptif. Le poète interrompt sa contemplation."],
-["moins objet de respect que de consommation.","Le pain est fait pour être mangé, pas adoré. Retour pragmatique et humain."],
-["","Pas d'analyse pour cette ligne."],
+["La surface du pain est merveilleuse d'abord à cause de cette impression quasi panoramique qu'elle donne : comme si l'on avait à sa disposition sous la main les Alpes, le Taurus ou la Cordillère des Andes.","La surface du pain est « merveilleuse » d'emblée. Impression panoramique : le pain devient paysage. Comparaison avec les grandes chaînes de montagnes."],
+["Ainsi donc une masse amorphe en train d'éructer fut glissée pour nous dans le four stellaire, où durcissant elle s'est façonnée en vallées, crêtes, ondulations, crevasses…","Image de naissance volcanique. Le four est « stellaire » : cosmique et grandiose. Énumération géographique : le pain est un paysage façonné par la cuisson."],
+["Et tous ces plans dès lors si nettement articulés, ces dalles minces où la lumière avec application couche ses feux, - sans un regard pour la mollesse ignoble sous-jacente.","La lumière est personnifiée. Opposition : croûte lumineuse / mie méprisée (« mollesse ignoble »)."],
+["Ce lâche et froid sous-sol que l'on nomme la mie a son tissu pareil à celui des éponges : feuilles ou fleurs y sont comme des sœurs siamoises soudées par tous les coudes à la fois.","La mie qualifiée de « lâche et froid sous-sol ». Son tissu poreux comparé à une éponge. Métaphore végétale : les alvéoles comme des sœurs siamoises."],
+["Lorsque le pain rassit ces fleurs fanent et se rétrécissent : elles se détachent alors les unes des autres, et la masse en devient friable…","Métaphore de la mort : le vieillissement du pain. La mie se désagrège."],
+["Mais brisons-la : car le pain doit être dans notre bouche moins objet de respect que de consommation.","Rupture du registre descriptif. Retour pragmatique : le pain est fait pour être mangé."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
 ],
 
-/* ---- TEXTE 13 : 26 lignes ---- */
+/* ====================================================================
+   TEXTE 13 — 23 lignes
+   Règle : chaque phrase ou unité argumentative = une ligne.
+   ==================================================================== */
 texte13:[
-["Pauvres et misérables peuples insensés, nations obstinées dans votre mal et aveugles à votre bien,","Apostrophe violente d'ouverture. Ton accusateur et pathétique : le peuple est interpellé directement."],
-["vous vous laissez priver du plus beau et du plus clair de votre revenu ;","Première accusation : accepter d'être spolié. Le revenu = fruits du travail."],
-["vous laissez piller vos champs, voler vos maisons et les dépouiller des meubles anciens de vos pères !","Énumération des violences subies et acceptées. Les biens patrimoniaux sont volés."],
-["Vous vivez de sorte que vous ne puissiez rien revendiquer ;","Le peuple a renoncé à tout droit : il ne peut même plus réclamer."],
-["et l'on dirait que c'est un grand bonheur pour vous d'avoir vos biens, vos familles et vos vies en location.","Ironie mordante : vivre « en location » = n'être propriétaire de rien, pas même de sa vie."],
-["Or tous ces dégâts, ce malheur, cette ruine ne vous viennent pas des ennemis,","Renversement argumentatif : la menace n'est pas extérieure."],
-["mais bien de l'ennemi que vous faites aussi grand,","La cause réelle : le tyran que vous avez vous-mêmes élevé."],
-["pour lequel vous allez si courageusement à la guerre, pour la grandeur duquel vous ne refusez point de risquer la mort.","Ironie : le peuple se bat courageusement pour son propre oppresseur."],
-["Celui qui est votre maître n'a pourtant que deux yeux, deux mains, un corps,","Démystification du tyran : il est humain, physiquement ordinaire."],
-["et rien d'autre que ce dont dispose n'importe quel habitant du très grand nombre de vos villes,","Il n'a rien de plus que vous. Sa puissance est une illusion."],
-["rien d'autre que l'avantage que vous lui donnez pour vous détruire.","La seule différence : vous lui avez donné le pouvoir de vous détruire."],
+["Pauvres et misérables peuples insensés, nations obstinées dans votre mal et aveugles à votre bien, vous vous laissez priver du plus beau et du plus clair de votre revenu ; vous laissez piller vos champs, voler vos maisons et les dépouiller des meubles anciens de vos pères !","Apostrophe violente d'ouverture. Ton accusateur et pathétique : le peuple est interpellé directement. Énumération des violences subies et acceptées."],
+["Vous vivez de sorte que vous ne puissiez rien revendiquer ; et l'on dirait que c'est un grand bonheur pour vous d'avoir vos biens, vos familles et vos vies en location.","Le peuple a renoncé à tout droit. Ironie mordante : vivre « en location » = n'être propriétaire de rien."],
+["Or tous ces dégâts, ce malheur, cette ruine ne vous viennent pas des ennemis, mais bien de l'ennemi que vous faites aussi grand, pour lequel vous allez si courageusement à la guerre, pour la grandeur duquel vous ne refusez point de risquer la mort.","Renversement argumentatif : la menace n'est pas extérieure. Ironie : le peuple se bat courageusement pour son propre oppresseur."],
+["Celui qui est votre maître n'a pourtant que deux yeux, deux mains, un corps, et rien d'autre que ce dont dispose n'importe quel habitant du très grand nombre de vos villes, rien d'autre que l'avantage que vous lui donnez pour vous détruire.","Démystification du tyran : il est humain, physiquement ordinaire. La seule différence : vous lui avez donné le pouvoir de vous détruire."],
 ["Chez qui a-t-il pris tant d'yeux, par lesquels il vous épie, sinon chez vous ?","Première question rhétorique : ses espions sont vos propres semblables."],
 ["Comment se fait-il qu'il ait tant de mains pour vous frapper, s'il ne les tient de vous ?","Ses bras pour frapper sont les vôtres. Paradoxe central."],
 ["Les pieds dont il foule vos cités, où les a-t-il trouvés, si ce ne sont pas les vôtres ?","Ses pieds pour écraser vos villes sont les vôtres. Accusation directe."],
 ["A-t-il du pouvoir sur vous, si ce n'est par vous ?","Formule synthétique de la servitude volontaire."],
 ["Comment oserait-il vous assaillir, s'il ne s'était entendu avec vous ?","Le tyran ne peut attaquer que parce que le peuple a consenti."],
-["Que pourrait-il vous faire, si vous n'étiez receleurs du bandit qui vous pille, complices du meurtrier qui vous tue","Accumulation : receleurs, complices, traîtres. Le peuple participe à son propre malheur."],
-["et traîtres envers vous-mêmes ?","Analyse commune à la ligne ci-dessus"],
-["Vous semez vos fruits afin qu'il les détruise ;","Anaphore de « vous » qui débute. Le travail du peuple nourrit le tyran."],
-["vous meublez et remplissez vos maisons afin de subvenir à ses pillages ;","Analyse commune à la ligne ci-dessus"],
-["vous élevez vos filles pour qu'il ait de quoi satisfaire sa luxure ;","Analyse commune à la ligne ci-dessus"],
-["vous élevez vos enfants afin que, dans le meilleur des cas, il les amène à ses guerres, qu'il les conduise à la boucherie,","Gradation terrible : les enfants élevés pour servir de chair à canon."],
-["qu'il en fasse les ministres de ses convoitises et les exécuteurs de ses vengeances ;","Analyse commune à la ligne ci-dessus"],
+["Que pourrait-il vous faire, si vous n'étiez receleurs du bandit qui vous pille, complices du meurtrier qui vous tue et traîtres envers vous-mêmes ?","Accumulation : receleurs, complices, traîtres. Le peuple participe à son propre malheur."],
+["Vous semez vos fruits afin qu'il les détruise ; vous meublez et remplissez vos maisons afin de subvenir à ses pillages ; vous élevez vos filles pour qu'il ait de quoi satisfaire sa luxure ;","Anaphore de « vous ». Le travail du peuple nourrit le tyran. Gradation des violences."],
+["vous élevez vos enfants afin que, dans le meilleur des cas, il les amène à ses guerres, qu'il les conduise à la boucherie, qu'il en fasse les ministres de ses convoitises et les exécuteurs de ses vengeances ;","Gradation terrible : les enfants élevés pour servir de chair à canon."],
 ["vous vous tuez à la tâche afin qu'il puisse être comblé de délices et se vautrer dans les sales et les vils plaisirs ;","Contraste saisissant : le peuple se tue au travail pendant que le tyran se vautre."],
+["vous vous affaiblissez afin de le rendre plus fort et dur, qu'il puisse vous tenir la bride plus courte ;","Analyse commune à la ligne ci-dessus"],
 ["et de tant d'indignités, que même les bêtes ne sentiraient ou n'endureraient pas, vous pouvez vous délivrer,","Les bêtes n'endureraient pas ce que le peuple accepte : comparaison rabaissante."],
-["si vous essayez non pas de vous délivrer, mais seulement de le vouloir. Soyez résolus à ne plus servir, et vous voilà libres.","Formule célèbre. La liberté ne demande qu'une volonté. Conclusion impérative et lumineuse."],
+["si vous essayez non pas de vous délivrer, mais seulement de le vouloir.","La volonté seule suffit. Formule concise et lumineuse."],
+["Soyez résolus à ne plus servir, et vous voilà libres.","Formule célèbre. La liberté ne demande qu'une décision."],
+["Je ne veux pas que vous le poussiez ou l'ébranliez, mais seulement que vous ne le souteniez plus ;","La résistance est passive : il ne s'agit pas de combattre mais de cesser de soutenir."],
+["alors vous le verrez, tel un grand colosse à qui l'on a enlevé son socle, ployer sous son poids et tomber en morceaux.","Métaphore monumentale. Chute finale spectaculaire du tyran privé de soutien."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
 ],
 
-/* ---- TEXTE 14 : 23 lignes ---- */
+/* ====================================================================
+   TEXTE 14 — 18 lignes
+   ==================================================================== */
 texte14:[
-["Aujourd'hui, ils ne font guère mieux, ceux qui ne commettent aucun dommage, même important,","Attaque directe contre les dirigeants contemporains. Ironie mordante."],
-["sans l'accompagner d'une fine allusion au bien public et au bien-être de tous.","Le dommage est toujours justifié par une prétention au bien commun : hypocrisie politique."],
-["Tu connais bien, ô Longa, la formule dont ils pourraient user finement à l'occasion ;","Apostrophe personnelle à Longa : ton de confidence, registre intime."],
-["mais la plupart du temps, il ne peut y avoir de finesse là où il y a tant d'impudence.","Conclusion ironique : impudence = manque de finesse."],
-["Les rois assyriens, et après eux les rois mèdes, se montraient en public le plus rarement possible,","Les rois assyriens se cachaient : stratégie de la rareté et du mystère."],
-["pour faire accroire à la populace qu'ils étaient d'une autre nature que les hommes,","Objectif : paraître supérieur à l'humanité ordinaire."],
-["et pour laisser rêver ceux qui ne demandent qu'à imaginer les choses dont ils ne peuvent juger de leurs propres yeux.","La crédulité populaire est délibérément exploitée."],
-["C'est ainsi que tant de peuples qui furent longtemps sous la domination de l'Empire assyrien,","Le mystère crée l'habitude de la servitude dans les peuples soumis."],
-["grâce à ce mystère, s'habituaient à servir","Analyse commune à la ligne ci-dessus"],
-["et le faisaient d'autant plus volontiers qu'ils ne connaissaient pas leur maître,","L'ignorance renforce l'obéissance : paradoxe."],
-["voire ignoraient s'ils en avaient un, et redoutaient tous, dans leur crédulité,","Analyse commune à la ligne ci-dessus"],
-["un homme que nul n'avait jamais vu.","Pointe finale : craindre un homme invisible. L'abstraction du pouvoir est plus efficace."],
-["Les premiers rois d'Égypte ne se montraient guère sans porter tantôt un chat, tantôt une branche, tantôt du feu sur la tête,","Mises en scène grotesques des rois d'Égypte pour impressionner."],
-["et ainsi se déguisaient et faisaient les bateleurs :","Comparaison aux saltimbanques : le pouvoir est un spectacle."],
-["de la sorte, par l'étrangeté du phénomène, ils suscitaient le respect et l'admiration de leurs sujets,","L'étrangeté produit l'admiration et la soumission."],
-["alors que, si ces derniers avaient été moins sots ou moins asservis,","Condition : si les sujets n'avaient pas été crédules…"],
-["à mon avis, ils n'auraient prêté qu'à rire.","… ils auraient ri. La manipulation ne fonctionne que sur les naïfs."],
-["Il est lamentable de voir tous les procédés dont se servirent les tyrans des temps passés","Bilan pathétique. La Boétie observe l'histoire avec un regard critique."],
-["afin d'établir leur tyrannie, tous les expédients auxquels ils eurent recours,","Analyse commune à la ligne ci-dessus"],
-["trouvant toujours la populace si préparée","La populace est toujours prête à se laisser piéger."],
-["qu'il leur suffisait de tendre le filet, même mal, pour qu'elle vienne s'y prendre :","Métaphore du filet : la foule tombe dans le piège même grossier."],
-["ils l'ont toujours trompée de si bonne grâce","Paradoxe final : la tromperie est gracieuse."],
-["qu'ils ne l'ont jamais aussi bien assujettie qu'au moment où ils s'en moquaient le plus.","Chute ironique : plus les tyrans se moquent, mieux ils dominent."],
+["Aujourd'hui, ils ne font guère mieux, ceux qui ne commettent aucun dommage, même important, sans l'accompagner d'une fine allusion au bien public et au bien-être de tous.","Attaque directe contre les dirigeants contemporains. Le dommage est toujours justifié par une prétention au bien commun : hypocrisie politique."],
+["Tu connais bien, ô Longa, la formule dont ils pourraient user finement à l'occasion ; mais la plupart du temps, il ne peut y avoir de finesse là où il y a tant d'impudence.","Apostrophe personnelle à Longa : ton de confidence. Conclusion ironique : impudence = manque de finesse."],
+["Les rois assyriens, et après eux les rois mèdes, se montraient en public le plus rarement possible, pour faire accroire à la populace qu'ils étaient d'une autre nature que les hommes, et pour laisser rêver ceux qui ne demandent qu'à imaginer les choses dont ils ne peuvent juger de leurs propres yeux.","Les rois assyriens se cachaient : stratégie de la rareté et du mystère. La crédulité populaire est délibérément exploitée."],
+["C'est ainsi que tant de peuples qui furent longtemps sous la domination de l'Empire assyrien, grâce à ce mystère, s'habituaient à servir et le faisaient d'autant plus volontiers qu'ils ne connaissaient pas leur maître, voire ignoraient s'ils en avaient un, et redoutaient tous, dans leur crédulité, un homme que nul n'avait jamais vu.","Le mystère crée l'habitude de la servitude. L'ignorance renforce l'obéissance : paradoxe. Craindre un homme invisible."],
+["Les premiers rois d'Égypte ne se montraient guère sans porter tantôt un chat, tantôt une branche, tantôt du feu sur la tête, et ainsi se déguisaient et faisaient les bateleurs :","Mises en scène grotesques des rois d'Égypte. Comparaison aux saltimbanques : le pouvoir est un spectacle."],
+["de la sorte, par l'étrangeté du phénomène, ils suscitaient le respect et l'admiration de leurs sujets, alors que, si ces derniers avaient été moins sots ou moins asservis, à mon avis, ils n'auraient prêté qu'à rire.","L'étrangeté produit l'admiration et la soumission. La manipulation ne fonctionne que sur les naïfs."],
+["Il est lamentable de voir tous les procédés dont se servirent les tyrans des temps passés afin d'établir leur tyrannie, tous les expédients auxquels ils eurent recours,","Bilan pathétique. La Boétie observe l'histoire avec un regard critique."],
+["trouvant toujours la populace si préparée qu'il leur suffisait de tendre le filet, même mal, pour qu'elle vienne s'y prendre :","Métaphore du filet : la foule tombe dans le piège même grossier."],
+["ils l'ont toujours trompée de si bonne grâce qu'ils ne l'ont jamais aussi bien assujettie qu'au moment où ils s'en moquaient le plus.","Chute ironique : plus les tyrans se moquent, mieux ils dominent."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
 ],
 
-/* ---- TEXTE 15 : 28 lignes ---- */
+/* ====================================================================
+   TEXTE 15 — 23 lignes
+   ==================================================================== */
 texte15:[
-["Mais j'en viens maintenant à un point qui fait, me semble-t-il, le ressort et le secret de la domination,","Annonce solennelle : La Boétie va révéler le mécanisme central de la tyrannie."],
-["le soutien et le fondement de la tyrannie.","Vocabulaire architectural : ressort, soutien, fondement. La tyrannie est une construction."],
-["À mon sens, celui qui s'imagine que les hallebardes, les gardes et les rondes de soldats protègent les tyrans se trompe fort ;","Réfutation d'une idée reçue : la force militaire ne protège pas vraiment le tyran."],
-["s'ils y ont recours, je crois que c'est plus pour la forme et comme d'un épouvantail","Les gardes sont un décor, un « épouvantail ». Apparence de force."],
-["que pour la confiance qu'ils leur accordent.","Le tyran ne fait pas vraiment confiance à ses gardes."],
-["Les archers bloquent l'accès au palais des gens mal vêtus qui n'ont rien à leur disposition,","Ironie : les gardes arrêtent les pauvres, pas les vrais dangereux."],
-["non pas des gens bien armés qui peuvent s'avérer dangereux.","Les vrais menaces (gens bien armés) ne sont pas arrêtées."],
-["Assurément le compte est facile à faire : il y a moins d'empereurs romains ayant échappé au danger grâce à leurs gardes,","Argument historique : preuve par l'histoire romaine."],
-["que d'empereurs ayant été tués par leurs archers eux-mêmes.","Les gardes ont souvent tué leur maître. La protection est un leurre."],
-["Ce ne sont pas les bandes de chevaliers, ce ne sont pas les compagnies de fantassins,","Énumération des forces militaires toutes réfutées."],
-["ce ne sont pas les armes qui défendent le tyran.","Conclusion paradoxale : les armes ne défendent pas le tyran."],
-["Cela semble à première vue peu croyable, mais en vérité,","Précaution rhétorique : la vérité va sembler invraisemblable."],
-["ce sont toujours quatre ou cinq hommes qui soutiennent le tyran,","Révélation centrale : quatre ou cinq hommes seulement."],
-["quatre ou cinq qui lui permettent de tenir tout le pays en esclavage.","Répétition du nombre : insistance sur le peu qui suffit."],
-["Il en a toujours été ainsi : cinq ou six hommes ont eu l'oreille du tyran et l'ont approché de leur propre initiative,","Constante historique : le cercle rapproché existe toujours."],
-["ou bien ont été appelés à la sienne, pour être complices de ses cruautés,","Complicité volontaire ou sollicitée."],
-["les compagnons de ses plaisirs, les maquereaux de ses voluptés","Termes forts : les complices partagent les plaisirs et les vices du tyran."],
-["et ceux qui partagent les fruits de ses pillages.","Corruption matérielle : ils profitent des pillages."],
-["Ces six hommes dressent si bien leur chef que la société doit accepter de le voir faire le mal","Les complices façonnent le tyran et le couvrent."],
-["non seulement par ses méchancetés, mais encore par les leurs.","Le mal du tyran est aussi le mal de ses complices."],
-["Ces six hommes en ont six cents qui tirent profit de leur pouvoir,","Amplification : six deviennent six cents. La corruption se propage."],
-["et auxquels ils font ce que les six font au tyran.","Chaque niveau reproduit le schéma de domination du niveau supérieur."],
-["Ces six cents en ont six mille sous leurs ordres, qu'ils ont placés en cet état,","Les six cents ont six mille sous-fifres. La pyramide s'élargit."],
-["auxquels ils attribuent soit le gouvernement des provinces, soit la gestion des deniers publics,","Les postes de pouvoir sont distribués comme récompenses."],
-["afin qu'ils prêtent leur bras à leur cupidité et à leur cruauté,","Analyse commune à la ligne ci-dessus"],
-["qu'ils exécutent leurs ordres au moment voulu,","Analyse commune à la ligne ci-dessus"],
-["et fassent tant de maux en plus qu'ils ne puissent perdurer que sous leur ombre,","Ces subalternes font tant de mal qu'ils ne peuvent survivre que protégés par leurs maîtres."],
-["qu'ils n'aient que ce moyen pour se soustraire aux lois et aux peines de justice. Après eux vient une longue succession d'hommes… des millions d'hommes qui, par cette corde, se rattachent au tyran : celui-ci l'utilise comme, chez Homère, Jupiter qui se vante, en tirant la chaîne, d'amener à lui tous les dieux.","Métaphore finale grandiose : la chaîne de Jupiter chez Homère. Des millions d'hommes liés au tyran."],
+["Mais j'en viens maintenant à un point qui fait, me semble-t-il, le ressort et le secret de la domination, le soutien et le fondement de la tyrannie.","Annonce solennelle : La Boétie va révéler le mécanisme central de la tyrannie. Vocabulaire architectural : ressort, soutien, fondement."],
+["À mon sens, celui qui s'imagine que les hallebardes, les gardes et les rondes de soldats protègent les tyrans se trompe fort ; s'ils y ont recours, je crois que c'est plus pour la forme et comme d'un épouvantail que pour la confiance qu'ils leur accordent.","Réfutation d'une idée reçue : la force militaire ne protège pas vraiment le tyran. Les gardes sont un décor, un « épouvantail »."],
+["Les archers bloquent l'accès au palais des gens mal vêtus qui n'ont rien à leur disposition, non pas des gens bien armés qui peuvent s'avérer dangereux.","Ironie : les gardes arrêtent les pauvres, pas les vrais dangereux."],
+["Assurément le compte est facile à faire : il y a moins d'empereurs romains ayant échappé au danger grâce à leurs gardes, que d'empereurs ayant été tués par leurs archers eux-mêmes.","Argument historique : preuve par l'histoire romaine. Les gardes ont souvent tué leur maître."],
+["Ce ne sont pas les bandes de chevaliers, ce ne sont pas les compagnies de fantassins, ce ne sont pas les armes qui défendent le tyran.","Énumération des forces militaires toutes réfutées. Conclusion paradoxale."],
+["Cela semble à première vue peu croyable, mais en vérité, ce sont toujours quatre ou cinq hommes qui soutiennent le tyran, quatre ou cinq qui lui permettent de tenir tout le pays en esclavage.","Précaution rhétorique. Révélation centrale : quatre ou cinq hommes seulement."],
+["Il en a toujours été ainsi : cinq ou six hommes ont eu l'oreille du tyran et l'ont approché de leur propre initiative, ou bien ont été appelés à la sienne, pour être complices de ses cruautés, les compagnons de ses plaisirs, les maquereaux de ses voluptés et ceux qui partagent les fruits de ses pillages.","Constante historique : le cercle rapproché. Complicité volontaire ou sollicitée. Corruption matérielle."],
+["Ces six hommes dressent si bien leur chef que la société doit accepter de le voir faire le mal non seulement par ses méchancetés, mais encore par les leurs.","Les complices façonnent le tyran et le couvrent. Le mal du tyran est aussi le mal de ses complices."],
+["Ces six hommes en ont six cents qui tirent profit de leur pouvoir, et auxquels ils font ce que les six font au tyran.","Amplification : six deviennent six cents. La corruption se propage. Chaque niveau reproduit le schéma."],
+["Ces six cents en ont six mille sous leurs ordres, qu'ils ont placés en cet état, auxquels ils attribuent soit le gouvernement des provinces, soit la gestion des deniers publics,","Les six cents ont six mille sous-fifres. Les postes de pouvoir sont distribués comme récompenses."],
+["afin qu'ils prêtent leur bras à leur cupidité et à leur cruauté, qu'ils exécutent leurs ordres au moment voulu, et fassent tant de maux en plus qu'ils ne puissent perdurer que sous leur ombre, qu'ils n'aient que ce moyen pour se soustraire aux lois et aux peines de justice.","Ces subalternes font tant de mal qu'ils ne peuvent survivre que protégés par leurs maîtres."],
+["Après eux vient une longue succession d'hommes, et celui qui voudra s'amuser à en dévider le fil pourra voir que ce ne sont pas six mille mais cent mille, mais des millions d'hommes qui, par cette corde, se rattachent au tyran :","La pyramide s'élargit : des millions d'hommes liés au tyran."],
+["celui-ci l'utilise comme, chez Homère, Jupiter qui se vante, en tirant la chaîne, d'amener à lui tous les dieux.","Métaphore finale grandiose : la chaîne de Jupiter chez Homère."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
+["Pas d'analyse pour cette ligne.","Pas d'analyse pour cette ligne."],
 ],
 
-/* ---- TEXTE 16 : 41 lignes ---- */
+/* ====================================================================
+   TEXTE 16 — 41 lignes
+   ==================================================================== */
 texte16:[
 ["Un Loup n'avait que les os et la peau,","Hyperbole : extrême maigreur. Le loup incarne la misère absolue."],
 ["Tant les chiens faisaient bonne garde.","Cause de la faim : les chiens gardent bien les troupeaux, le loup ne peut chasser."],
@@ -702,7 +637,7 @@ texte3:{moves:[
 ]},
 texte4:{moves:[
 {titre:"Mouvement 1 — Mise en place de la dispute philosophique",lignes:["<strong>SGANARELLE :</strong> cet habit me donne de l'esprit…","<strong>DOM JUAN :</strong> Eh bien !","<strong>SGANARELLE :</strong> Est-il possible que vous ne croyiez point du tout au Ciel ?","<strong>DOM JUAN :</strong> Laissons cela.","<strong>SGANARELLE :</strong> C'est-à-dire que non. Et à l'Enfer ?","<strong>DOM JUAN :</strong> Eh.","<strong>SGANARELLE :</strong> Tout de même. Et au diable, s'il vous plaît ?","<strong>DOM JUAN :</strong> Oui, oui.","<strong>SGANARELLE :</strong> Aussi peu. Ne croyez-vous point l'autre vie ?","<strong>DOM JUAN :</strong> Ah, ah, ah.","<strong>SGANARELLE :</strong> Et dites-moi un peu, le Moine-Bourru, qu'en croyez-vous, eh ?","<strong>DOM JUAN :</strong> La peste soit du fat !","<strong>SGANARELLE :</strong> Mais encore faut-il croire quelque chose. Qu'est-ce que vous croyez ?","<strong>DOM JUAN :</strong> Je crois que deux et deux sont quatre, et que quatre et quatre sont huit."]},
-{titre:"Mouvement 2 — Échec du raisonnement de Sganarelle",lignes:["<strong>SGANARELLE :</strong> La belle croyance ! Votre religion est donc l'arithmétique ?","<strong>SGANARELLE :</strong> Pour moi… je vois les choses mieux que tous les livres… ce monde n'est pas un champignon venu tout seul en une nuit.","<strong>SGANARELLE :</strong> qui a fait ces arbres-là, ces rochers, cette terre, et ce ciel ?","<strong>SGANARELLE :</strong> est-ce que vous vous êtes fait tout seul ?","<strong>SGANARELLE :</strong> Pouvez-vous voir toutes les inventions dont la machine de l'homme est composée…","<strong>SGANARELLE :</strong> vous vous taisez exprès, et me laissez parler par belle malice.","<strong>DOM JUAN :</strong> J'attends que ton raisonnement soit fini.","<strong>SGANARELLE :</strong> Mon raisonnement est qu'il y a quelque chose d'admirable dans l'homme…","<strong>DOM JUAN :</strong> Bon, voilà ton raisonnement qui a le nez cassé."]}
+{titre:"Mouvement 2 — Échec du raisonnement de Sganarelle",lignes:["<strong>SGANARELLE :</strong> La belle croyance ! Votre religion est donc l'arithmétique ?","<strong>SGANARELLE :</strong> Pour moi… je vois les choses mieux que tous les livres… ce monde n'est pas un champignon venu tout seul en une nuit.","<strong>SGANARELLE :</strong> qui a fait ces arbres-là, ces rochers, cette terre, et ce ciel ?","<strong>SGANARELLE :</strong> est-ce que vous vous êtes fait tout seul ?","<strong>SGANARELLE :</strong> Pouvez-vous voir toutes les inventions dont la machine de l'homme est composée…","<strong>DOM JUAN :</strong> J'attends que ton raisonnement soit fini.","<strong>SGANARELLE :</strong> Mon raisonnement est qu'il y a quelque chose d'admirable dans l'homme…","<strong>SGANARELLE :</strong> Je veux frapper des mains, hausser le bras… tourner…","<strong>DOM JUAN :</strong> Bon, voilà ton raisonnement qui a le nez cassé."]}
 ]},
 texte5:{moves:[
 {titre:"Mouvement 1 — Souvenirs d'enfance idéalisés",lignes:["Il y avait dans ce temps-là de grands hivers, de brûlants étés. Aucun été, sauf ceux de mon enfance, ne commémore le géranium écarlate et la hampe enflammée des digitales.","Aucun hiver n'est plus d'un blanc pur… Ce ciel pesait sur le toit chargé de neige… et pliait les oreilles des chattes…","La calme et verticale chute de neige devenait oblique… tandis que j'arpentais le jardin, happant la neige volante…"]},
@@ -718,7 +653,7 @@ texte7:{moves:[
 {titre:"Mouvement 2 — Regard des animaux sur l'attitude de la femme",lignes:["Je voyais la brume de ses cheveux danser autour de sa tête…","<strong>KIKI-LA-DOUCETTE</strong>, <em>révolté</em> : Aboyer, Elle ! Elle a ses défauts, mais tout de même aboyer !…","<strong>TOBY-CHIEN</strong>, <em>poursuivant</em> : Elle n'aboya point, en effet. Elle se redressa d'un bond…","<strong>KIKI-LA-DOUCETTE :</strong> Oui. Elle a la tête angora. La tête seulement.","<strong>TOBY-CHIEN :</strong> ... Et Elle se remit à parler, incohérente : « Alors, voilà ! Je veux faire ce que je veux. »"]}
 ]},
 texte8:{moves:[
-{titre:"Mouvement 1 — Contemplation extérieure, nature",lignes:["Quand le lac agité ne me permettait pas la navigation je passais mon après-midi à parcourir l'île en herborisant…","tantôt sur les terrasses et les tertres, pour parcourir des yeux le superbe et ravissant coup d'œil du lac…","et de l'autre élargis en riches et fertiles plaines dans lesquelles la vue s'étendait jusqu'aux montagnes bleuâtres…"]},
+{titre:"Mouvement 1 — Contemplation extérieure, nature",lignes:["Quand le lac agité ne me permettait pas la navigation je passais mon après-midi à parcourir l'île en herborisant…","tantôt sur les terrasses et les tertres, pour parcourir des yeux le superbe et ravissant coup d'œil du lac…"]},
 {titre:"Mouvement 2 — Réflexion intérieure et rêverie",lignes:["Quand le soir approchait je descendais des cimes de l'île et j'allais volontiers m'asseoir au bord du lac…","là le bruit des vagues et l'agitation de l'eau fixant mes sens… la plongeaient dans une rêverie délicieuse…","Le flux et reflux de cette eau… suffisaient pour me faire sentir avec plaisir mon existence, sans prendre la peine de penser.","De temps à autre naissait quelque faible et courte réflexion sur l'instabilité des choses de ce monde…"]},
 {titre:"Mouvement 3 — Vie quotidienne partagée, bonheur simple",lignes:["Après le souper, quand la soirée était belle, nous allions encore tous ensemble faire quelque tour de promenade…","On se reposait dans le pavillon, on riait, on causait, on chantait quelque vieille chanson…","et enfin l'on s'allait coucher content de sa journée et n'en désirant qu'une semblable pour le lendemain."]}
 ]},
@@ -760,21 +695,21 @@ texte16:{moves:[
 };
 
 const planData={
-texte1:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Nathalie Sarraute, à travers le conflit entre ces deux personnages, montre-t-elle la difficulté humaine à communiquer ?</p><p><strong>Introduction :</strong><br>En l'année 1900 naît Nathalie Sarraute, grande autrice française du XXe siècle, appartenant au mouvement du Nouveau Roman. Elle développe la notion de <em>tropismes</em>, qu'elle définit comme des « mouvements indéfinissables, glissant très rapidement aux limites de notre conscience ». Dans la pièce <em>Pour un oui ou pour un non</em> (1982), elle explore le langage et ces tropismes à travers les thèmes de l'amitié, de la communication et du tragique. Cet extrait constitue la scène d'exposition : il présente les personnages principaux, les thématiques de l'œuvre ainsi que leur première dispute.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 27 : l'expression du malaise entre deux amis de longue date.<br>II. Lignes 28 à 43 : le refus d'explication de H2.<br>III. Lignes 44 à 51 : la révélation et la dimension tragique de la rupture.</p><p><strong>Conclusion :</strong><br>À travers le conflit entre H1 et H2, Nathalie Sarraute montre que la communication humaine est profondément fragile et souvent vouée à l'échec. Ce sont moins les faits que le poids invisible des paroles et des silences qui rendent la communication entre les êtres difficile, voire impossible.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Juste la fin du monde</em> de Jean-Luc Lagarce, qui met elle aussi en scène les difficultés de communication, conduisant au départ du personnage alors qu'il n'aura pas réussi à se confier à sa famille sur sa mort prochaine.</p></div>`,
-texte2:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>En quoi les tropismes montrent-ils le double enjeu de communication et d'amitié dans ce passage ?</p><p><strong>Introduction :</strong><br>Cet extrait se situe dans les premières pages de l'œuvre, lors de l'apparition de nouveaux personnages, H3 et F, voisins de H2. Il met en valeur l'omniprésence et l'ampleur des tropismes lors d'un conflit.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 13 : une situation banale en apparence.<br>II. Lignes 14 à 36 : le malentendu se transforme en conflit.<br>III. Lignes 37 à 38 : l'éclatement du conflit.</p><p><strong>Conclusion :</strong><br>Sarraute joue avec la mauvaise interprétation et l'emploi des mots, du ton et des gestes accompagnant la pensée. L'enjeu de l'amitié prend ici une dimension de procès, dénonçant une société qui n'accepte pas que l'on puisse être en dehors de la norme.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Juste la fin du monde</em> de Jean-Luc Lagarce.</p></div>`,
-texte3:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Nathalie Sarraute montre-t-elle, à travers ce dialogue, la difficulté de rompre une relation et le poids du jugement social ?</p><p><strong>Introduction :</strong><br>Cet extrait se situe à un moment où les deux personnages envisagent de mettre fin à leur relation. À travers la métaphore d'un tribunal imaginaire, ils projettent la condamnation que la société pourrait porter sur leur rupture.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 10 : les deux personnages reconnaissent leur incapacité à agir seuls.<br>II. Lignes 11 à 26 : mise en scène du tribunal imaginaire.<br>III. Lignes 27 à 30 : chute finale autour du titre de la pièce.</p><p><strong>Conclusion :</strong><br>Les personnages sont paralysés, incapables de prendre eux-mêmes une décision. La chute finale, fondée sur l'opposition entre « oui » et « non », rappelle que des mots simples peuvent devenir sources de conflit majeur.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>En attendant Godot</em> de Samuel Beckett, où les personnages demeurent eux aussi enfermés dans un dialogue circulaire, marqués par l'attente et l'impuissance à agir.</p></div>`,
-texte4:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Molière transforme-t-il un débat sur la religion en scène comique tout en révélant le caractère de Dom Juan ?</p><p><strong>Introduction :</strong><br>En 1622 naît Molière, grand auteur du XVIIe siècle et figure majeure du Classicisme. Publiée en 1665, <em>Dom Juan</em> met en scène un libertin séducteur et impie. L'extrait étudié oppose Dom Juan à son valet Sganarelle, confrontant rationalisme provocateur et foi naïve.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 25 : un interrogatoire mené par Sganarelle sur les croyances de Dom Juan.<br>II. Lignes 26 à 38 : la tentative maladroite de Sganarelle pour prouver l'existence de Dieu.<br>III. Lignes 39 à 40 : l'échec final du raisonnement, conclu par la chute comique.</p><p><strong>Conclusion :</strong><br>Le comique naît du contraste entre les deux personnages. Derrière le rire, Molière pose une réflexion sérieuse sur la foi, la raison et les limites du discours humain.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Candide</em> de Voltaire, œuvre qui utilise elle aussi l'ironie et le comique pour remettre en question les certitudes religieuses et philosophiques.</p></div>`,
-texte5:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Colette fait-elle d'un souvenir d'enfance une évocation poétique et vivante de la nature ?</p><p><strong>Introduction :</strong><br>En 1873 naît Colette, grande autrice des XIXe et XXe siècles, dont l'œuvre célèbre la nature, les souvenirs et les sensations. Publié en 1930, <em>Sido</em> évoque la mère de Colette et les souvenirs d'enfance.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 11 : évocation idéalisée des saisons de l'enfance et description du paysage hivernal.<br>II. Lignes 12 à 18 : intervention dynamique de la mère et agitation provoquée par la tempête.<br>III. Lignes 19 à 20 : calme admiratif de la mère face à la beauté de la neige.</p><p><strong>Conclusion :</strong><br>Colette transforme un simple souvenir d'enfance en tableau poétique animé par les sensations. Elle célèbre à la fois l'enfance, la nature et le lien affectif avec la mère.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Les Vrilles de la vigne</em>, où l'autrice évoque, avec la même sensibilité, les souvenirs d'enfance liés à la nature.</p></div>`,
-texte6:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Colette transforme-t-elle une scène intime et ordinaire en moment poétique révélateur du désir amoureux ?</p><p><strong>Introduction :</strong><br>Publié en 1908, <em>Les Vrilles de la vigne</em> rassemble des textes en prose où se mêlent souvenirs, méditations et scènes de la vie quotidienne. L'extrait présente une scène nocturne entre deux êtres allongés côte à côte.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 11 : recherche du sommeil et persistance des sensations du jour.<br>II. Lignes 12 à 19 : éveil du désir à travers la proximité des corps.<br>III. Lignes 20 à 23 : insomnie heureuse et fusion silencieuse des deux êtres.</p><p><strong>Conclusion :</strong><br>Les sensations dominent le texte et traduisent l'intimité amoureuse. Le silence entre les personnages n'est pas absence de communication, mais langage du corps et de la tendresse.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Le Blé en herbe</em>, où l'autrice explore également la naissance du désir, les émotions amoureuses et la découverte sensible du corps.</p></div>`,
-texte7:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Colette utilise-t-elle le regard des animaux pour offrir une vision originale et poétique des émotions humaines ?</p><p><strong>Introduction :</strong><br>Publié en 1908, <em>Les Vrilles de la vigne</em> rassemble des textes variés où Colette manifeste un goût prononcé pour les animaux. L'extrait met en scène deux animaux, Toby-Chien et Kiki-la-Doucette, qui commentent les paroles d'« Elle ».</p><p><strong>Plan :</strong><br>I. Lignes 1 à 21 : le monologue passionné d'Elle sur l'amour et le bonheur.<br>II. Lignes 22 à 24 : regard amusé de Toby-Chien sur l'attitude de la femme.<br>III. Lignes 25 à 26 : dialogue comique entre les animaux et reprise de l'agitation humaine.</p><p><strong>Conclusion :</strong><br>Le long monologue d'Elle exprime une conception intense et sensible du bonheur. Colette brouille les frontières entre humanité et animalité.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Dialogues de bêtes</em>, où Colette donne également la parole aux animaux afin de porter un regard ironique et sensible sur les comportements humains.</p></div>`,
-texte8:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Rousseau fait-il de la contemplation de la nature un chemin vers le bonheur et l'harmonie intérieure ?</p><p><strong>Introduction :</strong><br>En 1712 naît Jean-Jacques Rousseau, figure majeure du Siècle des Lumières. Publié à titre posthume en 1782, <em>Les Rêveries du promeneur solitaire</em> est un recueil méditatif. L'extrait est tiré de la Cinquième promenade, où Rousseau raconte ses journées sur l'île Saint-Pierre.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 6 : promenade heureuse et contemplation des paysages de l'île.<br>II. Lignes 7 à 19 : méditation au bord du lac et naissance de la rêverie.<br>III. Lignes 20 à 23 : évocation simple et heureuse de la vie quotidienne partagée.</p><p><strong>Conclusion :</strong><br>Rousseau présente la nature comme un refuge capable d'apaiser les troubles de l'âme. Le bonheur naît ici de la simplicité.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Les Confessions</em>, où l'auteur explore également son intériorité et accorde une grande place à la sincérité des sentiments personnels.</p></div>`,
+texte1:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Nathalie Sarraute, à travers le conflit entre ces deux personnages, montre-t-elle la difficulté humaine à communiquer ?</p><p><strong>Introduction :</strong><br>En l'année 1900 naît Nathalie Sarraute, grande autrice française du XXe siècle, appartenant au mouvement du Nouveau Roman. Elle développe la notion de <em>tropismes</em>, qu'elle définit comme des « mouvements indéfinissables, glissant très rapidement aux limites de notre conscience ». Dans la pièce <em>Pour un oui ou pour un non</em> (1982), elle explore le langage et ces tropismes à travers les thèmes de l'amitié, de la communication et du tragique. Cet extrait constitue la scène d'exposition : il présente les personnages principaux, les thématiques de l'œuvre ainsi que leur première dispute.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 13 : l'expression du malaise entre deux amis de longue date.<br>II. Lignes 14 à 29 : le refus d'explication de H2.<br>III. Lignes 30 à 38 : la révélation et la dimension tragique de la rupture.</p><p><strong>Conclusion :</strong><br>À travers le conflit entre H1 et H2, Nathalie Sarraute montre que la communication humaine est profondément fragile et souvent vouée à l'échec. Ce sont moins les faits que le poids invisible des paroles et des silences qui rendent la communication entre les êtres difficile, voire impossible.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Juste la fin du monde</em> de Jean-Luc Lagarce, qui met elle aussi en scène les difficultés de communication, conduisant au départ du personnage alors qu'il n'aura pas réussi à se confier à sa famille sur sa mort prochaine.</p></div>`,
+texte2:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>En quoi les tropismes montrent-ils le double enjeu de communication et d'amitié dans ce passage ?</p><p><strong>Introduction :</strong><br>Cet extrait se situe dans les premières pages de l'œuvre, lors de l'apparition de nouveaux personnages, H3 et F, voisins de H2. Il met en valeur l'omniprésence et l'ampleur des tropismes lors d'un conflit.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 8 : une situation banale en apparence.<br>II. Lignes 9 à 27 : le malentendu se transforme en conflit.<br>III. Lignes 28 à 32 : l'éclatement du conflit.</p><p><strong>Conclusion :</strong><br>Sarraute joue avec la mauvaise interprétation et l'emploi des mots, du ton et des gestes accompagnant la pensée. L'enjeu de l'amitié prend ici une dimension de procès, dénonçant une société qui n'accepte pas que l'on puisse être en dehors de la norme.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Juste la fin du monde</em> de Jean-Luc Lagarce.</p></div>`,
+texte3:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Nathalie Sarraute montre-t-elle, à travers ce dialogue, la difficulté de rompre une relation et le poids du jugement social ?</p><p><strong>Introduction :</strong><br>Cet extrait se situe à un moment où les deux personnages envisagent de mettre fin à leur relation. À travers la métaphore d'un tribunal imaginaire, ils projettent la condamnation que la société pourrait porter sur leur rupture.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 9 : les deux personnages reconnaissent leur incapacité à agir seuls.<br>II. Lignes 10 à 16 : mise en scène du tribunal imaginaire.<br>III. Lignes 17 à 22 : chute finale autour du titre de la pièce.</p><p><strong>Conclusion :</strong><br>Les personnages sont paralysés, incapables de prendre eux-mêmes une décision. La chute finale, fondée sur l'opposition entre « oui » et « non », rappelle que des mots simples peuvent devenir sources de conflit majeur.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>En attendant Godot</em> de Samuel Beckett, où les personnages demeurent eux aussi enfermés dans un dialogue circulaire, marqués par l'attente et l'impuissance à agir.</p></div>`,
+texte4:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Molière transforme-t-il un débat sur la religion en scène comique tout en révélant le caractère de Dom Juan ?</p><p><strong>Introduction :</strong><br>En 1622 naît Molière, grand auteur du XVIIe siècle et figure majeure du Classicisme. Publiée en 1665, <em>Dom Juan</em> met en scène un libertin séducteur et impie. L'extrait étudié oppose Dom Juan à son valet Sganarelle, confrontant rationalisme provocateur et foi naïve.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 16 : un interrogatoire mené par Sganarelle sur les croyances de Dom Juan.<br>II. Lignes 17 à 22 : la tentative maladroite de Sganarelle pour prouver l'existence de Dieu.<br>III. Lignes 23 à 24 : l'échec final du raisonnement, conclu par la chute comique.</p><p><strong>Conclusion :</strong><br>Le comique naît du contraste entre les deux personnages. Derrière le rire, Molière pose une réflexion sérieuse sur la foi, la raison et les limites du discours humain.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Candide</em> de Voltaire, œuvre qui utilise elle aussi l'ironie et le comique pour remettre en question les certitudes religieuses et philosophiques.</p></div>`,
+texte5:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Colette fait-elle d'un souvenir d'enfance une évocation poétique et vivante de la nature ?</p><p><strong>Introduction :</strong><br>En 1873 naît Colette, grande autrice des XIXe et XXe siècles, dont l'œuvre célèbre la nature, les souvenirs et les sensations. Publié en 1930, <em>Sido</em> évoque la mère de Colette et les souvenirs d'enfance.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 5 : évocation idéalisée des saisons de l'enfance et description du paysage hivernal.<br>II. Lignes 6 à 8 : intervention dynamique de la mère et agitation provoquée par la tempête.<br>III. Lignes 9 à 10 : calme admiratif de la mère face à la beauté de la neige.</p><p><strong>Conclusion :</strong><br>Colette transforme un simple souvenir d'enfance en tableau poétique animé par les sensations. Elle célèbre à la fois l'enfance, la nature et le lien affectif avec la mère.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Les Vrilles de la vigne</em>, où l'autrice évoque, avec la même sensibilité, les souvenirs d'enfance liés à la nature.</p></div>`,
+texte6:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Colette transforme-t-elle une scène intime et ordinaire en moment poétique révélateur du désir amoureux ?</p><p><strong>Introduction :</strong><br>Publié en 1908, <em>Les Vrilles de la vigne</em> rassemble des textes en prose où se mêlent souvenirs, méditations et scènes de la vie quotidienne. L'extrait présente une scène nocturne entre deux êtres allongés côte à côte.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 3 : recherche du sommeil et persistance des sensations du jour.<br>II. Lignes 4 à 6 : éveil du désir à travers la proximité des corps.<br>III. Lignes 7 à 10 : insomnie heureuse et fusion silencieuse des deux êtres.</p><p><strong>Conclusion :</strong><br>Les sensations dominent le texte et traduisent l'intimité amoureuse. Le silence entre les personnages n'est pas absence de communication, mais langage du corps et de la tendresse.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Le Blé en herbe</em>, où l'autrice explore également la naissance du désir, les émotions amoureuses et la découverte sensible du corps.</p></div>`,
+texte7:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Colette utilise-t-elle le regard des animaux pour offrir une vision originale et poétique des émotions humaines ?</p><p><strong>Introduction :</strong><br>Publié en 1908, <em>Les Vrilles de la vigne</em> rassemble des textes variés où Colette manifeste un goût prononcé pour les animaux. L'extrait met en scène deux animaux, Toby-Chien et Kiki-la-Doucette, qui commentent les paroles d'« Elle ».</p><p><strong>Plan :</strong><br>I. Lignes 1 à 9 : le monologue passionné d'Elle sur l'amour et le bonheur.<br>II. Lignes 10 à 11 : regard amusé de Toby-Chien sur l'attitude de la femme.<br>III. Lignes 12 à 13 : dialogue comique entre les animaux et reprise de l'agitation humaine.</p><p><strong>Conclusion :</strong><br>Le long monologue d'Elle exprime une conception intense et sensible du bonheur. Colette brouille les frontières entre humanité et animalité.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Dialogues de bêtes</em>, où Colette donne également la parole aux animaux afin de porter un regard ironique et sensible sur les comportements humains.</p></div>`,
+texte8:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Rousseau fait-il de la contemplation de la nature un chemin vers le bonheur et l'harmonie intérieure ?</p><p><strong>Introduction :</strong><br>En 1712 naît Jean-Jacques Rousseau, figure majeure du Siècle des Lumières. Publié à titre posthume en 1782, <em>Les Rêveries du promeneur solitaire</em> est un recueil méditatif. L'extrait est tiré de la Cinquième promenade, où Rousseau raconte ses journées sur l'île Saint-Pierre.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 2 : promenade heureuse et contemplation des paysages de l'île.<br>II. Lignes 3 à 9 : méditation au bord du lac et naissance de la rêverie.<br>III. Lignes 10 à 12 : évocation simple et heureuse de la vie quotidienne partagée.</p><p><strong>Conclusion :</strong><br>Rousseau présente la nature comme un refuge capable d'apaiser les troubles de l'âme. Le bonheur naît ici de la simplicité.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Les Confessions</em>, où l'auteur explore également son intériorité et accorde une grande place à la sincérité des sentiments personnels.</p></div>`,
 texte9:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Rimbaud transforme-t-il ici le mythe de Vénus afin de dénoncer les codes traditionnels de la beauté poétique ?</p><p><strong>Introduction :</strong><br>Arthur Rimbaud naît en 1854 et devient l'une des figures majeures de la poésie moderne. Dans <em>Cahier de Douai</em> (1870), il rassemble des poèmes de jeunesse. Le poème « Vénus Anadyomène » détourne le modèle traditionnel de la naissance de Vénus pour proposer une vision grotesque et provocatrice du corps féminin.</p><p><strong>Plan :</strong><br>I. Des vers 1 à 4 : l'apparition progressive d'un corps féminin dévalorisé.<br>II. Des vers 5 à 9 : la description physique accentue la laideur et la vulgarité.<br>III. Des vers 10 à 15 : la chute du poème révèle une satire violente et provocatrice.</p><p><strong>Conclusion :</strong><br>En parodiant les codes du blason amoureux, le poète affirme sa modernité et son goût de la provocation. Rimbaud fait de la laideur un véritable sujet poétique.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Les Fleurs du mal</em> de Charles Baudelaire, œuvre dans laquelle la poésie transforme elle aussi la laideur, le vice ou le grotesque en matière artistique.</p></div>`,
 texte10:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Rimbaud fait-il de ce poème une double dénonciation de la guerre et de l'hypocrisie religieuse ?</p><p><strong>Introduction :</strong><br>Arthur Rimbaud compose en 1870 les poèmes du <em>Cahier de Douai</em>, dans un contexte marqué par la guerre franco-prussienne. Le poème « Le Mal » dénonce la violence de la guerre ainsi que l'hypocrisie religieuse et politique qui l'accompagne.</p><p><strong>Plan :</strong><br>I. Des vers 1 à 4 : la représentation violente et spectaculaire du champ de bataille.<br>II. Des vers 5 à 8 : la compassion du poète pour les victimes et l'appel à la Nature.<br>III. Des vers 9 à 14 : la critique ironique d'un Dieu associé aux puissants et indifférent à la souffrance humaine.</p><p><strong>Conclusion :</strong><br>Par la force des images, l'ironie et l'indignation, Rimbaud transforme la poésie en arme critique.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Les Châtiments</em> de Victor Hugo, recueil dans lequel la poésie sert également à dénoncer la violence politique et l'injustice.</p></div>`,
 texte11:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Rimbaud fait-il de l'errance et de la pauvreté une source de liberté poétique ?</p><p><strong>Introduction :</strong><br>Arthur Rimbaud exprime très tôt un désir de liberté et de rupture. Le poème « Ma Bohème » évoque les fugues du jeune poète à travers une marche libre et joyeuse. Rimbaud y transforme la misère matérielle en richesse imaginaire.</p><p><strong>Plan :</strong><br>I. Des vers 1 à 4 : l'évocation joyeuse du départ et de la liberté du poète errant.<br>II. Des vers 5 à 8 : la pauvreté matérielle transformée en aventure poétique.<br>III. Des vers 9 à 14 : la communion avec la nature et la naissance de l'inspiration poétique.</p><p><strong>Conclusion :</strong><br>« Ma Bohème » construit le mythe du jeune poète rebelle pour qui la liberté vaut plus que toute richesse.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Les Contemplations</em> de Victor Hugo, où la nature et la marche deviennent elles aussi des sources de méditation et d'inspiration poétique.</p></div>`,
-texte12:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Francis Ponge parvient-il à faire d'un objet ordinaire un véritable objet poétique ?</p><p><strong>Introduction :</strong><br>Francis Ponge naît en 1899 et développe une œuvre fondée sur l'observation minutieuse des objets du quotidien. Le texte « Le Pain » propose une description inattendue de cet aliment banal. Ponge en transforme la surface et la matière en paysages grandioses.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 5 : la surface du pain devient un paysage majestueux.<br>II. Lignes 6 à 10 : exploration de la fabrication et de la structure intérieure du pain.<br>III. Lignes 11 à 12 : retour concret à la fonction nourricière de l'objet.</p><p><strong>Conclusion :</strong><br>Ponge réconcilie poésie et réalité matérielle. La chute rappelle avec humour que le pain est destiné à être consommé.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Les Fleurs du mal</em> de Charles Baudelaire, où la poésie transforme elle aussi le réel ordinaire en matière artistique.</p></div>`,
-texte13:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment La Boétie montre-t-il que le pouvoir du tyran repose avant tout sur le consentement du peuple ?</p><p><strong>Introduction :</strong><br>Étienne de La Boétie naît en 1530, en pleine Renaissance. Juriste, penseur et ami de Montaigne, il s'inscrit dans le mouvement humaniste. Son œuvre majeure, <em>Discours de la servitude volontaire</em> (rédigée vers 1548), s'interroge sur un paradoxe politique : pourquoi des peuples entiers acceptent-ils d'obéir à un tyran ?</p><p><strong>Plan :</strong><br>I. Lignes 1 à 11 : dénonciation de la misère du peuple exploité par le tyran.<br>II. Lignes 12 à 24 : le peuple est complice de son oppression.<br>III. Lignes 25 à 26 : appel à la révolte pacifique par le refus d'obéir.</p><p><strong>Conclusion :</strong><br>Son message est profondément humaniste : la liberté appartient naturellement aux hommes, et il suffit de refuser de servir pour la retrouver.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Du contrat social</em> de Jean-Jacques Rousseau, qui réfléchit lui aussi à la légitimité du pouvoir politique et à la souveraineté du peuple.</p></div>`,
-texte14:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment La Boétie montre-t-il que les tyrans utilisent l'illusion et la mise en scène pour obtenir l'obéissance du peuple ?</p><p><strong>Introduction :</strong><br>Étienne de La Boétie naît en 1530, en pleine Renaissance. Humaniste, juriste et proche de Michel de Montaigne, il réfléchit dans ses œuvres aux rapports entre le pouvoir et la liberté. Son texte majeur, le <em>Discours de la servitude volontaire</em>, rédigé vers 1548 et publié après sa mort en 1577, dénonce les mécanismes de la tyrannie.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 4 : dénonciation de l'hypocrisie des dirigeants qui prétendent agir pour le bien public.<br>II. Lignes 5 à 12 : le mystère entretenu autour des souverains pour impressionner et soumettre le peuple.<br>III. Lignes 13 à 23 : critique des mises en scène grotesques des tyrans et de la crédulité populaire.</p><p><strong>Conclusion :</strong><br>À travers cet extrait, La Boétie dénonce les stratégies de manipulation utilisées par les tyrans pour conserver leur pouvoir. Cette domination ne fonctionne que parce que le peuple accepte d'y croire.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>1984</em> de George Orwell, œuvre dans laquelle le pouvoir politique repose lui aussi sur la manipulation des esprits et l'entretien de l'illusion.</p></div>`,
-texte15:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment La Boétie montre-t-il que la tyrannie repose sur un système organisé de complicité et d'intérêts partagés ?</p><p><strong>Introduction :</strong><br>Étienne de La Boétie naît en 1530, en pleine Renaissance. Humaniste, juriste et ami de Michel de Montaigne, il place au cœur de sa réflexion la question de la liberté politique. Dans son œuvre majeure, le <em>Discours de la servitude volontaire</em>, rédigé vers 1548 et publié après sa mort en 1577, il cherche à comprendre pourquoi les peuples acceptent de se soumettre à un tyran.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 11 : remise en cause de l'idée selon laquelle la force militaire protège le tyran.<br>II. Lignes 12 à 20 : présentation du cercle rapproché des complices du tyran.<br>III. Lignes 21 à 28 : élargissement progressif du système de domination à toute la société.</p><p><strong>Conclusion :</strong><br>À travers cet extrait, La Boétie montre que la tyrannie ne repose pas principalement sur la violence ou les armes, mais sur un vaste réseau de dépendances et d'intérêts personnels.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Animal Farm</em> de George Orwell, œuvre dans laquelle le pouvoir autoritaire repose lui aussi sur une hiérarchie de privilèges.</p></div>`,
+texte12:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment Francis Ponge parvient-il à faire d'un objet ordinaire un véritable objet poétique ?</p><p><strong>Introduction :</strong><br>Francis Ponge naît en 1899 et développe une œuvre fondée sur l'observation minutieuse des objets du quotidien. Le texte « Le Pain » propose une description inattendue de cet aliment banal. Ponge en transforme la surface et la matière en paysages grandioses.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 2 : la surface du pain devient un paysage majestueux.<br>II. Lignes 3 à 5 : exploration de la fabrication et de la structure intérieure du pain.<br>III. Lignes 6 : retour concret à la fonction nourricière de l'objet.</p><p><strong>Conclusion :</strong><br>Ponge réconcilie poésie et réalité matérielle. La chute rappelle avec humour que le pain est destiné à être consommé.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Les Fleurs du mal</em> de Charles Baudelaire, où la poésie transforme elle aussi le réel ordinaire en matière artistique.</p></div>`,
+texte13:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment La Boétie montre-t-il que le pouvoir du tyran repose avant tout sur le consentement du peuple ?</p><p><strong>Introduction :</strong><br>Étienne de La Boétie naît en 1530, en pleine Renaissance. Juriste, penseur et ami de Montaigne, il s'inscrit dans le mouvement humaniste. Son œuvre majeure, <em>Discours de la servitude volontaire</em> (rédigée vers 1548), s'interroge sur un paradoxe politique : pourquoi des peuples entiers acceptent-ils d'obéir à un tyran ?</p><p><strong>Plan :</strong><br>I. Lignes 1 à 4 : dénonciation de la misère du peuple exploité par le tyran.<br>II. Lignes 5 à 14 : le peuple est complice de son oppression.<br>III. Lignes 15 à 19 : appel à la révolte pacifique par le refus d'obéir.</p><p><strong>Conclusion :</strong><br>Son message est profondément humaniste : la liberté appartient naturellement aux hommes, et il suffit de refuser de servir pour la retrouver.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Du contrat social</em> de Jean-Jacques Rousseau, qui réfléchit lui aussi à la légitimité du pouvoir politique et à la souveraineté du peuple.</p></div>`,
+texte14:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment La Boétie montre-t-il que les tyrans utilisent l'illusion et la mise en scène pour obtenir l'obéissance du peuple ?</p><p><strong>Introduction :</strong><br>Étienne de La Boétie naît en 1530, en pleine Renaissance. Humaniste, juriste et proche de Michel de Montaigne, il réfléchit dans ses œuvres aux rapports entre le pouvoir et la liberté. Son texte majeur, le <em>Discours de la servitude volontaire</em>, rédigé vers 1548 et publié après sa mort en 1577, dénonce les mécanismes de la tyrannie.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 2 : dénonciation de l'hypocrisie des dirigeants qui prétendent agir pour le bien public.<br>II. Lignes 3 à 4 : le mystère entretenu autour des souverains pour impressionner et soumettre le peuple.<br>III. Lignes 5 à 9 : critique des mises en scène grotesques des tyrans et de la crédulité populaire.</p><p><strong>Conclusion :</strong><br>À travers cet extrait, La Boétie dénonce les stratégies de manipulation utilisées par les tyrans pour conserver leur pouvoir. Cette domination ne fonctionne que parce que le peuple accepte d'y croire.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>1984</em> de George Orwell, œuvre dans laquelle le pouvoir politique repose lui aussi sur la manipulation des esprits et l'entretien de l'illusion.</p></div>`,
+texte15:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment La Boétie montre-t-il que la tyrannie repose sur un système organisé de complicité et d'intérêts partagés ?</p><p><strong>Introduction :</strong><br>Étienne de La Boétie naît en 1530, en pleine Renaissance. Humaniste, juriste et ami de Michel de Montaigne, il place au cœur de sa réflexion la question de la liberté politique. Dans son œuvre majeure, le <em>Discours de la servitude volontaire</em>, rédigé vers 1548 et publié après sa mort en 1577, il cherche à comprendre pourquoi les peuples acceptent de se soumettre à un tyran.</p><p><strong>Plan :</strong><br>I. Lignes 1 à 5 : remise en cause de l'idée selon laquelle la force militaire protège le tyran.<br>II. Lignes 6 à 8 : présentation du cercle rapproché des complices du tyran.<br>III. Lignes 9 à 13 : élargissement progressif du système de domination à toute la société.</p><p><strong>Conclusion :</strong><br>À travers cet extrait, La Boétie montre que la tyrannie ne repose pas principalement sur la violence ou les armes, mais sur un vaste réseau de dépendances et d'intérêts personnels.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec <em>Animal Farm</em> de George Orwell, œuvre dans laquelle le pouvoir autoritaire repose lui aussi sur une hiérarchie de privilèges.</p></div>`,
 texte16:`<div class="plan-section"><h3>Proposition de construction du passage à l'oral</h3><p><strong>Problématique :</strong><br>Comment La Fontaine oppose-t-il la liberté et la servitude pour mettre en valeur la liberté, malgré le prix à payer ?</p><p><strong>Introduction :</strong><br>Jean de La Fontaine naît en 1621 et devient l'un des grands maîtres de la fable au XVIIe siècle, s'inscrivant dans le mouvement du Classicisme. Ses <em>Fables</em> (Livre I, 1668) s'inspirent d'Ésope et de Phèdre pour proposer, sous une forme poétique et allégorique, une réflexion morale sur la condition humaine.</p><p><strong>Plan :</strong><br>I. Des lignes 1 à 9 : la rencontre entre le loup et le chien — cadre et présentation des personnages.<br>II. Des lignes 10 à 31 : l'échange persuasif du chien, qui cherche à convaincre le loup d'adopter son mode de vie.<br>III. Des lignes 32 à 41 : le refus du loup, qui préfère la liberté au confort de la servitude.</p><p><strong>Conclusion :</strong><br>À travers cette fable allégorique, La Fontaine illustre que la liberté, même précaire et douloureuse, vaut davantage que le confort obtenu au prix de la soumission.</p><p><strong>Ouverture :</strong><br>On peut établir un lien avec le <em>Discours de la servitude volontaire</em> d'Étienne de La Boétie, qui développe la même réflexion sur l'opposition entre liberté naturelle et servitude consentie.</p></div>`,
 };
 
@@ -816,7 +751,6 @@ function hideBackContainer(){
   document.getElementById("pdfBtn").style.display="none";
 }
 
-/* ---- Construction HTML : une ligne = une entrée du tableau ---- */
 function buildTextHTML(items){
   let s=`<div class="full-text">`;
   let lineIdx=0;
@@ -849,7 +783,6 @@ function buildMouvementsHTML(id){
   return s;
 }
 
-/* ---- Fonctions principales ---- */
 function openText(id){
   currentTextId=id; mode="lineaire";
   document.getElementById("home").style.display="none";
@@ -925,7 +858,6 @@ document.getElementById("toggleModeBtn").onclick=function(){
   }
 };
 
-/* ---- Modale Analyse linéaire ---- */
 function openAnalyseModal(){
   const id=currentTextId;
   const titre=textesTitres[id]||id;
@@ -936,7 +868,7 @@ function openAnalyseModal(){
   items.forEach(item=>{
     if(item[0]!=="__BREAK__"){
       lineIdx++;
-      lignes.push({num:lineIdx, texte:item[0], analyse:item[1]||"Pas d'analyse pour cette ligne."});
+      lignes.push({num:lineIdx, analyse:item[1]||"Pas d'analyse pour cette ligne."});
     }
   });
   document.getElementById("analyseModalTitle").textContent="Analyse linéaire – "+titre;
@@ -976,7 +908,6 @@ td:first-child{font-weight:bold;color:#555;white-space:nowrap;width:50px;}
   win.document.close();
 }
 
-/* ---- Mode nuit ---- */
 let nightManual=null;
 function isNightHour(){const h=new Date().getHours();return h>=21||h<6;}
 function applyNight(on){
