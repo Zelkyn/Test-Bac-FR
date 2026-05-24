@@ -28,7 +28,7 @@ html{scroll-behavior:smooth;}
 .pdf-btn{background:#1a6fca;color:white;border:none;border-radius:12px;cursor:pointer;font-size:15px;padding:10px 18px;display:flex;justify-content:center;align-items:center;font-family:Georgia,serif;box-shadow:0 2px 8px rgba(0,0,0,0.2);transition:background 0.2s,transform 0.1s;}
 .pdf-btn:hover{background:#155ca0;transform:scale(1.04);}
 .pdf-btn:active{transform:scale(0.95);}
-.full-text{width:100%;max-width:860px;margin:80px auto 0 auto;padding:0 10px 0 60px;box-sizing:border-box;}
+.full-text{width:100%;max-width:1200px;margin:80px auto 0 auto;padding:0 40px 0 80px;box-sizing:border-box;}
 .line-wrapper{position:relative;display:block;}
 .line-num{position:absolute;left:-46px;top:0;font-size:13px;color:#999;font-family:Georgia,serif;line-height:1.6;padding-top:3px;min-width:40px;text-align:right;user-select:none;}
 .line{cursor:pointer;display:block;margin:0;font-size:18px;line-height:1.6;padding:3px 8px;border-radius:5px;}
@@ -1884,6 +1884,7 @@ function openText(id){
   document.getElementById("home").style.display="none";
   document.getElementById("viewer").style.display="block";
   document.getElementById("topbar").classList.add("hidden");
+  document.getElementById("night-toggle").style.display="none";
   showBackContainer(true);
   document.getElementById("toggleModeBtn").innerText="Voir les mouvements";
   window.scrollTo(0,0);
@@ -1902,6 +1903,7 @@ function openAuthor(id){
   document.getElementById("home").style.display="none";
   document.getElementById("viewer").style.display="block";
   document.getElementById("topbar").classList.add("hidden");
+  document.getElementById("night-toggle").style.display="none";
   showBackContainer(false);
   window.scrollTo(0,0);
   document.getElementById("content").innerHTML=auteursContent[id]||`<h2 style="margin-top:70px;">Auteur indisponible.</h2>`;
@@ -1911,6 +1913,7 @@ function openWork(id){
   document.getElementById("home").style.display="none";
   document.getElementById("viewer").style.display="block";
   document.getElementById("topbar").classList.add("hidden");
+  document.getElementById("night-toggle").style.display="none";
   showBackContainer(false);
   window.scrollTo(0,0);
   document.getElementById("content").innerHTML=oeuvresContent[id]||`<h2 style="margin-top:70px;">Indisponible pour le moment...</h2>`;
@@ -1920,6 +1923,7 @@ function back(){
   document.getElementById("viewer").style.display="none";
   document.getElementById("home").style.display="block";
   document.getElementById("topbar").classList.remove("hidden");
+  document.getElementById("night-toggle").style.display="flex";
   hideBackContainer();
   window.scrollTo(0,0);
 }
