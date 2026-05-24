@@ -982,6 +982,46 @@ laboetie:`<div style="line-height:1.7;font-size:17px;font-family:Georgia,serif;m
 <h3>Synthèse : à retenir</h3>
 <p>La Boétie est un grand penseur politique de la Renaissance. Dans son <em>Discours de la servitude volontaire</em>, il pose une question majeure : pourquoi un peuple accepte-t-il d'obéir à un seul tyran ? Il montre que le pouvoir repose souvent sur l'habitude, la peur et le consentement. Son texte reste moderne car il invite à l'esprit critique face aux dominations. Pour le bac, il faut retenir la dénonciation de la tyrannie et la défense de la liberté.</p>
 </div>`,
+
+lafontaine:`<div style="line-height:1.7;font-size:17px;font-family:Georgia,serif;margin-top:70px;max-width:900px;padding:0 10px;">
+<h2>Jean de La Fontaine</h2>
+
+<h3>Identité</h3>
+<ul>
+<li><strong>Nom complet :</strong> Jean de La Fontaine</li>
+<li><strong>Naissance :</strong> 8 juillet 1621, Château-Thierry</li>
+<li><strong>Mort :</strong> 13 avril 1695, Paris</li>
+<li><strong>Profession :</strong> Poète, fabuliste</li>
+<li><strong>Mouvement littéraire :</strong> Classicisme</li>
+</ul>
+
+<h3>Biographie</h3>
+<p>Jean de La Fontaine naît dans une famille bourgeoise de Champagne. Il reçoit une solide formation classique et s'installe progressivement à Paris, où il fréquente les milieux littéraires et artistiques. Il bénéficie de la protection de mécènes importants, notamment Nicolas Fouquet, surintendant des finances de Louis XIV. Après la disgrâce et l'emprisonnement de Fouquet en 1661, La Fontaine lui reste fidèle, ce qui lui vaut la méfiance durable du roi. Il trouve d'autres protecteurs et publie à partir de 1668 les premiers livres de ses <em>Fables</em>, qui le rendent célèbre dans toute l'Europe. Son œuvre s'inspire principalement d'Ésope et de Phèdre, fabulistes antiques, mais La Fontaine renouvelle profondément le genre en lui donnant une dimension poétique, morale et satirique inédite. Il est élu à l'Académie française en 1684.</p>
+
+<h3>Œuvres principales</h3>
+<ul>
+<li>Fables, Livres I à VI (1668)</li>
+<li>Fables, Livres VII à XI (1678-1679)</li>
+<li>Fables, Livre XII (1694)</li>
+<li>Contes et nouvelles en vers (1664-1674)</li>
+<li>Adonis (1658)</li>
+<li>Les Amours de Psyché et de Cupidon (1669)</li>
+</ul>
+
+<h3>Caractéristiques de son écriture</h3>
+<ul>
+<li>Maîtrise parfaite du vers et du rythme poétique</li>
+<li>Art de la narration condensée et efficace</li>
+<li>Satire des défauts humains à travers les animaux</li>
+<li>Mélange du comique, du tragique et du philosophique</li>
+<li>Richesse du vocabulaire et des registres de langue</li>
+<li>Morale souvent ambiguë, jamais simpliste</li>
+<li>Personnages animaux devenus universels</li>
+</ul>
+
+<h3>Synthèse : à retenir</h3>
+<p>Jean de La Fontaine est le grand maître de la fable en langue française. Il transforme un genre antique en chef-d'œuvre poétique et moral. Ses animaux sont des miroirs de l'humanité : ils incarnent des types sociaux, des comportements universels, des vices et des vertus. Derrière chaque récit apparemment simple se cache une réflexion profonde sur le pouvoir, la liberté, l'ambition ou la naïveté. La fable du <em>Loup et le Chien</em> illustre parfaitement cette capacité à poser une question philosophique majeure — la liberté vaut-elle plus que le confort ? — en quelques vers accessibles à tous. Pour le bac, il faut retenir son art de la brièveté, la richesse de ses images et la complexité de ses morales.</p>
+</div>`
 };
 
 const oeuvresContent={
@@ -1344,7 +1384,7 @@ laboetie:`<div class="oeuvre-fiche">
    ===================================================================== */
 let currentPage="textes", currentTextId="", mode="lineaire";
 const textesHTML=document.getElementById("contentList").innerHTML;
-const auteursHTML=`<div class="card" onclick="openAuthor('sarraute')"><div class="card-title"><strong>Nathalie Sarraute</strong><span class="card-badge">Œuvre au programme</span></div><div class="card-sub">1900 – 1999</div></div><div class="card" onclick="openAuthor('moliere')"><div class="card-title"><strong>Molière</strong></div><div class="card-sub">1622 – 1673</div></div><div class="card" onclick="openAuthor('colette')"><div class="card-title"><strong>Colette</strong><span class="card-badge">Œuvre au programme</span></div><div class="card-sub">1873 – 1954</div></div><div class="card" onclick="openAuthor('rousseau')"><div class="card-title"><strong>Jean-Jacques Rousseau</strong></div><div class="card-sub">1712 – 1778</div></div><div class="card" onclick="openAuthor('rimbaud')"><div class="card-title"><strong>Arthur Rimbaud</strong><span class="card-badge">Œuvre au programme</span></div><div class="card-sub">1854 – 1891</div></div><div class="card" onclick="openAuthor('ponge')"><div class="card-title"><strong>Francis Ponge</strong></div><div class="card-sub">1899 – 1988</div></div><div class="card" onclick="openAuthor('laboetie')"><div class="card-title"><strong>Étienne de La Boétie</strong><span class="card-badge">Œuvre au programme</span></div><div class="card-sub">1530 – 1563</div></div>`;
+const auteursHTML=`<div class="card" onclick="openAuthor('sarraute')"><div class="card-title"><strong>Nathalie Sarraute</strong><span class="card-badge">Œuvre au programme</span></div><div class="card-sub">1900 – 1999</div></div><div class="card" onclick="openAuthor('moliere')"><div class="card-title"><strong>Molière</strong></div><div class="card-sub">1622 – 1673</div></div><div class="card" onclick="openAuthor('colette')"><div class="card-title"><strong>Colette</strong><span class="card-badge">Œuvre au programme</span></div><div class="card-sub">1873 – 1954</div></div><div class="card" onclick="openAuthor('rousseau')"><div class="card-title"><strong>Jean-Jacques Rousseau</strong></div><div class="card-sub">1712 – 1778</div></div><div class="card" onclick="openAuthor('rimbaud')"><div class="card-title"><strong>Arthur Rimbaud</strong><span class="card-badge">Œuvre au programme</span></div><div class="card-sub">1854 – 1891</div></div><div class="card" onclick="openAuthor('ponge')"><div class="card-title"><strong>Francis Ponge</strong></div><div class="card-sub">1899 – 1988</div></div><div class="card" onclick="openAuthor('laboetie')"><div class="card-title"><strong>Étienne de La Boétie</strong><span class="card-badge">Œuvre au programme</span></div><div class="card-sub">1530 – 1563</div></div><div class="card" onclick="openAuthor('lafontaine')"><div class="card-title"><strong>Jean de La Fontaine</strong></div><div class="card-sub">1621 – 1695</div></div>`;
 const oeuvresHTML=`<div class="card" onclick="openWork('sarraute')"><div class="card-title"><strong>Pour un oui ou pour un non</strong></div><div class="card-sub">Nathalie Sarraute, 1982</div></div><div class="card" onclick="openWork('colette')"><div class="card-title"><strong>Les Vrilles de la vigne</strong></div><div class="card-sub">Colette, 1908</div></div><div class="card" onclick="openWork('rimbaud')"><div class="card-title"><strong>Cahier de Douai</strong></div><div class="card-sub">Arthur Rimbaud, 1870</div></div><div class="card" onclick="openWork('laboetie')"><div class="card-title"><strong>Discours de la servitude volontaire</strong></div><div class="card-sub">Étienne de La Boétie, 1577</div></div>`;
 
 function showBackContainer(isText){
