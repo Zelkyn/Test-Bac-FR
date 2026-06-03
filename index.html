@@ -97,6 +97,13 @@ body.night #analyseModalTable td{border-bottom-color:#333;color:#e0d7c6;}
 body.night #analyseModalTable td:first-child{color:#999;}
 body.night #analyseModalClose{color:#bbb;}
 body.night .grammaire-def{background:#1c1c1c;border-left-color:#c0392b;color:#e0d7c6;}
+body.night #content p[style*="background:#f9f9f9"],
+body.night #content div[style*="background:#f9f9f9"]{background:#1c1c1c !important;color:#e0d7c6 !important;}
+body.night #content table tr:nth-child(even) td{background:#2a2a2a !important;color:#e0d7c6 !important;}
+body.night #content table tr td{color:#e0d7c6 !important;border-bottom-color:#333 !important;}
+body.night #content table tr[style*="background:#c0392b"] td{color:white !important;}
+body.night #content h3,body.night #content h4{color:#e0d7c6;}
+body.night #content ul li,body.night #content ol li{color:#e0d7c6;}
 </style>
 </head>
 <body>
@@ -118,11 +125,14 @@ body.night .grammaire-def{background:#1c1c1c;border-left-color:#c0392b;color:#e0
   <button id="pdfBtn" class="pdf-btn" style="display:none;" onclick="openAnalyseModal()">📋 Voir l'analyse linéaire</button>
 </div>
 
-<div style="text-align:center;margin-top:20px;margin-bottom:10px;font-family:Georgia,serif;">
-  <div style="font-size:22px;">Grâce au travail de Aurélien et Aline</div>
-  <div style="font-size:14px;color:#666;margin-top:5px;">avec l'aide de ChatGPT</div>
-  <div style="font-size:14px;color:#666;margin-top:5px;">merci à Alban d'avoir mis son nom</div>
-  <div style="font-size:26px;font-weight:bold;margin-top:8px;">Votez pour nous l'année prochaine !</div>
+<div style="font-size:16px;color:#555;line-height:1.9;margin-top:4px;">
+    <strong>Crédits :</strong><br>
+    – Créé par Aurélien<br>
+    – Avec l'aide précieuse de Aline<br>
+    – Avec la participation de Mathilde et Léa<br>
+    – Avec l'aide de ClaudeAI et ChatGPT
+  </div>
+<div style="font-size:26px;font-weight:bold;margin-top:8px;">Votez pour nous l'année prochaine !</div>
 </div>
 
 <div id="topbar">
@@ -2325,339 +2335,418 @@ subordonnees:`<div style="line-height:1.7;font-size:17px;font-family:Georgia,ser
 </div>`,
 };
 
-/* =====================================================================
-   FICHES MÉTHODOLOGIE
-   ===================================================================== */
 const methodoContent={
 
 oral:`<div style="line-height:1.7;font-size:17px;font-family:Georgia,serif;margin-top:70px;max-width:900px;padding:0 10px;">
 <h2>Fiche méthode — L'oral : l'analyse linéaire</h2>
 
-<p style="font-style:italic;background:#f9f9f9;padding:10px 14px;border-left:3px solid #c0392b;margin:10px 0 24px 0;">L'analyse linéaire est l'exercice central de l'oral du bac de français. Elle consiste à analyser un texte extrait d'une œuvre au programme en suivant l'ordre du texte, du début à la fin, en relevant les procédés d'écriture et en expliquant leurs effets au service du sens. L'exposé dure environ 8 à 10 minutes au total.</p>
+<p style="font-style:italic;background:#f9f9f9;padding:10px 14px;border-left:3px solid #c0392b;margin:10px 0 24px 0;">L'analyse linéaire est l'exercice central de l'oral du bac de français. Elle consiste à analyser un texte extrait d'une œuvre au programme en suivant l'ordre du texte, du début à la fin, en relevant les procédés d'écriture et en expliquant leurs effets au service du sens. L'exposé dure au maximum 8 minutes au total, lecture comprise.</p>
 
-<h3>I. L'introduction <span style="font-size:14px;font-weight:normal;color:#888;">(environ 1 min 30)</span></h3>
+<h3>I. L'introduction <span style="font-size:14px;font-weight:normal;color:#888;">(environ 45 secondes)</span></h3>
 
-<p>L'introduction se compose de cinq étapes enchaînées sans titres apparents. Elle se dit d'une seule traite, comme un texte parlé fluide.</p>
+<p>L'introduction se compose de cinq étapes enchaînées sans titres apparents. Elle se dit d'une seule traite, comme un texte parlé fluide. Elle ne doit pas dépasser 45 secondes à 1 minute.</p>
 
 <h4>1 — Présentation de l'auteur et de l'œuvre</h4>
-<p>Il s'agit d'indiquer le nom de l'auteur, le titre de l'œuvre, la date de publication, le genre littéraire, et éventuellement le mouvement littéraire auquel appartient l'auteur. Cette étape doit être rapide — une à deux phrases suffisent. On ne raconte pas toute la vie de l'auteur.</p>
+<p>Il s'agit d'indiquer le nom de l'auteur, le titre de l'œuvre, la date de publication, le genre littéraire, et si possible le mouvement littéraire auquel appartient l'auteur. Cette étape doit être très rapide : une à deux phrases suffisent. L'examinateur sait qui est Molière — l'objectif est de montrer que toi aussi, tu sais le situer avec précision. On ne raconte pas toute la vie de l'auteur, on ne fait pas un cours de biographie.</p>
 <p><strong>Exemple :</strong> <em>Nathalie Sarraute, née en 1900 et morte en 1999, est l'une des grandes représentantes du Nouveau Roman. Dans Pour un oui ou pour un non, pièce radiophonique publiée en 1982, elle explore les tensions invisibles du langage à travers le conflit de deux amis.</em></p>
 
 <h4>2 — Remise en contexte</h4>
-<p>Il s'agit de situer le passage dans l'œuvre : qu'est-ce qui se passe avant ? Où en est-on dans l'intrigue ou dans l'argumentation ? Cette étape permet à l'examinateur de comprendre immédiatement la place de l'extrait.</p>
-<p><strong>Exemple :</strong> <em>Cet extrait constitue la scène d'ouverture de la pièce. H1 vient rendre visite à H2 pour comprendre pourquoi celui-ci s'éloigne, sans en connaître la raison.</em></p>
+<p>Il s'agit de situer le passage dans l'œuvre : qu'est-ce qui se passe avant l'extrait ? Où en est-on dans l'intrigue, dans l'argumentation, dans la progression de la pièce ou du poème ? Cette étape permet à l'examinateur de comprendre immédiatement la place et la fonction de l'extrait. Elle doit être brève — deux phrases au maximum — et orientée vers la suite : on ne résume pas tout le début de l'œuvre, on dit ce qui est utile pour comprendre ce qui suit.</p>
+<p><strong>Exemple :</strong> <em>Cet extrait constitue la scène d'ouverture de la pièce. H1 vient rendre visite à H2 pour comprendre pourquoi celui-ci s'est éloigné, sans en connaître la raison.</em></p>
 
 <h4>3 — Lecture du texte</h4>
-<p>La lecture est notée sur 2 points sur 20. Elle doit être expressive, respecter la ponctuation, faire les liaisons, et donner une première idée de l'interprétation que tu vas défendre. Elle dure environ 2 minutes. C'est à ce moment que l'examinateur t'entend lire — soigne la diction et le rythme.</p>
-<p><strong>Ce qu'il faut faire :</strong> articuler, ne pas lire trop vite, marquer les pauses aux points et aux virgules, varier l'intonation selon les registres (colère, hésitation, ironie…).</p>
+<p>La lecture est notée sur 2 points sur 20 : c'est une note facile à prendre si on la prépare sérieusement. Elle doit être expressive, respecter la ponctuation, faire les liaisons et donner une première idée de l'interprétation que tu vas défendre. Elle dure environ 2 minutes. C'est à ce moment précis que l'examinateur forme une première impression — soigne la diction, le rythme et l'intonation.</p>
+<p>On ne lit pas le texte de façon mécanique ou trop rapide. On marque les pauses aux points et aux virgules. On varie l'intonation selon les registres : colère, hésitation, ironie, tendresse. Pour un texte théâtral, on distingue les personnages ; pour un poème, on fait sentir le rythme des vers ; pour un texte argumentatif, on met en valeur les moments forts de la démonstration.</p>
 
 <h4>4 — Problématique</h4>
-<p>La problématique est la question centrale à laquelle ton analyse va répondre. Elle doit être formulée sous forme interrogative et doit porter sur la façon dont le texte est construit, et non sur ce qu'il dit. Elle doit être précise et porter sur cet extrait en particulier.</p>
-<p><strong>Formules utiles :</strong> <em>« Comment… ? »</em>, <em>« En quoi… ? »</em>, <em>« Dans quelle mesure… ? »</em></p>
+<p>La problématique est la question centrale à laquelle ton analyse va répondre tout au long du développement. Elle doit être formulée sous forme interrogative. Elle doit porter sur la façon dont le texte est construit — les procédés, les effets, les enjeux littéraires — et non simplement sur ce qu'il dit. Elle doit être précise et limitée à cet extrait : une problématique trop large ou trop vague ne guide pas l'analyse.</p>
+<p>Une bonne problématique commence souvent par <em>« Comment… ? »</em>, <em>« En quoi… ? »</em> ou <em>« Dans quelle mesure… ? »</em>. Elle doit être une question à laquelle on peut répondre en deux ou trois mouvements.</p>
 <p><strong>Exemple :</strong> <em>Comment Sarraute fait-elle de cette scène d'ouverture la mise en place d'un conflit fondé non sur les faits mais sur l'indicible ?</em></p>
 
 <h4>5 — Annonce des mouvements</h4>
-<p>Il s'agit d'annoncer le découpage du texte en deux à quatre mouvements, en donnant à chacun un titre qui dit ce qu'il démontre. Le plan doit suivre l'ordre du texte. Chaque titre de mouvement doit proposer une interprétation, pas seulement une description.</p>
+<p>Il s'agit d'annoncer le découpage du texte en deux à quatre mouvements, en donnant à chacun un titre interprétatif. Ce plan doit impérativement suivre l'ordre du texte — c'est ce qui distingue l'analyse linéaire du commentaire composé. Chaque titre de mouvement doit dire ce que ce passage démontre, pas seulement ce qu'il contient. On évite les titres descriptifs comme « première partie : description » ; on préfère des titres qui disent une idée : « l'installation du malaise ».</p>
 <p><strong>Formule utile :</strong> <em>« On peut distinguer trois mouvements dans cet extrait. Dans un premier temps, des lignes 1 à 18… Dans un deuxième temps… Enfin… »</em></p>
 <p><strong>Exemple :</strong> <em>On peut distinguer trois mouvements. Dans un premier temps, des lignes 1 à 18, Sarraute installe le malaise entre deux amis, opposant la pression verbale de H1 au silence résistant de H2. Dans un deuxième temps, des lignes 19 à 40, H2 reconnaît l'existence d'un motif mais refuse de le nommer, faisant du langage lui-même un obstacle. Dans un troisième temps, des lignes 41 à 51, la révélation de la cause ouvre sur un paradoxe tragique.</em></p>
 
 <hr style="border:none;border-top:2px solid #ccc;margin:30px 0;">
 
-<h3>II. Le développement <span style="font-size:14px;font-weight:normal;color:#888;">(environ 7 min)</span></h3>
+<h3>II. Le développement <span style="font-size:14px;font-weight:normal;color:#888;">(environ 6-7 min)</span></h3>
 
 <p>Le développement suit le texte dans l'ordre, mouvement par mouvement. Pour chaque observation, on applique un schéma en quatre temps :</p>
 
 <h4>1 — Indiquer le numéro de ligne</h4>
-<p>On situe toujours précisément le passage commenté. Cela permet à l'examinateur de suivre dans le texte et montre que l'analyse est rigoureuse.</p>
-<p><strong>Formules :</strong> <em>« À la ligne 3… »</em>, <em>« Aux lignes 10 à 12… »</em>, <em>« Dès la première ligne… »</em></p>
+<p>On situe toujours précisément le passage commenté avant de le citer ou de le paraphraser. Cette habitude permet à l'examinateur de suivre dans le texte et montre que l'analyse est rigoureuse et organisée. Ne jamais commencer une remarque sans dire où elle se situe dans le texte.</p>
+<p><strong>Formules :</strong> <em>« À la ligne 3… »</em> / <em>« Aux lignes 10 à 12… »</em> / <em>« Dès la première ligne… »</em> / <em>« Dans la dernière réplique… »</em></p>
 
 <h4>2 — Citer le passage</h4>
-<p>On ne cite que lorsque c'est utile — c'est-à-dire lorsque le passage est suffisamment court et que les mots eux-mêmes méritent d'être commentés. Si le passage est long, on peut le paraphraser brièvement. On ne lit pas tout le texte à nouveau.</p>
-<p><strong>Exemple :</strong> <em>« À la ligne 3, H2 répond par le mot "rien"… »</em></p>
+<p>On cite lorsque les mots eux-mêmes méritent d'être commentés — c'est-à-dire lorsque c'est précisément le choix de ce mot, de cette tournure, de cette formulation qui produit l'effet. Si le passage est long, on le paraphrase brièvement avant de citer la formule la plus significative. On ne relit pas de longs blocs du texte : l'examinateur a le texte sous les yeux.</p>
+<p><strong>Exemple :</strong> <em>« À la ligne 3, H2 répond par le seul mot "rien"… »</em></p>
 
 <h4>3 — Identifier le procédé</h4>
-<p>Il faut nommer avec précision le procédé utilisé par l'auteur. Ne pas se contenter de dire « il y a une figure de style » — nommer la figure exacte. Les procédés se classent en plusieurs catégories :</p>
-
+<p>Il faut nommer avec précision le procédé utilisé par l'auteur. Ne pas se contenter de dire « il y a une figure de style » ou « c'est expressif » : nommer la figure exacte. Les procédés se classent en plusieurs catégories :</p>
 <ul>
-<li><strong>Figures de style :</strong> voir la liste ci-dessous.</li>
-<li><strong>Champ lexical :</strong> ensemble de mots appartenant au même domaine sémantique dans un texte.</li>
-<li><strong>Type de registre :</strong> lyrique, épique, comique, tragique, pathétique, ironique, polémique, didactique.</li>
-<li><strong>Structure syntaxique :</strong> phrase courte, longue, interrogative, exclamative, négative, accumulation, gradation, chiasme, parallélisme.</li>
-<li><strong>Temps verbaux :</strong> présent de narration, imparfait de durée, passé simple d'action ponctuelle, conditionnel de l'hypothèse…</li>
-<li><strong>Ponctuation :</strong> points de suspension (hésitation), point d'exclamation (émotion), tiret (rupture, aparté).</li>
-<li><strong>Didascalies :</strong> au théâtre, les indications scéniques qui indiquent gestes, ton, déplacements.</li>
+<li><strong>Figures de style :</strong> voir la liste complète ci-dessous.</li>
+<li><strong>Champ lexical :</strong> ensemble de mots appartenant au même domaine sémantique dans un texte. Par exemple, un champ lexical de la violence dit l'atmosphère agressive d'un passage.</li>
+<li><strong>Registre littéraire :</strong> la tonalité dominante du passage — lyrique, épique, comique, tragique, pathétique, ironique, polémique, didactique. Voir le tableau ci-dessous.</li>
+<li><strong>Structure syntaxique :</strong> phrase courte (tension, rapidité), longue (ampleur, réflexion), interrogative (doute, pression), exclamative (émotion), négative (refus, manque), accumulation (insistance), gradation (progression), chiasme (miroir), parallélisme (équilibre ou contraste).</li>
+<li><strong>Temps verbaux :</strong> présent de narration (vivacité), imparfait de durée (habitude, description), passé simple d'action ponctuelle (événement bref), conditionnel (hypothèse, distance).</li>
+<li><strong>Ponctuation :</strong> points de suspension (hésitation, non-dit), point d'exclamation (émotion vive), tiret (rupture, aparté, changement de locuteur).</li>
+<li><strong>Didascalies :</strong> au théâtre, les indications scéniques qui indiquent gestes, ton, déplacements — elles font partie du texte et peuvent être analysées comme n'importe quel procédé.</li>
 </ul>
 
 <h4>4 — Interpréter le procédé</h4>
-<p>C'est l'étape la plus importante. Nommer un procédé sans l'interpréter ne vaut presque rien. Il faut expliquer : pourquoi l'auteur utilise-t-il ce procédé ? Quel effet produit-il sur le lecteur ou le spectateur ? En quoi cela répond-il à la problématique ?</p>
-<p><strong>Formules utiles :</strong> <em>« Ce procédé dit… »</em>, <em>« Cette figure traduit… »</em>, <em>« Cet effet crée… »</em>, <em>« On remarque que… ce qui suggère… »</em></p>
-
-<p><strong>Exemple complet :</strong> <em>À la ligne 3, H2 répond par le mot "rien" — négation totale qui dit paradoxalement l'existence d'un problème qu'il refuse de nommer. Ce "rien" inaugural est une litote : il dit moins pour signifier davantage. Il reviendra de façon obsessionnelle tout au long de la pièce, instaurant dès l'ouverture la thématique de l'indicible qui est au cœur de la problématique.</em></p>
+<p>C'est l'étape la plus importante, et la plus souvent négligée. Nommer un procédé sans l'interpréter ne vaut presque rien aux yeux de l'examinateur. Il faut expliquer : pourquoi l'auteur utilise-t-il ce procédé ? Quel effet produit-il sur le lecteur ou le spectateur ? En quoi cela sert-il le sens du passage ? En quoi cela répond-il à la problématique ?</p>
+<p>L'interprétation doit toujours aller du procédé vers le sens : on ne dit pas « il y a une métaphore » et on s'arrête là. On dit : « cette métaphore dit telle chose, produit tel effet, crée telle impression. »</p>
+<p><strong>Formules utiles :</strong> <em>« Ce procédé dit… »</em> / <em>« Cette figure traduit… »</em> / <em>« On remarque que… ce qui suggère… »</em> / <em>« Cet effet crée une impression de… »</em> / <em>« L'auteur choisit ce terme pour… »</em></p>
+<p><strong>Exemple complet :</strong> <em>À la ligne 3, H2 répond par le seul mot "rien" — une négation totale qui dit paradoxalement l'existence d'un problème qu'il refuse de nommer. Ce "rien" inaugural fonctionne comme une litote : il dit moins pour signifier davantage. Il reviendra de façon obsessionnelle tout au long de la pièce, instaurant dès l'ouverture la thématique de l'indicible qui est au cœur de notre problématique : le conflit naît non d'un fait mais d'une impossibilité à dire.</em></p>
 
 <div style="background:#f9f9f9;border-left:3px solid #1a6fca;padding:12px 16px;margin:20px 0;">
 <strong>⚠️ Les erreurs à éviter</strong>
 <ul style="margin:8px 0 0 0;">
-<li><strong>La paraphrase :</strong> raconter ce qui se passe sans analyser comment c'est dit. (<em>Mauvais : « H2 dit qu'il ne s'est rien passé. »</em> — <em>Bon : « La réponse minimale de H2, réduite au mot "rien", dit par litote l'existence d'un problème qu'il refuse de nommer. »</em>)</li>
-<li><strong>La liste de procédés sans interprétation :</strong> citer des figures de style sans expliquer leur effet ne vaut rien.</li>
-<li><strong>Commenter tous les mots du texte :</strong> on sélectionne les éléments les plus significatifs. En 8 minutes, il est impossible de tout dire.</li>
-<li><strong>Perdre le fil de la problématique :</strong> chaque remarque doit tendre vers la réponse à la question posée.</li>
+<li><strong>La paraphrase :</strong> raconter ce qui se passe sans analyser comment c'est dit. (<em>Mauvais : « H2 dit qu'il ne s'est rien passé. »</em> — <em>Bon : « La réponse minimale de H2, réduite au mot "rien", fonctionne comme une litote : elle dit moins pour signifier davantage. »</em>)</li>
+<li><strong>La liste de procédés sans interprétation :</strong> citer des figures de style sans expliquer leur effet ne vaut rien. Nommer n'est pas analyser.</li>
+<li><strong>Tout commenter :</strong> on sélectionne les éléments les plus significatifs. En 8 minutes, il est impossible de tout dire — mieux vaut trois remarques profondes que dix remarques superficielles.</li>
+<li><strong>Perdre le fil de la problématique :</strong> chaque remarque doit tendre vers la réponse à la question posée. Si une observation ne sert pas la problématique, elle ne sert à rien.</li>
 </ul>
 </div>
 
 <hr style="border:none;border-top:2px solid #ccc;margin:30px 0;">
 
-<h3>III. La conclusion <span style="font-size:14px;font-weight:normal;color:#888;">(environ 1 min)</span></h3>
+<h3>III. La conclusion <span style="font-size:14px;font-weight:normal;color:#888;">(environ 30 secondes)</span></h3>
 
-<p>La conclusion est brève. Elle comporte deux temps :</p>
-<p><strong>1 — Bilan :</strong> on rappelle les étapes parcourues dans le développement en résumant ce qu'elles ont démontré. On commence par une formule de transition : <em>« Ainsi… »</em>, <em>« Pour conclure… »</em>.</p>
-<p><strong>2 — Réponse à la problématique :</strong> on répond clairement à la question posée en introduction. C'est une phrase synthétique qui dit ce que l'analyse a prouvé.</p>
-<p><strong>Exemple :</strong> <em>Ainsi, cette scène d'ouverture met en place un conflit fondé non sur des faits mais sur l'indicible, une blessure née de mots dont on ne sait pas comment ils sont venus. Sarraute y déploie toute sa maîtrise dramaturgique pour montrer que la communication humaine repose sur un gouffre : le rien qui cause tout, voilà ce qu'elle pose dès l'ouverture.</em></p>
+<p>La conclusion est brève — 30 secondes maximum. Elle ne doit pas introduire de nouvelles idées. Elle comporte deux temps :</p>
+<p><strong>1 — Bilan :</strong> on rappelle en une à deux phrases ce que les mouvements ont démontré. On commence par une formule de clôture : <em>« Ainsi… »</em>, <em>« Pour conclure… »</em>. Le bilan ne répète pas les détails du développement — il en tire la leçon.</p>
+<p><strong>2 — Réponse à la problématique :</strong> on répond clairement et en une seule phrase à la question posée en introduction. C'est la phrase la plus importante de toute l'analyse : elle dit ce que le texte prouve, ce que l'auteur réussit à faire avec ce passage.</p>
+<p><strong>Exemple :</strong> <em>Ainsi, cette scène d'ouverture met en place un conflit fondé non sur des faits mais sur l'indicible : une blessure née de mots dont on ne sait pas comment ils sont venus, et qu'on ne peut pas nommer sans risquer le ridicule social. Sarraute montre dès l'ouverture que la communication humaine repose sur un gouffre — le rien qui cause tout.</em></p>
 
 <hr style="border:none;border-top:2px solid #ccc;margin:30px 0;">
 
 <h3>À connaître absolument : les figures de style</h3>
 
-<p>Il ne suffit pas de reconnaître les figures — il faut savoir les nommer précisément et expliquer leur effet dans le contexte du texte.</p>
+<p>Il ne suffit pas de reconnaître les figures — il faut savoir les nommer précisément et expliquer leur effet dans le contexte du texte. Une figure identifiée mais non interprétée ne vaut rien à l'oral.</p>
 
 <table style="width:100%;border-collapse:collapse;font-size:15px;">
 <tr style="background:#c0392b;color:white;"><td style="padding:8px 10px;font-weight:bold;">Figure</td><td style="padding:8px 10px;font-weight:bold;">Définition</td><td style="padding:8px 10px;font-weight:bold;">Effet principal</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Métaphore</strong></td><td style="padding:8px 10px;">Comparaison sans outil comparatif (<em>comme</em>, <em>tel</em>…)</td><td style="padding:8px 10px;">Crée une image forte, rapproche deux réalités</td></tr>
-<tr><td style="padding:8px 10px;"><strong>Comparaison</strong></td><td style="padding:8px 10px;">Rapprochement de deux éléments avec un outil (<em>comme</em>, <em>tel que</em>…)</td><td style="padding:8px 10px;">Illustre, précise, met en valeur</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Personnification</strong></td><td style="padding:8px 10px;">Attribution de qualités humaines à une chose ou un animal</td><td style="padding:8px 10px;">Anime le réel, crée de l'émotion</td></tr>
-<tr><td style="padding:8px 10px;"><strong>Hyperbole</strong></td><td style="padding:8px 10px;">Exagération volontaire</td><td style="padding:8px 10px;">Amplifie, dramatise, peut être comique ou épique</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Litote</strong></td><td style="padding:8px 10px;">Dire moins pour suggérer davantage</td><td style="padding:8px 10px;">Atténue en surface, mais renforce implicitement</td></tr>
-<tr><td style="padding:8px 10px;"><strong>Euphémisme</strong></td><td style="padding:8px 10px;">Adoucissement d'une réalité difficile</td><td style="padding:8px 10px;">Atténue, voile la réalité</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Antithèse</strong></td><td style="padding:8px 10px;">Opposition de deux termes ou idées contraires</td><td style="padding:8px 10px;">Met en relief un contraste, une tension</td></tr>
-<tr><td style="padding:8px 10px;"><strong>Oxymore</strong></td><td style="padding:8px 10px;">Association de deux termes contradictoires dans un même groupe</td><td style="padding:8px 10px;">Dit la complexité, le paradoxe d'une réalité</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Anaphore</strong></td><td style="padding:8px 10px;">Répétition d'un mot ou groupe de mots en début de phrases successives</td><td style="padding:8px 10px;">Insistance, rythme, martèlement</td></tr>
-<tr><td style="padding:8px 10px;"><strong>Gradation</strong></td><td style="padding:8px 10px;">Suite de termes en intensité croissante ou décroissante</td><td style="padding:8px 10px;">Progression dramatique, amplification</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Chiasme</strong></td><td style="padding:8px 10px;">Inversion symétrique de deux membres de phrase (AB / BA)</td><td style="padding:8px 10px;">Met en miroir, crée un effet de balance</td></tr>
-<tr><td style="padding:8px 10px;"><strong>Métonymie</strong></td><td style="padding:8px 10px;">Désigner une chose par une autre qui lui est liée</td><td style="padding:8px 10px;">Condensation, mise en relief</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Ironie / Antiphrase</strong></td><td style="padding:8px 10px;">Dire le contraire de ce qu'on pense</td><td style="padding:8px 10px;">Critique, humour, distance</td></tr>
-<tr><td style="padding:8px 10px;"><strong>Apostrophe</strong></td><td style="padding:8px 10px;">Interpellation directe d'un être ou d'une chose</td><td style="padding:8px 10px;">Crée un effet d'adresse, de présence</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Allitération</strong></td><td style="padding:8px 10px;">Répétition de consonnes dans des mots proches</td><td style="padding:8px 10px;">Effet sonore, rythme, musicalité</td></tr>
-<tr><td style="padding:8px 10px;"><strong>Assonance</strong></td><td style="padding:8px 10px;">Répétition de sons vocaliques dans des mots proches</td><td style="padding:8px 10px;">Effet musical, harmonie ou dissonance</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Métaphore</strong></td><td style="padding:8px 10px;">Comparaison sans outil comparatif (<em>comme</em>, <em>tel</em>…) — identification directe entre deux réalités</td><td style="padding:8px 10px;">Crée une image forte et immédiate, rapproche deux réalités de façon surprenante</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Comparaison</strong></td><td style="padding:8px 10px;">Rapprochement de deux éléments avec un outil comparatif explicite (<em>comme</em>, <em>tel que</em>, <em>pareil à</em>…)</td><td style="padding:8px 10px;">Illustre, précise, met en valeur une ressemblance tout en maintenant la distance entre les deux termes</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Personnification</strong></td><td style="padding:8px 10px;">Attribution de qualités, d'actions ou de sentiments humains à une chose, un animal ou une idée abstraite</td><td style="padding:8px 10px;">Anime le réel, crée de l'émotion, rend vivant ce qui est inerte</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Hyperbole</strong></td><td style="padding:8px 10px;">Exagération volontaire au-delà de la réalité</td><td style="padding:8px 10px;">Amplifie, dramatise ; peut créer un effet épique, comique ou pathétique selon le contexte</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Litote</strong></td><td style="padding:8px 10px;">Dire moins pour suggérer davantage — atténuation apparente qui renforce l'idée implicitement</td><td style="padding:8px 10px;">Atténue en surface mais renforce implicitement ; crée souvent un effet d'ironie ou de pudeur</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Euphémisme</strong></td><td style="padding:8px 10px;">Remplacement d'un mot difficile ou choquant par une formulation plus douce</td><td style="padding:8px 10px;">Adoucit, voile la réalité ; peut révéler un malaise ou une hypocrisie sociale</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Antithèse</strong></td><td style="padding:8px 10px;">Opposition explicite de deux termes, idées ou images contraires dans une même phrase ou un même passage</td><td style="padding:8px 10px;">Met en relief un contraste, une tension, une contradiction ; structure visuellement l'opposition</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Oxymore</strong></td><td style="padding:8px 10px;">Association de deux termes contradictoires dans un même groupe syntaxique (<em>obscure clarté</em>, <em>insomnie heureuse</em>)</td><td style="padding:8px 10px;">Dit la complexité, le paradoxe d'une réalité ; traduit une tension irréductible entre deux réalités opposées</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Anaphore</strong></td><td style="padding:8px 10px;">Répétition d'un même mot ou groupe de mots au début de plusieurs phrases ou vers successifs</td><td style="padding:8px 10px;">Insistance, rythme, martèlement ; crée une progression ou une accumulation émotionnelle</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Gradation</strong></td><td style="padding:8px 10px;">Suite de termes disposés par ordre d'intensité croissante ou décroissante</td><td style="padding:8px 10px;">Progression dramatique, amplification ou atténuation progressive ; donne une impression de mouvement</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Chiasme</strong></td><td style="padding:8px 10px;">Inversion symétrique de deux membres de phrase : la structure AB se retourne en BA</td><td style="padding:8px 10px;">Met en miroir deux réalités, crée un effet de balance ou de retournement ; souligne un paradoxe</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Métonymie</strong></td><td style="padding:8px 10px;">Désigner une chose par une autre qui lui est liée (contenant pour contenu, cause pour effet, partie pour tout…)</td><td style="padding:8px 10px;">Condensation, mise en relief d'un aspect particulier ; crée souvent un effet de proximité ou de violence</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Ironie / Antiphrase</strong></td><td style="padding:8px 10px;">Dire le contraire de ce qu'on pense, en comptant sur le lecteur pour percevoir le décalage</td><td style="padding:8px 10px;">Critique, humour, distance ; permet de dénoncer sans attaquer directement</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Apostrophe</strong></td><td style="padding:8px 10px;">Interpellation directe d'un être (présent ou absent), d'une chose ou d'une idée abstraite</td><td style="padding:8px 10px;">Crée un effet de présence et d'adresse directe ; peut exprimer l'émotion, la solennité ou la provocation</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Allitération</strong></td><td style="padding:8px 10px;">Répétition de sons consonantiques identiques ou proches dans des mots voisins</td><td style="padding:8px 10px;">Effet sonore et rythmique ; selon les sons, peut créer douceur, violence, fluidité ou dureté</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Assonance</strong></td><td style="padding:8px 10px;">Répétition de sons vocaliques identiques ou proches dans des mots voisins</td><td style="padding:8px 10px;">Effet musical et harmonique ; crée une musicalité douce ou lancinante selon le contexte</td></tr>
 </table>
 
 <h3 style="margin-top:30px;">À connaître absolument : les registres littéraires</h3>
+
+<p>Le registre est la tonalité dominante d'un texte ou d'un passage. Un même texte peut mêler plusieurs registres — l'important est d'identifier le registre dominant et d'expliquer comment il est produit par les procédés d'écriture.</p>
+
 <table style="width:100%;border-collapse:collapse;font-size:15px;">
-<tr style="background:#c0392b;color:white;"><td style="padding:8px 10px;font-weight:bold;">Registre</td><td style="padding:8px 10px;font-weight:bold;">Caractéristiques principales</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Lyrique</strong></td><td style="padding:8px 10px;">Expression des émotions personnelles, présence du « je », vocabulaire de l'intime</td></tr>
-<tr><td style="padding:8px 10px;"><strong>Épique</strong></td><td style="padding:8px 10px;">Grandeur, héroïsme, hyperboles, batailles, récit de faits extraordinaires</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Tragique</strong></td><td style="padding:8px 10px;">Destin inéluctable, fatalité, vocabulaire de la mort et de l'impuissance</td></tr>
-<tr><td style="padding:8px 10px;"><strong>Comique</strong></td><td style="padding:8px 10px;">Décalage, absurde, jeux de mots, renversements de situation</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Pathétique</strong></td><td style="padding:8px 10px;">Appel à la pitié, souffrance, exclamations, vocabulaire de la douleur</td></tr>
-<tr><td style="padding:8px 10px;"><strong>Ironique</strong></td><td style="padding:8px 10px;">Décalage entre ce qui est dit et ce qui est signifié, antiphrase</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Polémique</strong></td><td style="padding:8px 10px;">Attaque, dénonciation, ton virulent, questions rhétoriques</td></tr>
-<tr><td style="padding:8px 10px;"><strong>Didactique</strong></td><td style="padding:8px 10px;">Volonté d'enseigner, ton neutre et pédagogique, exemples, définitions</td></tr>
+<tr style="background:#c0392b;color:white;"><td style="padding:8px 10px;font-weight:bold;">Registre</td><td style="padding:8px 10px;font-weight:bold;">Définition et caractéristiques principales</td><td style="padding:8px 10px;font-weight:bold;">Procédés associés</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Lyrique</strong></td><td style="padding:8px 10px;">Expression des émotions et sentiments personnels du locuteur ou du narrateur. Le moi est au centre.</td><td style="padding:8px 10px;">Présence du « je », vocabulaire des émotions, exclamations, apostrophes, images poétiques</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Épique</strong></td><td style="padding:8px 10px;">Récit de faits extraordinaires, héroïques ou grandioses. Dimension de dépassement et de grandeur.</td><td style="padding:8px 10px;">Hyperboles, comparaisons héroïques, vocabulaire de la guerre et de la gloire, présent de narration</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Tragique</strong></td><td style="padding:8px 10px;">Sentiment d'un destin inéluctable, d'une fatalité que le personnage ne peut pas éviter. La souffrance est irrémédiable.</td><td style="padding:8px 10px;">Vocabulaire de la mort et de l'impuissance, négations, questions sans réponse, silences</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Comique</strong></td><td style="padding:8px 10px;">Recherche du rire par le décalage, l'absurde, la mécanique ou le renversement des situations attendues.</td><td style="padding:8px 10px;">Jeux de mots, didascalies comiques, répétitions, chutes, décalages de registre, quiproquos</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Pathétique</strong></td><td style="padding:8px 10px;">Appel à la pitié du lecteur face à une souffrance représentée. Le lecteur est ému par la douleur d'un personnage.</td><td style="padding:8px 10px;">Exclamations, apostrophes, vocabulaire de la douleur, hyperboles de la souffrance, présent d'actualité</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Ironique</strong></td><td style="padding:8px 10px;">Décalage entre ce qui est dit et ce qui est signifié. L'auteur dit le contraire de ce qu'il pense pour produire un effet critique.</td><td style="padding:8px 10px;">Antiphrase, vocabulaire inadapté au sujet, ton faussement élogieux, oxymores, chutes inattendues</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Polémique</strong></td><td style="padding:8px 10px;">Attaque et dénonciation d'un adversaire, d'une institution ou d'une idée. Le ton est vif, souvent agressif.</td><td style="padding:8px 10px;">Questions rhétoriques, apostrophes, accumulations d'accusations, vocabulaire péjoratif, gradations</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Didactique</strong></td><td style="padding:8px 10px;">Volonté d'enseigner, d'expliquer ou de démontrer. Le texte cherche à transmettre un savoir ou une conviction.</td><td style="padding:8px 10px;">Ton neutre et ordonné, connecteurs logiques, exemples, définitions, progression argumentative claire</td></tr>
 </table>
 </div>`,
 
 commentaire:`<div style="line-height:1.7;font-size:17px;font-family:Georgia,serif;margin-top:70px;max-width:900px;padding:0 10px;">
 <h2>Fiche méthode — Le commentaire composé</h2>
 
-<p style="font-style:italic;background:#f9f9f9;padding:10px 14px;border-left:3px solid #c0392b;margin:10px 0 24px 0;">Le commentaire composé est l'un des deux exercices écrits proposés au bac de français (l'autre étant la dissertation). Il s'agit d'analyser un texte littéraire de manière organisée, en dégageant des axes de lecture qui regroupent les observations stylistiques et thématiques. Contrairement à l'analyse linéaire, le plan ne suit pas l'ordre du texte : il est organisé par idées. Durée : 4 heures.</p>
+<p style="font-style:italic;background:#f9f9f9;padding:10px 14px;border-left:3px solid #c0392b;margin:10px 0 24px 0;">Le commentaire composé est l'un des deux exercices écrits proposés au bac de français. Il s'agit d'analyser un texte littéraire de manière organisée, en dégageant des axes de lecture qui regroupent les observations stylistiques et thématiques. Contrairement à l'analyse linéaire, le plan ne suit pas l'ordre du texte : il est organisé par idées. Durée : 4 heures.</p>
 
 <h3>Avant de rédiger : le travail au brouillon</h3>
-<p>Le brouillon est indispensable. On y fait les étapes suivantes dans l'ordre :</p>
+<p>Le brouillon est une étape obligatoire, pas un luxe. On y fait les étapes suivantes dans l'ordre :</p>
 <ol>
-<li>Lire le texte plusieurs fois et annoter : souligner les mots importants, noter les procédés repérés en marge.</li>
-<li>Identifier le sens général du texte : de quoi parle-t-il ? Quel est son enjeu ?</li>
-<li>Regrouper les observations par thèmes pour construire le plan.</li>
-<li>Formuler la problématique.</li>
-<li>Rédiger l'introduction et la conclusion entièrement au brouillon.</li>
+<li>Lire le texte plusieurs fois et annoter au crayon : souligner les mots importants, noter dans les marges les procédés repérés, les effets produits, les thèmes qui émergent.</li>
+<li>Identifier le sens général du texte : de quoi parle-t-il ? Quel est son enjeu ? Quelle impression produit-il ?</li>
+<li>Regrouper les observations par thèmes pour construire le plan. On classe les procédés et les effets selon les grandes idées qu'ils servent.</li>
+<li>Formuler la problématique : une question précise à laquelle le développement va répondre.</li>
+<li>Rédiger l'introduction et la conclusion entièrement au brouillon avant de commencer le propre — ce sont les deux étapes les plus importantes à soigner.</li>
 </ol>
 
 <hr style="border:none;border-top:2px solid #ccc;margin:30px 0;">
 
 <h3>I. L'introduction</h3>
-<p>L'introduction du commentaire composé se présente en un seul paragraphe continu. Elle suit une structure en entonnoir : du général au particulier. Elle comprend quatre étapes :</p>
+<p>L'introduction du commentaire composé se présente en un seul paragraphe continu, sans tirets ni numérotation. Elle suit une structure en entonnoir : du général au particulier. Elle comprend quatre étapes enchaînées naturellement.</p>
 
 <h4>1 — Présentation du texte</h4>
-<p>On indique : l'auteur, le titre de l'œuvre, la date de publication, le genre et le mouvement littéraire. On situe brièvement l'extrait dans l'œuvre. On rédige comme si le correcteur ne connaissait pas le texte.</p>
-<p><strong>Exemple :</strong> <em>Dans Les Vrilles de la vigne, recueil de proses poétiques publié en 1908, Colette célèbre la beauté du monde sensible. Cet extrait, intitulé "Nuit blanche", évoque une nuit d'insomnie amoureuse.</em></p>
+<p>On indique l'auteur, le titre de l'œuvre, la date de publication, le genre et le mouvement littéraire. On situe brièvement l'extrait dans l'œuvre et on présente son contenu en deux lignes. On rédige comme si le correcteur ne connaissait pas le texte : il doit comprendre de quoi il s'agit avant même de lire le développement. On évite de commencer par « Ce texte… » ou « Cet extrait… » — on entre directement dans la présentation de l'auteur et du contexte.</p>
+<p><strong>Exemple :</strong> <em>Dans Les Vrilles de la vigne, recueil de proses poétiques publié en 1908, Colette célèbre la beauté du monde sensible à travers des textes autobiographiques et lyriques. Cet extrait, intitulé « Nuit blanche », évoque une nuit d'insomnie amoureuse où la narratrice lutte pour dormir sans y parvenir.</em></p>
 
 <h4>2 — Présentation du contenu de l'extrait</h4>
-<p>En deux ou trois lignes, on résume ce qui se passe dans l'extrait — non pas tout raconter, mais donner au lecteur les informations nécessaires pour comprendre ce qu'on va analyser.</p>
+<p>En deux ou trois lignes, on résume ce qui se passe dans l'extrait — pas tout raconter, mais donner au correcteur les informations nécessaires pour comprendre ce qu'on va analyser. Cette étape est distincte de la présentation de l'œuvre : elle porte sur ce passage précis.</p>
 
 <h4>3 — Problématique</h4>
-<p>La problématique est la question centrale à laquelle le développement va répondre. Elle porte sur la façon dont le texte est construit et sur ses enjeux littéraires. Elle doit être formulée de façon précise, sous forme interrogative.</p>
-<p><strong>Formules utiles :</strong> <em>« Comment… ? »</em>, <em>« En quoi… ? »</em>, <em>« Dans quelle mesure… ? »</em></p>
+<p>La problématique est la question centrale à laquelle le développement va répondre. Elle porte sur la façon dont le texte est construit et sur ses enjeux littéraires, pas seulement sur ce qu'il dit. Elle doit être formulée de façon précise et sous forme interrogative. Une bonne problématique doit appeler plusieurs réponses partielles — c'est pourquoi elle structure le développement en deux ou trois parties.</p>
+<p>On évite les problématiques trop larges (<em>« Comment Colette écrit-elle ? »</em>) ou trop proches de la paraphrase (<em>« Pourquoi la narratrice ne dort-elle pas ? »</em>). On préfère une question qui porte sur le travail littéraire de l'auteur.</p>
+<p><strong>Formules utiles :</strong> <em>« Comment… ? »</em> / <em>« En quoi… ? »</em> / <em>« Dans quelle mesure… ? »</em></p>
 <p><strong>Exemple :</strong> <em>Comment Colette transforme-t-elle une scène intime et ordinaire en moment poétique révélateur du désir amoureux ?</em></p>
 
 <h4>4 — Annonce du plan</h4>
-<p>On annonce clairement les deux ou trois parties du développement. Chaque partie doit avoir un titre qui dit ce qu'elle démontre. On sépare les parties par des connecteurs logiques : <em>« Dans un premier temps… puis… enfin… »</em></p>
+<p>On annonce clairement les deux ou trois parties du développement. Chaque partie doit avoir un titre interprétatif — une affirmation qui dit ce que cette partie va démontrer. On les enchaîne avec des connecteurs logiques. On évite les titres trop vagues (<em>« l'écriture de Colette »</em>) ou purement descriptifs.</p>
 <p><strong>Exemple :</strong> <em>Nous verrons d'abord comment la narratrice cherche le sommeil en luttant contre la persistance des sensations du jour, puis comment l'éveil du désir rend le repos impossible, et enfin comment Colette célèbre paradoxalement cette insomnie comme une forme de plénitude amoureuse.</em></p>
 
 <hr style="border:none;border-top:2px solid #ccc;margin:30px 0;">
 
 <h3>II. Le développement</h3>
-<p>Le développement comprend deux ou trois parties, chacune subdivisée en deux ou trois sous-parties (paragraphes). Chaque partie est séparée de la suivante par une phrase de transition qui fait le bilan de ce qui précède et annonce ce qui suit.</p>
+<p>Le développement comprend deux ou trois parties, chacune subdivisée en deux ou trois sous-parties ou paragraphes. Les parties sont séparées par un saut de ligne et une phrase de transition. On ne met jamais de titres visibles dans la copie.</p>
 
 <h4>Structure d'un paragraphe de développement</h4>
-<p>Chaque paragraphe suit un schéma en trois temps :</p>
+<p>Chaque paragraphe suit un schéma en trois temps, qu'on enchaîne de façon fluide sans les annoncer explicitement :</p>
 <ol>
-<li><strong>Idée directrice :</strong> la thèse ou l'observation principale du paragraphe, formulée en une phrase.</li>
-<li><strong>Procédé + citation :</strong> on identifie le procédé utilisé et on cite le texte précisément (avec le numéro de ligne entre parenthèses).</li>
-<li><strong>Interprétation :</strong> on explique l'effet produit par ce procédé et on le relie à la problématique.</li>
+<li><strong>L'idée directrice :</strong> l'observation ou la thèse principale du paragraphe, formulée en une phrase affirmative claire. C'est la phrase d'ouverture du paragraphe — elle dit d'emblée ce que le paragraphe va prouver.</li>
+<li><strong>Le procédé et la citation :</strong> on identifie le procédé littéraire et on cite le texte précisément, avec le numéro de ligne entre parenthèses. La citation doit être courte et ciblée — on ne recopie pas tout un passage.</li>
+<li><strong>L'interprétation :</strong> on explique l'effet produit par ce procédé et on le relie à la problématique. C'est l'étape la plus importante. Un procédé nommé sans être interprété ne vaut rien.</li>
 </ol>
-<p><strong>Exemple de paragraphe :</strong> <em>Colette installe d'emblée une atmosphère d'immobilité et de passivité totale. Le verbe « gis » (l. 1), archaïque et solennel, confère une tonalité presque funèbre à l'inaction du corps. La métaphore du sommeil comme descente — « descendre au fond d'un noir sommeil » — dit l'attrait d'un repos absolu, une disparition momentanée de soi. Ce désir de sommeil total prépare le renversement paradoxal du texte : l'insomnie sera finalement célébrée comme une plénitude.</em></p>
+<p><strong>Exemple de paragraphe complet :</strong> <em>Colette installe d'emblée une atmosphère d'immobilité et de passivité totale. Le verbe « gis » (l. 1), archaïque et solennel, confère une tonalité presque funèbre à l'inaction du corps — comme si la narratrice était déjà hors du monde. La métaphore du sommeil comme descente — « descendre au fond d'un noir sommeil » — prolonge cette image en disant l'attrait d'un repos absolu, d'une disparition momentanée de soi. Ce désir de sommeil total prépare le renversement paradoxal du texte : l'insomnie sera finalement célébrée comme une plénitude.</em></p>
 
-<h4>Les transitions</h4>
-<p>Entre chaque partie, on rédige une phrase de transition en deux temps : bilan de la partie précédente + annonce de la partie suivante.</p>
-<p><strong>Exemple :</strong> <em>Ainsi, le désir de repos est constamment contrarié par la vitalité du corps. Mais loin d'être vécue comme une souffrance, cette impossibilité de dormir devient la condition d'une expérience amoureuse intense.</em></p>
+<h4>Les phrases de transition</h4>
+<p>Entre chaque partie, on rédige une phrase de transition en deux temps : un bilan de la partie précédente, puis une annonce de la partie suivante. Cette phrase doit être rédigée et ne pas se contenter de dire « nous allons maintenant voir ».</p>
+<p><strong>Exemple :</strong> <em>Ainsi, le désir de repos est constamment contrarié par la vitalité du corps — une vitalité qui se révèle être non pas un obstacle au bonheur mais la condition même de l'expérience amoureuse que Colette va progressivement célébrer.</em></p>
 
-<h4>Ce qu'il faut toujours mêler</h4>
+<h4>Ce qu'il faut toujours faire dans chaque paragraphe</h4>
 <ul>
-<li>Le fond (ce que dit le texte) et la forme (comment il le dit) : on ne commente jamais le sens sans analyser les procédés, ni les procédés sans expliquer leur sens.</li>
-<li>Une citation précise avec son numéro de ligne.</li>
-<li>Le nom du procédé.</li>
-<li>L'effet produit, relié à la problématique.</li>
+<li>Mêler le fond (ce que dit le texte) et la forme (comment il le dit) : on ne commente jamais le sens sans analyser les procédés, ni les procédés sans expliquer leur sens.</li>
+<li>Citer précisément avec le numéro de ligne entre parenthèses.</li>
+<li>Nommer le procédé utilisé.</li>
+<li>Expliquer l'effet produit et le relier à la problématique.</li>
 </ul>
 
 <div style="background:#f9f9f9;border-left:3px solid #1a6fca;padding:12px 16px;margin:20px 0;">
 <strong>⚠️ Les erreurs à éviter</strong>
 <ul style="margin:8px 0 0 0;">
-<li><strong>La paraphrase :</strong> résumer le texte au lieu de l'analyser.</li>
-<li><strong>La liste de procédés sans interprétation :</strong> nommer sans expliquer l'effet.</li>
-<li><strong>Le plan qui suit l'ordre du texte :</strong> le commentaire composé s'organise par axes thématiques, pas ligne par ligne.</li>
-<li><strong>Les titres visibles dans la copie :</strong> on ne met jamais de titres dans un commentaire composé. Tout est rédigé.</li>
-<li><strong>Oublier les transitions :</strong> les parties doivent s'enchaîner logiquement.</li>
+<li><strong>La paraphrase :</strong> résumer ce qui se passe au lieu d'analyser comment c'est écrit. Si on peut supprimer la citation et que le paragraphe reste identique, c'est de la paraphrase.</li>
+<li><strong>La liste de procédés sans interprétation :</strong> « on note une métaphore, une hyperbole et un champ lexical » ne vaut rien si on n'explique pas les effets produits.</li>
+<li><strong>Le plan qui suit l'ordre du texte :</strong> le commentaire composé s'organise par axes thématiques, pas ligne par ligne. C'est ce qui le distingue de l'analyse linéaire.</li>
+<li><strong>Les titres visibles dans la copie :</strong> tout est rédigé en prose. Pas de numérotation, pas de titres en gras, pas de tirets.</li>
+<li><strong>Les transitions oubliées :</strong> les parties doivent s'enchaîner logiquement. Une copie sans transitions donne l'impression d'une suite de remarques sans lien.</li>
 </ul>
 </div>
 
 <hr style="border:none;border-top:2px solid #ccc;margin:30px 0;">
 
 <h3>III. La conclusion</h3>
-<p>La conclusion est un unique paragraphe. Elle comprend deux temps :</p>
-<p><strong>1 — Bilan :</strong> on rappelle brièvement les grandes étapes du développement et ce qu'elles ont prouvé. On commence par une formule de transition : <em>« Ainsi… »</em>, <em>« Pour conclure… »</em>.</p>
-<p><strong>2 — Réponse à la problématique :</strong> on répond clairement et synthétiquement à la question posée en introduction.</p>
-<p><strong>3 — Ouverture (facultatif mais valorisé) :</strong> on élargit vers une autre œuvre, un autre auteur, un autre mouvement littéraire ou un autre art, en justifiant le rapprochement.</p>
-<p><strong>Exemple :</strong> <em>Ainsi, Colette transforme une scène intime et ordinaire en célébration poétique du désir. L'insomnie, loin d'être une souffrance, devient une plénitude : le corps agité dit la vitalité du désir et la richesse de la présence de l'autre. Cette façon de célébrer le bonheur dans l'effleurement et l'impossibilité rappelle la conception du bonheur que développe Colette dans Toby-Chien parle, où le frôlement vaut mieux que la possession.</em></p>
+<p>La conclusion est un unique paragraphe. Elle ne doit pas introduire de nouvelles idées — tout ce qui mérite d'être dit doit l'avoir été dans le développement. Elle comprend deux temps obligatoires et un troisième facultatif.</p>
+<p><strong>1 — Bilan :</strong> on rappelle brièvement les grandes étapes du développement et ce qu'elles ont prouvé. Le bilan doit être synthétique — deux ou trois phrases — et montrer la progression logique des parties. On commence par une formule de transition.</p>
+<p><strong>2 — Réponse à la problématique :</strong> on répond clairement et en une phrase à la question posée en introduction. C'est la phrase la plus importante de la conclusion — elle dit ce que le texte prouve, ce que l'auteur réussit à faire avec ce passage.</p>
+<p><strong>3 — Ouverture (facultatif mais valorisé) :</strong> on élargit vers une autre œuvre, un autre auteur, un autre mouvement ou un autre art, en justifiant le rapprochement. L'ouverture doit être en lien réel avec le texte étudié — elle ne doit pas être un prétexte pour parler d'autre chose. Une ouverture mal choisie est pire que pas d'ouverture.</p>
+<p><strong>Exemple :</strong> <em>Ainsi, Colette transforme une scène intime et ordinaire en célébration poétique du désir. L'insomnie, loin d'être une souffrance, devient une plénitude : le corps agité dit la vitalité du désir et la richesse de la présence de l'autre. En répondant à notre problématique, ce texte montre que le bonheur amoureux chez Colette n'est pas dans le repos mais dans l'éveil permanent des sens — conception que l'on retrouve dans « Toby-Chien parle » où le frôlement du bonheur vaut davantage que sa possession.</em></p>
 
 <hr style="border:none;border-top:2px solid #ccc;margin:30px 0;">
 
 <h3>À connaître absolument : les types de plans</h3>
 <table style="width:100%;border-collapse:collapse;font-size:15px;">
 <tr style="background:#c0392b;color:white;"><td style="padding:8px 10px;font-weight:bold;">Type de plan</td><td style="padding:8px 10px;font-weight:bold;">Quand l'utiliser</td><td style="padding:8px 10px;font-weight:bold;">Structure</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Plan thématique</strong></td><td style="padding:8px 10px;">Texte riche, plusieurs axes de lecture possibles</td><td style="padding:8px 10px;">Chaque partie explore un thème ou un aspect du texte</td></tr>
-<tr><td style="padding:8px 10px;"><strong>Plan analytique</strong></td><td style="padding:8px 10px;">Texte argumentatif ou démonstratif</td><td style="padding:8px 10px;">Partie I : constat / Partie II : explication / Partie III : portée</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Plan dialectique</strong></td><td style="padding:8px 10px;">Rarement utilisé au commentaire — plutôt pour la dissertation</td><td style="padding:8px 10px;">Thèse / Antithèse / Synthèse</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Plan thématique</strong></td><td style="padding:8px 10px;">Texte riche, plusieurs axes de lecture possibles — c'est le plan le plus courant au commentaire</td><td style="padding:8px 10px;">Chaque partie explore un thème ou un aspect du texte (ex. : I. La quête du repos / II. L'éveil du désir / III. La célébration de l'insomnie)</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Plan analytique</strong></td><td style="padding:8px 10px;">Texte argumentatif ou démonstratif qui progresse logiquement</td><td style="padding:8px 10px;">I. Constat / II. Explication ou moyens / III. Portée ou conséquences</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Plan dialectique</strong></td><td style="padding:8px 10px;">Rarement utilisé au commentaire — plutôt réservé à la dissertation sur une question qui oppose deux points de vue</td><td style="padding:8px 10px;">I. Thèse / II. Antithèse / III. Synthèse ou dépassement</td></tr>
 </table>
 
 <h3 style="margin-top:30px;">À connaître absolument : la mise en forme de la copie</h3>
 <ul>
-<li>On saute une ligne entre l'introduction et le développement, entre les parties, et entre le développement et la conclusion.</li>
-<li>Chaque paragraphe commence par un alinéa.</li>
-<li>On ne met jamais de titres visibles.</li>
+<li>On saute une ligne entre l'introduction et le développement, entre chaque partie du développement, et entre le développement et la conclusion.</li>
+<li>Chaque paragraphe commence par un alinéa (décalage de quelques centimètres).</li>
+<li>On ne met jamais de titres visibles — ni en gras, ni soulignés, ni entre guillemets.</li>
 <li>On ne numérote pas les parties.</li>
-<li>La copie est entièrement rédigée : pas de style télégraphique, pas de tirets, pas d'abréviations.</li>
+<li>La copie est entièrement rédigée en prose : pas de style télégraphique, pas de tirets, pas d'abréviations.</li>
 </ul>
+
+<hr style="border:none;border-top:2px solid #ccc;margin:30px 0;">
+
+<h3>À connaître absolument : les figures de style</h3>
+
+<p>Dans le commentaire composé, les figures de style sont les preuves de ton analyse. Nommer une figure sans l'interpréter ne vaut rien — il faut toujours expliquer l'effet qu'elle produit dans ce texte précis.</p>
+
+<table style="width:100%;border-collapse:collapse;font-size:15px;">
+<tr style="background:#c0392b;color:white;"><td style="padding:8px 10px;font-weight:bold;">Figure</td><td style="padding:8px 10px;font-weight:bold;">Définition</td><td style="padding:8px 10px;font-weight:bold;">Effet principal</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Métaphore</strong></td><td style="padding:8px 10px;">Comparaison sans outil comparatif — identification directe entre deux réalités</td><td style="padding:8px 10px;">Crée une image forte et immédiate, rapproche deux réalités de façon surprenante</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Comparaison</strong></td><td style="padding:8px 10px;">Rapprochement de deux éléments avec un outil comparatif explicite (<em>comme</em>, <em>tel que</em>…)</td><td style="padding:8px 10px;">Illustre, précise, met en valeur une ressemblance tout en maintenant la distance entre les deux termes</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Personnification</strong></td><td style="padding:8px 10px;">Attribution de qualités ou d'actions humaines à une chose, un animal ou une idée abstraite</td><td style="padding:8px 10px;">Anime le réel, crée de l'émotion, rend vivant ce qui est inerte</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Hyperbole</strong></td><td style="padding:8px 10px;">Exagération volontaire au-delà de la réalité</td><td style="padding:8px 10px;">Amplifie, dramatise ; peut créer un effet épique, comique ou pathétique selon le contexte</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Litote</strong></td><td style="padding:8px 10px;">Dire moins pour suggérer davantage</td><td style="padding:8px 10px;">Atténue en surface mais renforce implicitement ; crée souvent un effet d'ironie ou de pudeur</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Euphémisme</strong></td><td style="padding:8px 10px;">Remplacement d'un mot difficile ou choquant par une formulation plus douce</td><td style="padding:8px 10px;">Adoucit, voile la réalité ; peut révéler un malaise ou une hypocrisie</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Antithèse</strong></td><td style="padding:8px 10px;">Opposition explicite de deux termes ou idées contraires dans un même passage</td><td style="padding:8px 10px;">Met en relief un contraste, une tension, une contradiction</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Oxymore</strong></td><td style="padding:8px 10px;">Association de deux termes contradictoires dans un même groupe syntaxique</td><td style="padding:8px 10px;">Dit la complexité et le paradoxe d'une réalité irréductible</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Anaphore</strong></td><td style="padding:8px 10px;">Répétition d'un même mot ou groupe de mots au début de phrases ou vers successifs</td><td style="padding:8px 10px;">Insistance, rythme, martèlement ; progression émotionnelle</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Gradation</strong></td><td style="padding:8px 10px;">Suite de termes par ordre d'intensité croissante ou décroissante</td><td style="padding:8px 10px;">Progression dramatique ou atténuation ; donne une impression de mouvement</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Chiasme</strong></td><td style="padding:8px 10px;">Inversion symétrique de deux membres de phrase (AB → BA)</td><td style="padding:8px 10px;">Met en miroir deux réalités ; souligne un paradoxe ou un retournement</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Métonymie</strong></td><td style="padding:8px 10px;">Désigner une chose par une autre qui lui est liée (contenant/contenu, cause/effet…)</td><td style="padding:8px 10px;">Condensation, mise en relief ; crée souvent proximité ou violence</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Ironie / Antiphrase</strong></td><td style="padding:8px 10px;">Dire le contraire de ce qu'on pense</td><td style="padding:8px 10px;">Critique, humour, distance ; dénonce sans attaquer directement</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Apostrophe</strong></td><td style="padding:8px 10px;">Interpellation directe d'un être, d'une chose ou d'une idée abstraite</td><td style="padding:8px 10px;">Présence, adresse directe ; émotion, solennité ou provocation</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Allitération</strong></td><td style="padding:8px 10px;">Répétition de sons consonantiques dans des mots voisins</td><td style="padding:8px 10px;">Effet sonore ; douceur, violence, fluidité ou dureté selon les sons</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Assonance</strong></td><td style="padding:8px 10px;">Répétition de sons vocaliques dans des mots voisins</td><td style="padding:8px 10px;">Musicalité douce ou lancinante selon le contexte</td></tr>
+</table>
+
+<h3 style="margin-top:30px;">À connaître absolument : les registres littéraires</h3>
+
+<p>Identifier le registre d'un passage dans un commentaire, c'est dire quelle tonalité l'auteur a choisie et pourquoi. Il faut toujours justifier l'identification d'un registre par des procédés précis.</p>
+
+<table style="width:100%;border-collapse:collapse;font-size:15px;">
+<tr style="background:#c0392b;color:white;"><td style="padding:8px 10px;font-weight:bold;">Registre</td><td style="padding:8px 10px;font-weight:bold;">Définition et caractéristiques principales</td><td style="padding:8px 10px;font-weight:bold;">Procédés associés</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Lyrique</strong></td><td style="padding:8px 10px;">Expression des émotions et sentiments personnels. Le moi est au centre du texte.</td><td style="padding:8px 10px;">Présence du « je », vocabulaire des émotions, exclamations, apostrophes, images poétiques</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Épique</strong></td><td style="padding:8px 10px;">Récit de faits extraordinaires ou héroïques. Dimension de grandeur et de dépassement.</td><td style="padding:8px 10px;">Hyperboles, comparaisons héroïques, vocabulaire de la guerre et de la gloire</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Tragique</strong></td><td style="padding:8px 10px;">Sentiment d'une fatalité inéluctable. La souffrance est irrémédiable.</td><td style="padding:8px 10px;">Vocabulaire de la mort et de l'impuissance, négations, silences, questions sans réponse</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Comique</strong></td><td style="padding:8px 10px;">Recherche du rire par le décalage, l'absurde ou le renversement des situations attendues.</td><td style="padding:8px 10px;">Jeux de mots, répétitions, chutes, décalages de registre, quiproquos</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Pathétique</strong></td><td style="padding:8px 10px;">Appel à la pitié du lecteur face à une souffrance représentée.</td><td style="padding:8px 10px;">Exclamations, vocabulaire de la douleur, hyperboles de la souffrance</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Ironique</strong></td><td style="padding:8px 10px;">Décalage entre ce qui est dit et ce qui est signifié. Critique voilée.</td><td style="padding:8px 10px;">Antiphrase, ton faussement élogieux, vocabulaire inadapté, chutes inattendues</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Polémique</strong></td><td style="padding:8px 10px;">Attaque et dénonciation. Ton vif, souvent agressif.</td><td style="padding:8px 10px;">Questions rhétoriques, apostrophes, accumulations d'accusations, vocabulaire péjoratif</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Didactique</strong></td><td style="padding:8px 10px;">Volonté d'enseigner ou de démontrer. Le texte transmet un savoir ou une conviction.</td><td style="padding:8px 10px;">Connecteurs logiques, exemples, définitions, progression argumentative claire</td></tr>
+</table>
 </div>`,
 
 dissertation:`<div style="line-height:1.7;font-size:17px;font-family:Georgia,serif;margin-top:70px;max-width:900px;padding:0 10px;">
 <h2>Fiche méthode — La dissertation</h2>
 
-<p style="font-style:italic;background:#f9f9f9;padding:10px 14px;border-left:3px solid #c0392b;margin:10px 0 24px 0;">La dissertation est un exercice de réflexion personnelle organisée sur une question littéraire portant sur une œuvre au programme. Le candidat construit un raisonnement argumenté en s'appuyant sur des exemples précis tirés de l'œuvre étudiée et de sa culture littéraire. Durée : 4 heures. Trois sujets sont proposés le jour du bac ; un seul est à traiter.</p>
+<p style="font-style:italic;background:#f9f9f9;padding:10px 14px;border-left:3px solid #c0392b;margin:10px 0 24px 0;">La dissertation est un exercice de réflexion personnelle organisée sur une question littéraire portant sur une œuvre au programme. Le candidat construit un raisonnement argumenté en s'appuyant sur des exemples précis tirés de l'œuvre et de sa culture littéraire. Durée : 4 heures. Trois sujets sont proposés le jour du bac ; un seul est à traiter.</p>
 
 <h3>Avant de rédiger : le travail au brouillon</h3>
-<p>Le brouillon est indispensable en dissertation. On y fait les étapes suivantes :</p>
+<p>En dissertation, le brouillon est encore plus important que dans les autres exercices. On y consacre au moins une heure avant de commencer à rédiger.</p>
 <ol>
-<li><strong>Analyser le sujet :</strong> lire attentivement l'énoncé, souligner les mots-clés, définir les termes importants. Un sujet mal compris entraîne une dissertation hors sujet.</li>
-<li><strong>Dégager la problématique :</strong> formuler la ou les questions soulevées par le sujet. La problématique doit être une vraie question, non une reformulation du sujet.</li>
-<li><strong>Construire le plan :</strong> trouver deux ou trois grandes parties logiquement enchaînées, chacune subdivisée en deux ou trois sous-parties.</li>
-<li><strong>Trouver les exemples :</strong> pour chaque argument, trouver un ou plusieurs exemples précis tirés de l'œuvre au programme ou de la culture littéraire personnelle.</li>
-<li><strong>Rédiger l'introduction et la conclusion au brouillon</strong> avant de passer au propre.</li>
+<li><strong>Analyser le sujet :</strong> lire attentivement l'énoncé, souligner les mots-clés, définir chaque terme important. Un sujet mal compris entraîne une dissertation hors sujet — c'est l'erreur la plus grave et la plus fréquente. On définit les termes au brouillon en cherchant leurs nuances : un mot peut avoir plusieurs sens, et le sujet joue souvent sur cette ambiguïté.</li>
+<li><strong>Dégager la problématique :</strong> formuler la question centrale soulevée par le sujet. La problématique n'est pas une reformulation du sujet — c'est une question plus précise qui en révèle l'enjeu réel. Elle doit appeler plusieurs réponses partielles et contradictoires.</li>
+<li><strong>Construire le plan :</strong> trouver deux ou trois grandes parties logiquement enchaînées, chacune subdivisée en deux ou trois sous-parties. Le plan doit progresser : on ne répète pas les mêmes idées, on avance.</li>
+<li><strong>Trouver les exemples :</strong> pour chaque argument, chercher un exemple précis dans l'œuvre au programme. On note la scène, les personnages concernés, les phrases ou formules clés. Un argument sans exemple ne prouve rien.</li>
+<li><strong>Rédiger l'introduction et la conclusion au brouillon</strong> avant de commencer le propre — ce sont les deux parties les plus importantes à soigner.</li>
 </ol>
 
 <hr style="border:none;border-top:2px solid #ccc;margin:30px 0;">
 
 <h3>I. L'introduction</h3>
-<p>L'introduction est un seul paragraphe de 10 à 15 lignes environ. Elle se construit en quatre étapes :</p>
+<p>L'introduction est un seul paragraphe de 10 à 15 lignes environ. Elle ne doit pas trop s'étendre — l'objectif est d'entrer rapidement dans le sujet tout en posant clairement le cadre. Elle se construit en quatre étapes enchaînées naturellement.</p>
 
 <h4>1 — L'accroche (amorce)</h4>
-<p>On introduit le sujet par une phrase générale qui contextualise la question et éveille l'intérêt du lecteur. On peut s'appuyer sur un élément historique ou littéraire, un mouvement d'idées, ou un aspect de l'œuvre. On évite les généralités vides (<em>« Depuis la nuit des temps, les hommes ont toujours… »</em>) et les formules clichés.</p>
-<p><strong>Exemple :</strong> <em>Le XVIe siècle humaniste est traversé par une interrogation fondamentale sur la nature du pouvoir politique et sur les conditions de la liberté humaine.</em></p>
+<p>On introduit le sujet par une ou deux phrases générales qui contextualisent la question et éveillent l'intérêt du correcteur. L'accroche doit être en lien direct avec le sujet — elle en est le premier mouvement. On peut s'appuyer sur un élément historique ou littéraire, un mouvement d'idées, une anecdote liée à la publication de l'œuvre, ou une réflexion sur le genre littéraire concerné.</p>
+<p>On évite absolument les généralités vides (<em>« Depuis la nuit des temps, les hommes ont toujours… »</em>) et les accroches déconnectées du sujet. Une bonne accroche dit déjà quelque chose d'utile — elle prépare le lecteur à comprendre pourquoi la question qui va suivre est légitime.</p>
+<p><strong>Exemple :</strong> <em>Le XVIe siècle humaniste est traversé par une interrogation fondamentale sur la nature du pouvoir politique et sur les conditions de la liberté humaine. Dans une France marquée par les guerres de religion et les abus du pouvoir royal, la question de la légitimité de l'obéissance devient brûlante.</em></p>
 
 <h4>2 — Présentation de l'œuvre et du sujet</h4>
-<p>On présente l'œuvre au programme (auteur, titre, date), on reformule ou on cite le sujet, et on définit les termes clés de l'énoncé. Cette étape permet de montrer qu'on a bien compris ce qu'on nous demande.</p>
-<p><strong>Exemple :</strong> <em>C'est dans ce contexte qu'Étienne de La Boétie rédige vers 1548 le Discours de la servitude volontaire, texte dans lequel il s'interroge sur le paradoxe suivant : pourquoi des peuples libres acceptent-ils de se soumettre à un seul tyran ?</em></p>
+<p>On présente l'œuvre au programme (auteur, titre, date), on reformule ou on cite le sujet tel qu'il est posé, et on définit brièvement les termes clés de l'énoncé. Cette étape permet de montrer qu'on a bien compris ce qu'on nous demande et qu'on ne va pas dériver vers un autre sujet.</p>
+<p><strong>Exemple :</strong> <em>C'est dans ce contexte qu'Étienne de La Boétie rédige vers 1548 le Discours de la servitude volontaire, publié posthume en 1577, dans lequel il interroge le paradoxe fondamental de la tyrannie : comment un seul homme peut-il dominer des millions d'individus qui auraient la force de résister ?</em></p>
 
 <h4>3 — La problématique</h4>
-<p>On formule la question centrale sous forme interrogative. La problématique doit être précise, non triviale, et suffisamment ouverte pour que le développement puisse en explorer plusieurs aspects. Elle doit se terminer par un point d'interrogation.</p>
-<p><strong>Formules utiles :</strong> <em>« Dès lors, on peut se demander si… »</em>, <em>« Dans quelle mesure… ? »</em>, <em>« En quoi… ? »</em></p>
+<p>On formule la question centrale sous forme interrogative. La problématique doit être précise, non triviale, et suffisamment ouverte pour que le développement puisse en explorer plusieurs aspects. Elle ne doit pas appeler une réponse évidente — si on peut répondre « oui » ou « non » en une phrase, la problématique est trop simple. Elle doit se terminer par un point d'interrogation.</p>
+<p><strong>Formules utiles :</strong> <em>« Dès lors, on peut se demander si… »</em> / <em>« Dans quelle mesure… ? »</em> / <em>« En quoi… ? »</em></p>
 <p><strong>Exemple :</strong> <em>Dans quelle mesure le Discours de la servitude volontaire est-il un texte politique engagé qui repose sur la conviction que la liberté est à la portée de chacun ?</em></p>
 
 <h4>4 — Annonce du plan</h4>
-<p>On annonce les deux ou trois parties du développement en les enchaînant logiquement. Les titres des parties ne doivent pas être des questions, mais des affirmations qui disent ce que chaque partie va démontrer.</p>
+<p>On annonce les deux ou trois parties du développement en les enchaînant logiquement. Les titres des parties ne doivent pas être des questions mais des affirmations qui disent ce que chaque partie va démontrer. On ne dit jamais « premièrement, deuxièmement » — on enchaîne avec des connecteurs logiques qui montrent la progression du raisonnement.</p>
 <p><strong>Formule utile :</strong> <em>« Nous verrons d'abord… puis… enfin… »</em></p>
-<p><strong>Exemple :</strong> <em>Nous verrons d'abord que La Boétie démystifie le pouvoir tyrannique en montrant qu'il repose uniquement sur le consentement du peuple, puis que l'auteur engage son lecteur dans une réflexion sur la responsabilité individuelle, et enfin que le texte dessine une voie vers la liberté qui reste d'une actualité remarquable.</em></p>
+<p><strong>Exemple :</strong> <em>Nous verrons d'abord que La Boétie démystifie le pouvoir tyrannique en montrant qu'il repose uniquement sur le consentement du peuple, puis que l'auteur engage son lecteur dans une réflexion sur la responsabilité individuelle face à l'oppression, et enfin que le texte dessine une voie vers la liberté qui reste d'une actualité remarquable.</em></p>
 
 <hr style="border:none;border-top:2px solid #ccc;margin:30px 0;">
 
 <h3>II. Le développement</h3>
-<p>Le développement comprend deux ou trois parties, chacune subdivisée en deux ou trois sous-parties. Chaque partie est séparée de la suivante par une phrase de transition.</p>
+<p>Le développement comprend deux ou trois parties, chacune subdivisée en deux ou trois sous-parties. Les parties sont séparées par un saut de ligne et une phrase de transition. On ne met jamais de titres visibles dans la copie.</p>
 
 <h4>Structure d'un paragraphe argumentatif</h4>
-<p>Chaque paragraphe suit le schéma suivant :</p>
+<p>Chaque paragraphe de la dissertation suit un schéma en trois temps, enchaînés de façon fluide :</p>
 <ol>
-<li><strong>L'argument :</strong> l'idée que le paragraphe va défendre, formulée en une phrase affirmative claire.</li>
-<li><strong>L'exemple :</strong> un extrait précis de l'œuvre, cité entre guillemets ou paraphrasé avec précision, qui illustre l'argument.</li>
-<li><strong>L'analyse :</strong> on explique en quoi l'exemple prouve l'argument. On relie toujours l'exemple à la problématique.</li>
+<li><strong>L'argument :</strong> l'idée que le paragraphe va défendre, formulée en une phrase affirmative claire et précise. C'est la phrase d'ouverture du paragraphe. Elle dit d'emblée ce qu'on va prouver.</li>
+<li><strong>L'exemple :</strong> un extrait précis de l'œuvre, cité entre guillemets ou paraphrasé avec précision, qui illustre l'argument. L'exemple doit être identifiable dans l'œuvre : une scène précise, un personnage, une formule, une situation.</li>
+<li><strong>L'analyse :</strong> on explique en quoi cet exemple prouve l'argument. On relie toujours l'exemple à la problématique. Un exemple sans analyse ne prouve rien — c'est l'analyse qui fait la démonstration, pas l'exemple seul.</li>
 </ol>
-<p><strong>Exemple de paragraphe :</strong> <em>La Boétie commence par démystifier le tyran en le réduisant à sa réalité physique ordinaire. L'énumération minimaliste « deux yeux, deux mains, un corps » dit que le tyran n'a rien de plus que n'importe quel homme. Cette démystification est le fondement de toute la démonstration : si le tyran n'est pas un surhomme, son pouvoir ne peut venir que de ce que le peuple lui donne. La formule synthétique — « rien d'autre que l'avantage que vous lui donnez pour vous détruire » — dit la servitude volontaire dans son expression la plus condensée et la plus paradoxale.</em></p>
+<p><strong>Exemple de paragraphe complet :</strong> <em>La Boétie commence par démystifier le tyran en le réduisant à sa réalité physique la plus ordinaire. L'énumération minimaliste « deux yeux, deux mains, un corps » dit que le tyran n'a rien de plus que n'importe quel habitant de la cité — aucun don surnaturel, aucune supériorité naturelle. Cette démystification est le fondement de toute la démonstration : si le tyran n'est pas un surhomme, son pouvoir ne peut venir que de ce que le peuple lui donne. La formule synthétique qui suit — « rien d'autre que l'avantage que vous lui donnez pour vous détruire » — dit la servitude volontaire dans son expression la plus condensée et la plus paradoxale, répondant directement à notre problématique.</em></p>
 
-<h4>Les transitions</h4>
-<p>Entre chaque partie, on rédige une phrase de transition en deux temps : bilan de ce qui précède + annonce de ce qui suit.</p>
-<p><strong>Exemple :</strong> <em>Ainsi, La Boétie démontre que la tyrannie ne tient que par le consentement du peuple. Mais cette démonstration ne suffit pas : encore faut-il comprendre pourquoi les peuples consentent, et comment le tyran entretient cette soumission.</em></p>
+<h4>Les phrases de transition</h4>
+<p>Entre chaque partie, on rédige une phrase de transition en deux temps : un bilan de la partie précédente, puis une annonce de la partie suivante. Cette transition doit être rédigée et montrer le lien logique entre les deux parties — pourquoi ce qu'on vient de démontrer appelle ce qu'on va démontrer ensuite.</p>
+<p><strong>Exemple :</strong> <em>Ainsi, La Boétie démontre que la tyrannie ne tient que par le consentement du peuple. Mais cette démonstration ouvre une question plus difficile : si la tyrannie repose sur l'habitude et la complicité, comment le tyran entretient-il ce consentement, et par quels moyens ?</em></p>
 
 <h4>L'utilisation des exemples</h4>
-<p>Les exemples de la dissertation doivent être :</p>
+<p>Les exemples de la dissertation ont trois exigences :</p>
 <ul>
-<li><strong>Précis :</strong> on cite des passages précis, des personnages, des scènes, des arguments identifiables dans l'œuvre.</li>
-<li><strong>Analysés :</strong> on ne se contente jamais de citer — on explique en quoi l'exemple prouve l'argument.</li>
-<li><strong>Variés :</strong> on peut s'appuyer sur l'œuvre au programme, mais aussi sur d'autres œuvres du parcours ou de la culture littéraire personnelle.</li>
+<li><strong>Précis :</strong> on cite des passages précis, des personnages, des scènes, des formules identifiables dans l'œuvre. Un exemple vague (<em>« dans l'œuvre, on voit que… »</em>) ne prouve rien.</li>
+<li><strong>Analysés :</strong> on ne se contente jamais de citer — on explique en quoi l'exemple prouve l'argument. La citation seule ne vaut rien sans l'analyse qui la suit.</li>
+<li><strong>Variés :</strong> on peut s'appuyer sur l'œuvre au programme, mais aussi sur d'autres œuvres du parcours ou de la culture littéraire personnelle. La variété des exemples montre la culture du candidat.</li>
 </ul>
 
 <div style="background:#f9f9f9;border-left:3px solid #1a6fca;padding:12px 16px;margin:20px 0;">
 <strong>⚠️ Les erreurs à éviter</strong>
 <ul style="margin:8px 0 0 0;">
-<li><strong>Répondre oui ou non dès l'introduction :</strong> l'introduction pose les questions, la conclusion répond.</li>
-<li><strong>Le plan déséquilibré :</strong> les parties doivent être à peu près de même longueur.</li>
-<li><strong>Les exemples sans analyse :</strong> un exemple cité sans explication ne prouve rien.</li>
-<li><strong>La paraphrase de l'œuvre :</strong> résumer l'histoire n'est pas argumenter.</li>
-<li><strong>Les titres visibles dans la copie :</strong> tout est rédigé, sans numérotation ni titres apparents.</li>
-<li><strong>Oublier de répondre à la problématique en conclusion.</strong></li>
+<li><strong>Répondre oui ou non dès l'introduction :</strong> l'introduction pose les questions, la conclusion répond. Un plan dialectique ne dévoile pas sa conclusion dans l'annonce du plan.</li>
+<li><strong>Le plan déséquilibré :</strong> les parties doivent être à peu près de même longueur. Une partie de deux lignes et une partie de deux pages, c'est un plan qui ne fonctionne pas.</li>
+<li><strong>Les exemples sans analyse :</strong> un exemple cité sans explication ne prouve rien. La citation n'est pas un argument — c'est une illustration d'un argument.</li>
+<li><strong>La paraphrase de l'œuvre :</strong> résumer l'histoire ou raconter ce qui se passe dans le texte n'est pas argumenter. La dissertation est un raisonnement, pas un résumé.</li>
+<li><strong>Les titres visibles dans la copie :</strong> tout est rédigé en prose, sans numérotation ni titres en gras.</li>
+<li><strong>Oublier de répondre à la problématique en conclusion :</strong> la conclusion doit impérativement répondre à la question posée en introduction.</li>
 </ul>
 </div>
 
 <hr style="border:none;border-top:2px solid #ccc;margin:30px 0;">
 
 <h3>III. La conclusion</h3>
-<p>La conclusion est un unique paragraphe. Elle comprend deux temps obligatoires et un facultatif :</p>
-<p><strong>1 — Bilan :</strong> on résume brièvement les grandes étapes du raisonnement et ce qu'elles ont démontré. On commence par une formule de transition.</p>
-<p><strong>2 — Réponse à la problématique :</strong> on répond clairement et synthétiquement à la question posée en introduction. C'est la phrase la plus importante de la conclusion.</p>
-<p><strong>3 — Ouverture (facultatif mais valorisé) :</strong> on élargit vers une question connexe, une autre œuvre, un autre auteur ou une réflexion plus générale. L'ouverture doit être en lien réel avec le sujet traité — elle ne doit pas introduire un sujet complètement différent.</p>
-<p><strong>Exemple :</strong> <em>Ainsi, le Discours de la servitude volontaire est bien un texte politique engagé dont la conviction centrale — la liberté naît du refus de servir — reste d'une remarquable actualité. La Boétie démontre avec une rigueur saisissante que la tyrannie ne tient que par le consentement de ceux qu'elle opprime, et que la liberté est à la portée d'une simple décision collective. On peut prolonger cette réflexion en lisant les Fables de La Fontaine, qui illustrent par l'apologue la même thèse : le Loup refuse la servitude confortable du Chien parce qu'il comprend que la liberté ne se monnaye pas.</em></p>
+<p>La conclusion est un unique paragraphe. Elle ne doit pas introduire de nouvelles idées. Elle comprend deux temps obligatoires et un troisième facultatif.</p>
+<p><strong>1 — Bilan :</strong> on résume brièvement les grandes étapes du raisonnement et ce qu'elles ont démontré. Le bilan doit être synthétique — deux ou trois phrases — et montrer la progression logique des parties. On commence par une formule de transition.</p>
+<p><strong>2 — Réponse à la problématique :</strong> on répond clairement et en une phrase à la question posée en introduction. C'est la phrase la plus importante de la conclusion — elle dit ce que la dissertation a prouvé.</p>
+<p><strong>3 — Ouverture (facultatif mais valorisé) :</strong> on élargit vers une question connexe, une autre œuvre, un autre auteur ou une réflexion plus générale. L'ouverture doit être en lien réel avec le sujet traité — une ouverture forcée ou déconnectée nuit à la copie.</p>
+<p><strong>Exemple :</strong> <em>Ainsi, le Discours de la servitude volontaire est bien un texte politique engagé dont la conviction centrale — la liberté naît du simple refus de servir — reste d'une remarquable actualité. La Boétie démontre avec une rigueur saisissante que la tyrannie ne tient que par le consentement de ceux qu'elle opprime, et que la liberté est à la portée d'une décision collective. On peut prolonger cette réflexion en lisant les Fables de La Fontaine, qui illustrent par l'apologue la même thèse : le Loup refuse la servitude confortable du Chien parce qu'il comprend que la liberté ne se monnaye pas.</em></p>
 
 <hr style="border:none;border-top:2px solid #ccc;margin:30px 0;">
 
 <h3>À connaître absolument : les types de plans</h3>
 <table style="width:100%;border-collapse:collapse;font-size:15px;">
 <tr style="background:#c0392b;color:white;"><td style="padding:8px 10px;font-weight:bold;">Type de plan</td><td style="padding:8px 10px;font-weight:bold;">Quand l'utiliser</td><td style="padding:8px 10px;font-weight:bold;">Structure</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Plan dialectique</strong></td><td style="padding:8px 10px;">Sujet qui oppose deux points de vue, formulation en « dans quelle mesure »</td><td style="padding:8px 10px;">I. Thèse (oui) / II. Antithèse (mais) / III. Synthèse (dépassement)</td></tr>
-<tr><td style="padding:8px 10px;"><strong>Plan thématique</strong></td><td style="padding:8px 10px;">Sujet qui demande d'explorer plusieurs aspects d'une même question</td><td style="padding:8px 10px;">Chaque partie explore un aspect différent de la question</td></tr>
-<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Plan analytique</strong></td><td style="padding:8px 10px;">Sujet formulé en « comment » ou « pourquoi »</td><td style="padding:8px 10px;">I. Constat / II. Causes ou moyens / III. Conséquences ou portée</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Plan dialectique</strong></td><td style="padding:8px 10px;">Sujet qui oppose deux points de vue ou formule une affirmation discutable — très fréquent au bac</td><td style="padding:8px 10px;">I. Thèse (oui, dans un premier sens) / II. Antithèse (mais, nuance ou limite) / III. Synthèse (dépassement ou position personnelle)</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Plan thématique</strong></td><td style="padding:8px 10px;">Sujet qui demande d'explorer plusieurs aspects d'une même question sans opposition frontale</td><td style="padding:8px 10px;">Chaque partie explore un aspect différent de la question (ex. : I. Le rôle du lecteur / II. Le rôle de l'auteur / III. La portée politique)</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Plan analytique</strong></td><td style="padding:8px 10px;">Sujet formulé en « comment » ou « pourquoi » — moins fréquent au bac de français</td><td style="padding:8px 10px;">I. Constat / II. Causes ou moyens / III. Conséquences ou portée</td></tr>
 </table>
 
 <h3 style="margin-top:30px;">À connaître absolument : analyser un sujet de dissertation</h3>
 <p>Avant tout, on identifie dans le sujet :</p>
 <ul>
-<li><strong>Les mots-clés :</strong> les termes centraux qui définissent le sujet. On les définit au brouillon.</li>
-<li><strong>Le verbe du sujet :</strong> <em>« montrer »</em>, <em>« expliquer »</em>, <em>« discuter »</em>, <em>« dans quelle mesure »</em>... Ces verbes indiquent la démarche attendue.</li>
-<li><strong>L'œuvre concernée :</strong> le sujet porte sur une œuvre précise du programme — on doit mobiliser des exemples de cette œuvre.</li>
-<li><strong>La nuance :</strong> beaucoup de sujets impliquent une nuance ou une limite à discuter. Un sujet qui dit <em>« l'auteur cherche avant tout à… »</em> invite à vérifier si c'est toujours le cas, et à montrer les limites de cette affirmation.</li>
+<li><strong>Les mots-clés :</strong> les termes centraux qui définissent le sujet. On les définit au brouillon en cherchant leurs nuances et leurs différents sens possibles. Par exemple, le mot « liberté » peut renvoyer à la liberté politique, à la liberté morale, à la liberté de l'auteur — et le sujet joue peut-être sur plusieurs de ces sens.</li>
+<li><strong>Le verbe ou la formulation du sujet :</strong> <em>« montrer »</em>, <em>« expliquer »</em>, <em>« discuter »</em>, <em>« dans quelle mesure »</em>, <em>« en quoi »</em>… Ces formulations indiquent la démarche attendue. <em>« Discuter »</em> ou <em>« dans quelle mesure »</em> appellent un plan dialectique ; <em>« montrer »</em> appelle un plan thématique ou analytique.</li>
+<li><strong>L'œuvre concernée :</strong> le sujet porte sur une œuvre précise du programme — on doit mobiliser des exemples de cette œuvre en priorité.</li>
+<li><strong>La nuance :</strong> beaucoup de sujets impliquent une limite à discuter. Un sujet qui dit <em>« l'auteur cherche avant tout à… »</em> invite à vérifier si c'est toujours le cas et à identifier les exceptions ou les nuances. Un bon plan montre qu'on a vu la complexité du sujet.</li>
 </ul>
+
+<hr style="border:none;border-top:2px solid #ccc;margin:30px 0;">
+
+<h3>À connaître absolument : les figures de style</h3>
+<p>En dissertation, les figures de style servent à analyser et citer précisément l'œuvre dans les exemples. Savoir identifier et nommer une figure dans un passage permet de montrer que l'exemple est vraiment analysé et non simplement paraphrasé.</p>
+
+<table style="width:100%;border-collapse:collapse;font-size:15px;">
+<tr style="background:#c0392b;color:white;"><td style="padding:8px 10px;font-weight:bold;">Figure</td><td style="padding:8px 10px;font-weight:bold;">Définition</td><td style="padding:8px 10px;font-weight:bold;">Effet principal</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Métaphore</strong></td><td style="padding:8px 10px;">Comparaison sans outil comparatif — identification directe entre deux réalités</td><td style="padding:8px 10px;">Image forte et immédiate</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Comparaison</strong></td><td style="padding:8px 10px;">Rapprochement avec outil comparatif (<em>comme</em>, <em>tel que</em>…)</td><td style="padding:8px 10px;">Illustre, précise</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Personnification</strong></td><td style="padding:8px 10px;">Qualités humaines attribuées à une chose ou une idée abstraite</td><td style="padding:8px 10px;">Anime le réel, crée de l'émotion</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Hyperbole</strong></td><td style="padding:8px 10px;">Exagération volontaire</td><td style="padding:8px 10px;">Amplifie, dramatise</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Litote</strong></td><td style="padding:8px 10px;">Dire moins pour suggérer davantage</td><td style="padding:8px 10px;">Renforce implicitement</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Antithèse</strong></td><td style="padding:8px 10px;">Opposition de deux termes contraires</td><td style="padding:8px 10px;">Met en relief un contraste</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Oxymore</strong></td><td style="padding:8px 10px;">Deux termes contradictoires dans un même groupe</td><td style="padding:8px 10px;">Dit le paradoxe d'une réalité</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Anaphore</strong></td><td style="padding:8px 10px;">Répétition en début de phrases successives</td><td style="padding:8px 10px;">Insistance, martèlement</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Gradation</strong></td><td style="padding:8px 10px;">Suite de termes par intensité croissante ou décroissante</td><td style="padding:8px 10px;">Progression dramatique</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Ironie / Antiphrase</strong></td><td style="padding:8px 10px;">Dire le contraire de ce qu'on pense</td><td style="padding:8px 10px;">Critique, distance</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Apostrophe</strong></td><td style="padding:8px 10px;">Interpellation directe d'un être ou d'une idée</td><td style="padding:8px 10px;">Présence, adresse directe</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Métonymie</strong></td><td style="padding:8px 10px;">Désigner une chose par une autre qui lui est liée</td><td style="padding:8px 10px;">Condensation, mise en relief</td></tr>
+</table>
+
+<h3 style="margin-top:30px;">À connaître absolument : les registres littéraires</h3>
+<p>En dissertation, identifier le registre dominant d'un passage permet d'analyser les effets produits sur le lecteur et de montrer comment l'auteur oriente la réception de son texte.</p>
+
+<table style="width:100%;border-collapse:collapse;font-size:15px;">
+<tr style="background:#c0392b;color:white;"><td style="padding:8px 10px;font-weight:bold;">Registre</td><td style="padding:8px 10px;font-weight:bold;">Définition</td><td style="padding:8px 10px;font-weight:bold;">Procédés associés</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Lyrique</strong></td><td style="padding:8px 10px;">Expression des émotions personnelles du locuteur</td><td style="padding:8px 10px;">« je », vocabulaire des émotions, exclamations, apostrophes</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Épique</strong></td><td style="padding:8px 10px;">Grandeur, héroïsme, faits extraordinaires</td><td style="padding:8px 10px;">Hyperboles, vocabulaire de la guerre et de la gloire</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Tragique</strong></td><td style="padding:8px 10px;">Fatalité inéluctable, souffrance irrémédiable</td><td style="padding:8px 10px;">Vocabulaire de la mort, négations, silences</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Comique</strong></td><td style="padding:8px 10px;">Recherche du rire par le décalage et l'absurde</td><td style="padding:8px 10px;">Répétitions, chutes, décalages de registre</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Pathétique</strong></td><td style="padding:8px 10px;">Appel à la pitié face à une souffrance représentée</td><td style="padding:8px 10px;">Exclamations, vocabulaire de la douleur</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Ironique</strong></td><td style="padding:8px 10px;">Décalage entre ce qui est dit et ce qui est signifié</td><td style="padding:8px 10px;">Antiphrase, ton faussement élogieux</td></tr>
+<tr style="background:#f9f9f9;"><td style="padding:8px 10px;"><strong>Polémique</strong></td><td style="padding:8px 10px;">Attaque et dénonciation, ton vif</td><td style="padding:8px 10px;">Questions rhétoriques, accumulations d'accusations</td></tr>
+<tr><td style="padding:8px 10px;"><strong>Didactique</strong></td><td style="padding:8px 10px;">Volonté d'enseigner ou de démontrer</td><td style="padding:8px 10px;">Connecteurs logiques, exemples, progression claire</td></tr>
+</table>
 </div>`,
 
 };
@@ -2696,7 +2785,7 @@ function buildTextHTML(items,prefix){
       lineIdx++;
       const id=`${prefix}l${lineIdx}`;
       const txt=analysesData[id]||"Pas d'analyse pour cette ligne.";
-      const showNum=(lineIdx%5===0);
+      const showNum=true;
       s+=`<div class="line-wrapper">`;
       if(showNum) s+=`<span class="line-num">${lineIdx}</span>`;
       s+=`<div class="line" data-id="${id}" onclick="toggleAnalysis(this)">${item}</div>`;
